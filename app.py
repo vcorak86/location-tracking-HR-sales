@@ -149,13 +149,36 @@ def with_parsed_date(df:pd.DataFrame)->pd.DataFrame:
     t['Kvartal']=((t['Mjesec']-1)//3 + 1)
     return t
 
-def dedupe_last_then_sort_desc(df:pd.DataFrame)->pd.DataFrame:
-    t=with_parsed_date(normalize_columns(df))
-    t['Datum_key']=t['Datum_dt'].dt.strftime('%d.%m.%Y.')
-    if 'Ime i prezime' in t.columns:
-        t=t.drop_duplicates(subset=['Ime i prezime','Datum_key'], keep='last')
-    t=t.sort_values(['Datum_dt'], ascending=[False], na_position='last')
-    return t.drop(columns=['Datum_key'], errors='ignore')
+def dedupe_last_then_sort_desc(df: pd.DataFrame) -> pd.DataFrame:
+    t = normalize_columns(df).copy()
+
+    # 1) Parse datuma (koliko ide)
+    t["Datum_dt"] = pd.to_datetime(t.get("Datum", ""), dayfirst=True, errors="coerce")
+
+    # 2) Fallback: ako parsing ne uspije, normaliziraj tekst (skini razmake, eventualnu točku na kraju)
+    def _norm_text_date(s: str) -> str:
+        s = str(s).strip()
+        # ukloni jednu točku na kraju, normaliziraj višestruke razmake
+        s = re.sub(r"\s+", " ", s)
+        s = re.sub(r"\.\s*$", "", s)
+        return s
+
+    t["Datum_txt_norm"] = t.get("Datum", "").astype(str).map(_norm_text_date)
+
+    # 3) Ključ: preferiraj parsed datum, inače tekstualni fallback
+    t["Datum_key"] = t["Datum_dt"].dt.strftime("%Y-%m-%d")
+    t.loc[t["Datum_key"].isna() | (t["Datum_key"] == "NaT"), "Datum_key"] = t["Datum_txt_norm"]
+
+    # 4) Last-win po (Ime i prezime + Datum_key)
+    if "Ime i prezime" in t.columns:
+        t = t.drop_duplicates(subset=["Ime i prezime", "Datum_key"], keep="last")
+
+    # 5) Sort od najnovijeg (parsed gdje je moguće)
+    t = t.sort_values(["Datum_dt", "Datum_txt_norm"], ascending=[False, False], na_position="last")
+
+    # 6) Čišćenje pomoćnih kolona
+    return t.drop(columns=["Datum_key", "Datum_txt_norm"], errors="ignore")
+
 
 def load_tracker()->pd.DataFrame:
     if gh_enabled():
