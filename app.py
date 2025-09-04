@@ -1,10 +1,12 @@
-# app.py (v8.3)
+# app.py (v8.3.2)
 from pathlib import Path
 from datetime import date, datetime
 import base64, io, requests, re, math
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+# Import shared utils (also used by tests)
+from utils_tracker import normalize_columns, with_parsed_date, dedupe_last_then_sort_desc, is_remote_value
 
 EMP_FILE = "data/Popis_djelatnika_HR_Sales.csv"
 LOC_FILE = "data/Locations.csv"
@@ -123,63 +125,7 @@ def load_holidays_csv(path:str):
     df['_name']=df[name_col].astype(str).str.strip()
     return {r['_date']:r['_name'] for _,r in df.dropna(subset=['_date']).iterrows()}
 
-# ---------- Tracker helpers ----------
-def normalize_columns(df:pd.DataFrame)->pd.DataFrame:
-    ren={c: re.sub(r"\s+"," ", str(c).strip()).lower() for c in df.columns}
-    t=df.rename(columns=ren)
-    m={}
-    for c in t.columns:
-        if 'datum' in c: m[c]='Datum'
-        elif ('ime' in c and 'prezime' in c) or c=='ime i prezime': m[c]='Ime i prezime'
-        elif 'odjel' in c: m[c]='Odjel'
-        elif 'lokacija' in c: m[c]='Lokacija'
-        elif c=='week': m[c]='Week'
-        elif c=='month': m[c]='Month'
-        elif c=='year': m[c]='Year'
-        else: m[c]=c
-    t=t.rename(columns=m)
-    if not t.columns.is_unique: t=t.loc[:, ~t.columns.duplicated(keep='first')]
-    return t
-
-def with_parsed_date(df:pd.DataFrame)->pd.DataFrame:
-    t=df.copy()
-    t['Datum_dt']=pd.to_datetime(t.get('Datum',''), dayfirst=True, errors='coerce')
-    t['Godina']=t['Datum_dt'].dt.year
-    t['Mjesec']=t['Datum_dt'].dt.month
-    t['Kvartal']=((t['Mjesec']-1)//3 + 1)
-    return t
-
-def dedupe_last_then_sort_desc(df: pd.DataFrame) -> pd.DataFrame:
-    t = normalize_columns(df).copy()
-
-    # 1) Parse datuma (koliko ide)
-    t["Datum_dt"] = pd.to_datetime(t.get("Datum", ""), dayfirst=True, errors="coerce")
-
-    # 2) Fallback: ako parsing ne uspije, normaliziraj tekst (skini razmake, eventualnu točku na kraju)
-    def _norm_text_date(s: str) -> str:
-        s = str(s).strip()
-        # ukloni jednu točku na kraju, normaliziraj višestruke razmake
-        s = re.sub(r"\s+", " ", s)
-        s = re.sub(r"\.\s*$", "", s)
-        return s
-
-    t["Datum_txt_norm"] = t.get("Datum", "").astype(str).map(_norm_text_date)
-
-    # 3) Ključ: preferiraj parsed datum, inače tekstualni fallback
-    t["Datum_key"] = t["Datum_dt"].dt.strftime("%Y-%m-%d")
-    t.loc[t["Datum_key"].isna() | (t["Datum_key"] == "NaT"), "Datum_key"] = t["Datum_txt_norm"]
-
-    # 4) Last-win po (Ime i prezime + Datum_key)
-    if "Ime i prezime" in t.columns:
-        t = t.drop_duplicates(subset=["Ime i prezime", "Datum_key"], keep="last")
-
-    # 5) Sort od najnovijeg (parsed gdje je moguće)
-    t = t.sort_values(["Datum_dt", "Datum_txt_norm"], ascending=[False, False], na_position="last")
-
-    # 6) Čišćenje pomoćnih kolona
-    return t.drop(columns=["Datum_key", "Datum_txt_norm"], errors="ignore")
-
-
+# ---------- Tracker helpers (imported from utils) ----------
 def load_tracker()->pd.DataFrame:
     if gh_enabled():
         cfg=_gh_config()
@@ -247,36 +193,6 @@ def render_location_chart(counts:pd.Series, chart_type:str='Pie'):
     elif chart_type=='Bar':
         fig,ax=plt.subplots(figsize=(6.5,4.2)); ax.barh(counts.index.astype(str), counts.values)
         ax.set_xlabel('Broj'); ax.set_ylabel('Lokacija'); ax.set_title('Raspodjela po lokaciji'); st.pyplot(fig)
-
-def is_remote_value(s)->bool:
-    if not isinstance(s,str): return False
-    l=s.lower()
-    return ("remote" in l) or ("rad od ku" in l) or ("work from home" in l) or ("home office" in l)
-
-def build_kpi_per_person(df: pd.DataFrame)->pd.DataFrame:
-    if df.empty or 'Lokacija' not in df.columns or 'Ime i prezime' not in df.columns:
-        return pd.DataFrame(columns=["Ime i prezime","Ured","Remote","Ostalo","Ukupno","% Remote"])
-    office_names={"ured"}
-    res=[]
-    for person, g in df.groupby('Ime i prezime'):
-        locs=g['Lokacija'].astype(str).str.lower()
-        office=int(locs.isin(office_names).sum())
-        remote=int(locs.apply(is_remote_value).sum())
-        total=int(len(g))
-        other=int(total - office - remote)
-        pct=round(remote/total*100,1) if total>0 else 0.0
-        res.append({"Ime i prezime":person,"Ured":office,"Remote":remote,"Ostalo":other,"Ukupno":total,"% Remote":pct})
-    out=pd.DataFrame(res).sort_values(["Remote","% Remote"], ascending=[False,False])
-    return out
-
-def make_excel(records: pd.DataFrame, counts: pd.Series, kpi: pd.DataFrame)->bytes:
-    buf = io.BytesIO()
-    with pd.ExcelWriter(buf, engine="openpyxl") as writer:
-        records.to_excel(writer, index=False, sheet_name="Records")
-        pd.DataFrame({"Lokacija":counts.index, "Broj":counts.values}).to_excel(writer, index=False, sheet_name="By location")
-        kpi.to_excel(writer, index=False, sheet_name="KPI per person")
-    buf.seek(0)
-    return buf.read()
 
 # ---------- Base data ----------
 employees=load_employees(EMP_FILE)
@@ -353,19 +269,44 @@ with st.expander("🛠️ Admin portal"):
         chart_type=st.radio("Prikaz", ["Pie","Column","Bar"], horizontal=True, index=0)
         if not df.empty and 'Lokacija' in df.columns:
             counts=df['Lokacija'].value_counts()
-            render_location_chart(counts, chart_type=chart_type)
+            # Chart + table
+            fig = None
+            if chart_type=='Pie':
+                fig,ax=plt.subplots(figsize=(5.2,5.2))
+                wedges,_=ax.pie(counts.values, startangle=90); ax.axis('equal')
+                total=int(counts.sum()); labels=[f"{n} — {v} ({v/total*100:.1f}%)" for n,v in zip(counts.index, counts.values)]
+                ax.legend(wedges, labels, loc='center left', bbox_to_anchor=(1,0.5))
+                st.pyplot(fig)
+            elif chart_type=='Column':
+                fig,ax=plt.subplots(figsize=(6.5,4.2)); ax.bar(counts.index.astype(str), counts.values)
+                ax.set_xlabel('Lokacija'); ax.set_ylabel('Broj'); ax.set_title('Raspodjela po lokaciji'); st.pyplot(fig)
+            elif chart_type=='Bar':
+                fig,ax=plt.subplots(figsize=(6.5,4.2)); ax.barh(counts.index.astype(str), counts.values)
+                ax.set_xlabel('Broj'); ax.set_ylabel('Lokacija'); ax.set_title('Raspodjela po lokaciji'); st.pyplot(fig)
 
-            # Table with absolute + percentage
             total=counts.sum()
             table=pd.DataFrame({"Lokacija":counts.index,"Broj":counts.values,"Postotak":(counts.values/total*100).round(1)})
             st.dataframe(table, width='stretch', hide_index=True)
 
-            # KPI per person (office vs remote vs other)
+            # KPI per person
             st.markdown("#### KPI po osobi (Ured / Remote / Ostalo)")
-            kpi = build_kpi_per_person(df)
+            def _is_remote_value(s):  # local alias if tests not imported
+                return is_remote_value(s)
+            res=[]
+            if not df.empty and 'Lokacija' in df.columns and 'Ime i prezime' in df.columns:
+                office_names={"ured"}
+                for person, g in df.groupby('Ime i prezime'):
+                    locs=g['Lokacija'].astype(str).str.lower()
+                    office=int(locs.isin(office_names).sum())
+                    remote=int(locs.apply(_is_remote_value).sum())
+                    total=int(len(g))
+                    other=int(total - office - remote)
+                    pct=round(remote/total*100,1) if total>0 else 0.0
+                    res.append({"Ime i prezime":person,"Ured":office,"Remote":remote,"Ostalo":other,"Ukupno":total,"% Remote":pct})
+            kpi=pd.DataFrame(res).sort_values(["Remote","% Remote"], ascending=[False,False]) if res else pd.DataFrame(columns=["Ime i prezime","Ured","Remote","Ostalo","Ukupno","% Remote"])
             st.dataframe(kpi, width='stretch', hide_index=True)
 
-            # Export buttons (CSV + Excel)
+            # Export buttons
             st.markdown("#### Izvoz")
             colx, coly, colz = st.columns([1,1,2])
             with colx:
@@ -375,8 +316,15 @@ with st.expander("🛠️ Admin portal"):
                 counts_csv = table.to_csv(index=False).encode("utf-8")
                 st.download_button("⬇️ CSV (po lokaciji)", data=counts_csv, file_name="analytics_by_location.csv", mime="text/csv")
             with colz:
-                xls_bytes = make_excel(df, counts, kpi)
-                st.download_button("⬇️ Excel (zapisi + lokacije + KPI)", data=xls_bytes, file_name="analytics_export.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+                # Excel export (records + by location + KPI)
+                buf = io.BytesIO()
+                with pd.ExcelWriter(buf, engine="openpyxl") as writer:
+                    df.to_excel(writer, index=False, sheet_name="Records")
+                    table.to_excel(writer, index=False, sheet_name="By location")
+                    kpi.to_excel(writer, index=False, sheet_name="KPI per person")
+                buf.seek(0)
+                st.download_button("⬇️ Excel (zapisi + lokacije + KPI)", data=buf.read(), file_name="analytics_export.xlsx",
+                                   mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
         else:
             st.info("Nema podataka za odabrane filtere.")
 
@@ -398,6 +346,13 @@ with st.expander("🛠️ Admin portal"):
 
 # ---------- User weekly entry ----------
 today=date.today()
+def weeks_forward_until_year_end(ref:date)->int:
+    year_end=date(ref.year,12,31)
+    start_monday=(pd.Timestamp(ref)-pd.Timedelta(days=ref.weekday())).date()
+    end_monday=(pd.Timestamp(year_end)-pd.Timedelta(days=year_end.weekday())).date()
+    delta_days=(pd.Timestamp(end_monday)-pd.Timestamp(start_monday)).days
+    return max(0, int(delta_days//7))
+
 MAX_WEEKS_FWD=weeks_forward_until_year_end(today)
 if 'week_offset' not in st.session_state: st.session_state.week_offset=1
 
@@ -433,8 +388,7 @@ with st.form("unos_tjedan"):
     week_rows=[]
     remote_count=0
     for i in range(5):
-        val = ""
-        d = (pd.Timestamp(week_start)+pd.Timedelta(days=i)).date()
+        val = ""  # Reset to prevent carry-over across iterations
         d=(pd.Timestamp(week_start)+pd.Timedelta(days=i)).date()
         day_name=HR_DAYS[i]; hol=HOLIDAYS.get(d)
 
@@ -482,6 +436,7 @@ if not tracker_df.empty:
     t=with_parsed_date(normalize_columns(tracker_df)); mine=t[(t["Ime i prezime"]==full_name) & (t["Godina"]==date.today().year)]
     if not mine.empty:
         counts=mine["Lokacija"].value_counts()
+        import matplotlib.pyplot as plt
         fig,ax=plt.subplots(figsize=(5.2,5.2)); wedges,_=ax.pie(counts.values, startangle=90); ax.axis("equal")
         total=int(counts.sum()); labels=[f"{n} — {v} ({v/total*100:.1f}%)" for n,v in zip(counts.index, counts.values)]
         ax.legend(wedges, labels, loc="center left", bbox_to_anchor=(1,0.5)); st.pyplot(fig)
