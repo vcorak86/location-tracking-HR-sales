@@ -2,7 +2,7 @@
 import pandas as pd
 from utils_tracker import parse_date_flexible
 
-def dt(d): 
+def dt(d):
     return None if pd.isna(d) else d.date()
 
 def test_various_formats():
