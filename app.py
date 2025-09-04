@@ -1,4 +1,4 @@
-# app.py (v8)
+# app.py (v8.3)
 from pathlib import Path
 from datetime import date, datetime
 import base64, io, requests, re, math
@@ -18,6 +18,19 @@ MONTHS_HR = ["Siječanj","Veljača","Ožujak","Travanj","Svibanj","Lipanj","Srpa
 
 st.set_page_config(page_title="Praćenje lokacije rada", page_icon="🗺️", layout="wide")
 
+# ---------- Inject CSS (holiday hover + minor UI) ----------
+st.markdown("""
+<style>
+.hday-cell { background:#fff7d6; padding:10px 12px; border-top:1px solid #f1c40f55; border-bottom:1px solid #f1c40f55; }
+.hday-left { border-left:1px solid #f1c40f55; border-top-left-radius:10px; border-bottom-left-radius:10px; }
+.hday-right{ border-right:1px solid #f1c40f55; border-top-right-radius:10px; border-bottom-right-radius:10px; }
+.hday-cell:hover { background:#fff1bd; box-shadow:0 0 0 2px #f1c40f3a inset; transition: all .15s ease; }
+.label-strong { font-weight:600; }
+.pin-input label { display:none !important; }
+</style>
+""", unsafe_allow_html=True)
+
+# ---------- GitHub helpers ----------
 def gh_enabled(): return "GITHUB" in st.secrets and all(k in st.secrets["GITHUB"] for k in ["token","repo"])
 def _gh_headers():
     return {"Authorization": f"Bearer {st.secrets['GITHUB']['token']}","Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"}
@@ -52,6 +65,7 @@ def parse_csv_bytes(b:bytes, preferred_sep=DEFAULT_GH_SEP):
         except Exception: pass
     df=pd.read_csv(io.BytesIO(b), sep=None, engine="python"); return df, None
 
+# ---------- CSV loaders ----------
 def read_csv_smart(path:str, seps=(',', ';'), encs=('utf-8','utf-8-sig','cp1250','latin1')):
     last=None
     for sep in seps:
@@ -109,6 +123,7 @@ def load_holidays_csv(path:str):
     df['_name']=df[name_col].astype(str).str.strip()
     return {r['_date']:r['_name'] for _,r in df.dropna(subset=['_date']).iterrows()}
 
+# ---------- Tracker helpers ----------
 def normalize_columns(df:pd.DataFrame)->pd.DataFrame:
     ren={c: re.sub(r"\s+"," ", str(c).strip()).lower() for c in df.columns}
     t=df.rename(columns=ren)
@@ -187,6 +202,7 @@ def save_tracker(new_rows:pd.DataFrame):
         if put.get('status') not in (200,201): st.error(f"GitHub PUT error {put.get('status')}"); st.code(put.get('body'))
     else: st.info("GitHub sync nije konfiguriran; ažurirana je samo lokalna kopija (data/Tracker.local.csv).")
 
+# ---------- Helpers ----------
 def monday_of_week(d:date)->date: return (pd.Timestamp(d)-pd.Timedelta(days=d.weekday())).date()
 def weeks_forward_until_year_end(ref:date)->int:
     year_end=date(ref.year,12,31)
@@ -209,15 +225,42 @@ def render_location_chart(counts:pd.Series, chart_type:str='Pie'):
         fig,ax=plt.subplots(figsize=(6.5,4.2)); ax.barh(counts.index.astype(str), counts.values)
         ax.set_xlabel('Broj'); ax.set_ylabel('Lokacija'); ax.set_title('Raspodjela po lokaciji'); st.pyplot(fig)
 
-def styled_holiday_box(text:str):
-    st.markdown(f"""<div style="padding:10px; border-radius:10px; border:1px solid #f1c40f33; background:#fff8e1;"><strong>''' +  + text +  + </strong></div>""", unsafe_allow_html=True)
+def is_remote_value(s)->bool:
+    if not isinstance(s,str): return False
+    l=s.lower()
+    return ("remote" in l) or ("rad od ku" in l) or ("work from home" in l) or ("home office" in l)
 
-# Base data
+def build_kpi_per_person(df: pd.DataFrame)->pd.DataFrame:
+    if df.empty or 'Lokacija' not in df.columns or 'Ime i prezime' not in df.columns:
+        return pd.DataFrame(columns=["Ime i prezime","Ured","Remote","Ostalo","Ukupno","% Remote"])
+    office_names={"ured"}
+    res=[]
+    for person, g in df.groupby('Ime i prezime'):
+        locs=g['Lokacija'].astype(str).str.lower()
+        office=int(locs.isin(office_names).sum())
+        remote=int(locs.apply(is_remote_value).sum())
+        total=int(len(g))
+        other=int(total - office - remote)
+        pct=round(remote/total*100,1) if total>0 else 0.0
+        res.append({"Ime i prezime":person,"Ured":office,"Remote":remote,"Ostalo":other,"Ukupno":total,"% Remote":pct})
+    out=pd.DataFrame(res).sort_values(["Remote","% Remote"], ascending=[False,False])
+    return out
+
+def make_excel(records: pd.DataFrame, counts: pd.Series, kpi: pd.DataFrame)->bytes:
+    buf = io.BytesIO()
+    with pd.ExcelWriter(buf, engine="openpyxl") as writer:
+        records.to_excel(writer, index=False, sheet_name="Records")
+        pd.DataFrame({"Lokacija":counts.index, "Broj":counts.values}).to_excel(writer, index=False, sheet_name="By location")
+        kpi.to_excel(writer, index=False, sheet_name="KPI per person")
+    buf.seek(0)
+    return buf.read()
+
+# ---------- Base data ----------
 employees=load_employees(EMP_FILE)
 LOCATIONS=load_locations(LOC_FILE)
 HOLIDAYS=load_holidays_csv(HOL_FILE)
 
-# Title + email first
+# ---------- Title + email first ----------
 st.title("Dobrodošli u aplikaciju za praćenje lokacije rada!")
 email=st.text_input("Unesite svoju eMail adresu").strip().lower()
 if not email: st.stop()
@@ -228,17 +271,31 @@ if row.empty: st.error("E-mail nije pronađen u popisu djelatnika."); st.stop()
 person=row.iloc[0]; full_name=str(person['Name']); dept=str(person['Department'])
 st.success(f"Pozdrav, **{full_name}** ({dept})!")
 
-# Admin portal (hidden until after email)
-with st.expander("🛠️ Admin portal (PIN 1986)"):
-    pin=st.text_input("Unesite admin PIN", type="password", value="")
-    if pin=="1986":
-        st.success("Admin pristup odobren.")
+# ---------- Admin portal (unlock form + lock button) ----------
+with st.expander("🛠️ Admin portal"):
+    if 'admin_ok' not in st.session_state: st.session_state['admin_ok']=False
+    if not st.session_state['admin_ok']:
+        with st.form("admin_unlock"):
+            pin = st.text_input("", type="password", placeholder="PIN", label_visibility="collapsed")
+            submitted = st.form_submit_button("🔓 Otključaj")
+        if submitted and pin == "1986":
+            st.session_state['admin_ok'] = True
+        elif submitted and pin != "":
+            st.error("Neispravan PIN.")
+    else:
+        colA, colB = st.columns([6,1])
+        with colA: st.success("Admin pristup odobren.")
+        with colB:
+            if st.button("🔒 Zaključaj", help="Zaključa admin portal"):
+                st.session_state['admin_ok'] = False
+
         all_data=with_parsed_date(normalize_columns(load_tracker().copy()))
         try:
             name2mgr=employees.set_index('Name')[['Manager','Department']]
             all_data=all_data.merge(name2mgr, left_on='Ime i prezime', right_index=True, how='left')
         except Exception: pass
 
+        # slicers
         c_year, c_quarter, c_month = st.columns([1,1,2])
         with c_year:
             years=sorted([int(y) for y in all_data['Godina'].dropna().unique() if str(y).isdigit()], reverse=True)
@@ -260,6 +317,7 @@ with st.expander("🛠️ Admin portal (PIN 1986)"):
             people=sorted([p for p in all_data.get('Ime i prezime', pd.Series([])).dropna().unique()])
             sel_people=st.multiselect("Osoba", options=people, default=[])
 
+        # apply
         df=all_data.copy()
         if sel_years: df=df[df['Godina'].isin(sel_years)]
         if sel_quarters: df=df[df['Kvartal'].isin(sel_quarters)]
@@ -273,11 +331,33 @@ with st.expander("🛠️ Admin portal (PIN 1986)"):
         if not df.empty and 'Lokacija' in df.columns:
             counts=df['Lokacija'].value_counts()
             render_location_chart(counts, chart_type=chart_type)
+
+            # Table with absolute + percentage
             total=counts.sum()
             table=pd.DataFrame({"Lokacija":counts.index,"Broj":counts.values,"Postotak":(counts.values/total*100).round(1)})
             st.dataframe(table, width='stretch', hide_index=True)
-        else: st.info("Nema podataka za odabrane filtere.")
 
+            # KPI per person (office vs remote vs other)
+            st.markdown("#### KPI po osobi (Ured / Remote / Ostalo)")
+            kpi = build_kpi_per_person(df)
+            st.dataframe(kpi, width='stretch', hide_index=True)
+
+            # Export buttons (CSV + Excel)
+            st.markdown("#### Izvoz")
+            colx, coly, colz = st.columns([1,1,2])
+            with colx:
+                csv_bytes = df.to_csv(index=False).encode("utf-8")
+                st.download_button("⬇️ CSV (zapisi)", data=csv_bytes, file_name="analytics_records.csv", mime="text/csv")
+            with coly:
+                counts_csv = table.to_csv(index=False).encode("utf-8")
+                st.download_button("⬇️ CSV (po lokaciji)", data=counts_csv, file_name="analytics_by_location.csv", mime="text/csv")
+            with colz:
+                xls_bytes = make_excel(df, counts, kpi)
+                st.download_button("⬇️ Excel (zapisi + lokacije + KPI)", data=xls_bytes, file_name="analytics_export.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        else:
+            st.info("Nema podataka za odabrane filtere.")
+
+        # Test connection
         st.markdown("---"); st.subheader("🔌 Test connection")
         if gh_enabled():
             cfg=_gh_config()
@@ -292,9 +372,8 @@ with st.expander("🛠️ Admin portal (PIN 1986)"):
                     if put_res.get("status") in (200,201): st.success("PUT test: OK (data/connection_check.txt)")
                     else: st.error(f"PUT test error {put_res.get('status')}"); st.code(put_res.get("body"))
         else: st.warning("GITHUB secrets nisu postavljeni.")
-    elif pin: st.error("Neispravan PIN.")
 
-# User weekly entry
+# ---------- User weekly entry ----------
 today=date.today()
 MAX_WEEKS_FWD=weeks_forward_until_year_end(today)
 if 'week_offset' not in st.session_state: st.session_state.week_offset=1
@@ -329,18 +408,22 @@ if not tracker_all.empty:
 with st.form("unos_tjedan"):
     st.write("**Datum, Dan, Lokacija** — Neradni dani su automatski označeni i nisu promjenjivi.")
     week_rows=[]
+    remote_count=0
     for i in range(5):
         d=(pd.Timestamp(week_start)+pd.Timedelta(days=i)).date()
         day_name=HR_DAYS[i]; hol=HOLIDAYS.get(d)
-        if hol: st.markdown(f"<div style='padding:10px; border-radius:10px; border:1px solid #f1c40f33; background:#fff8e1;'><strong>{pd.Timestamp(d).strftime('%d.%m.%Y.')} — {day_name}: {hol}</strong></div>", unsafe_allow_html=True)
+
         c1,c2,c3=st.columns([2,2,3])
-        with c1: st.markdown(f"**Datum:** {pd.Timestamp(d).strftime('%d.%m.%Y.')}")
-        with c2: st.markdown(f"**Dan:** {day_name}")
-        with c3:
-            default=prefill.get(d,"")
-            if hol:
-                st.text_input("Lokacija", value=hol, disabled=True, key=f"loc_{d.isoformat()}"); val=hol
-            else:
+        if hol:
+            with c1: st.markdown(f"<div class='hday-cell hday-left'><span class='label-strong'>Datum:</span> {pd.Timestamp(d).strftime('%d.%m.%Y.')}</div>", unsafe_allow_html=True)
+            with c2: st.markdown(f"<div class='hday-cell'><span class='label-strong'>Dan:</span> {day_name}</div>", unsafe_allow_html=True)
+            with c3: st.markdown(f"<div class='hday-cell hday-right'><span class='label-strong'>Lokacija:</span> {hol}</div>", unsafe_allow_html=True)
+            val=hol
+        else:
+            with c1: st.markdown(f"**Datum:** {pd.Timestamp(d).strftime('%d.%m.%Y.')}")
+            with c2: st.markdown(f"**Dan:** {day_name}")
+            with c3:
+                default=prefill.get(d,"")
                 sel=st.selectbox("Lokacija (pretraži ili odaberi)", ["(odaberi)"]+LOCATIONS+["(upiši ručno)"],
                                  index=(["(odaberi)"]+LOCATIONS+["(upiši ručno)"]).index(default) if default in LOCATIONS else 0,
                                  key=f"sel_{d.isoformat()}")
@@ -348,18 +431,31 @@ with st.form("unos_tjedan"):
                 elif sel!="(odaberi)": val=sel
                 else: val=default
                 if val and val.strip().lower()=="neradni dan": st.warning("Vrijednost 'Neradni dan' nije dopuštena za unos."); val=""
-        week_rows.append({"Datum":pd.Timestamp(d).strftime("%d.%m.%Y."),"Ime i prezime":full_name,"Odjel":dept,"Lokacija":val,
+        if not hol and is_remote_value(val): remote_count+=1
+
+        week_rows.append({"Datum":pd.Timestamp(d).strftime("%d.%m.%Y."),"Dan":day_name,"Ime i prezime":full_name,"Odjel":dept,"Lokacija":val,
                           "Week":iso_week(d),"Month":d.month,"Year":d.year})
+
+    # Weekly summary table (preview of 5 days)
+    st.markdown("##### Tjedni sažetak")
+    preview=pd.DataFrame(week_rows)[["Datum","Dan","Lokacija"]]
+    st.dataframe(preview, width='stretch', hide_index=True)
+
+    # Remote usage warning if >1
+    if remote_count>1:
+        st.warning('Prema internom dogovoru u odjelu Prodaje i marketinga, tjedno je moguće koristiti "Rad od kuće" jedan radni dan.')
+
     if st.form_submit_button("💾 Spremi tjedne unose"):
         to_save=[r for r in week_rows if r["Lokacija"]]
         if not to_save: st.info("Nema unosa za spremanje.")
         else: save_tracker(pd.DataFrame(to_save)); st.success("Unosi su spremljeni u Tracker.csv (GitHub ili lokalni keš).")
 
+# ---------- Personal analytics ----------
 st.markdown("---"); st.subheader("Udio lokacija u tekućoj godini (na temelju spremljenih unosa)")
 tracker_df=load_tracker()
 if not tracker_df.empty:
     t=with_parsed_date(normalize_columns(tracker_df)); mine=t[(t["Ime i prezime"]==full_name) & (t["Godina"]==date.today().year)]
-    if not mine.empty: 
+    if not mine.empty:
         counts=mine["Lokacija"].value_counts()
         fig,ax=plt.subplots(figsize=(5.2,5.2)); wedges,_=ax.pie(counts.values, startangle=90); ax.axis("equal")
         total=int(counts.sum()); labels=[f"{n} — {v} ({v/total*100:.1f}%)" for n,v in zip(counts.index, counts.values)]
@@ -367,6 +463,7 @@ if not tracker_df.empty:
     else: st.info("Nema spremljenih unosa za tekuću godinu.")
 else: st.info("Još nema podataka u Tracker.csv.")
 
+# ---------- Past records ----------
 st.markdown("---"); st.subheader("📜 Vaši prijašnji zapisi")
 tracker_all=load_tracker()
 if not tracker_all.empty:
