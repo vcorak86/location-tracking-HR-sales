@@ -433,6 +433,8 @@ with st.form("unos_tjedan"):
     week_rows=[]
     remote_count=0
     for i in range(5):
+        val = ""
+        d = (pd.Timestamp(week_start)+pd.Timedelta(days=i)).date()
         d=(pd.Timestamp(week_start)+pd.Timedelta(days=i)).date()
         day_name=HR_DAYS[i]; hol=HOLIDAYS.get(d)
 
