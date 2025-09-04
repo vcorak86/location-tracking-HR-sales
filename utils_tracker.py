@@ -1,4 +1,4 @@
-# utils_tracker.py
+# utils_tracker.py (v9)
 from __future__ import annotations
 import re
 import pandas as pd
@@ -22,17 +22,10 @@ def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
     return t
 
 def parse_date_flexible(x) -> pd.Timestamp:
-    """
-    Robust parsing for dates like:
-    01.09.2025., 1.9.2025, 01/09/2025, 2025-09-01, ' 01.09.2025 .'
-    Returns pandas.Timestamp (NaT if fails).
-    """
     if x is None: return pd.NaT
     s=str(x).strip()
-    # remove a trailing dot and extra spaces
     s=re.sub(r"\s+", " ", s)
     s=re.sub(r"\.\s*$", "", s)
-    # try day-first then default
     for dayfirst in (True, False):
         dt = pd.to_datetime(s, dayfirst=dayfirst, errors="coerce")
         if not pd.isna(dt): return dt
@@ -40,7 +33,7 @@ def parse_date_flexible(x) -> pd.Timestamp:
 
 def with_parsed_date(df: pd.DataFrame) -> pd.DataFrame:
     t=normalize_columns(df).copy()
-    t['Datum_dt']=df.get('Datum', pd.Series([], dtype='object')).apply(parse_date_flexible)
+    t['Datum_dt']=t.get('Datum', pd.Series([], dtype='object')).apply(parse_date_flexible)
     t['Godina']=t['Datum_dt'].dt.year
     t['Mjesec']=t['Datum_dt'].dt.month
     t['Kvartal']=((t['Mjesec']-1)//3 + 1)
@@ -48,7 +41,6 @@ def with_parsed_date(df: pd.DataFrame) -> pd.DataFrame:
 
 def dedupe_last_then_sort_desc(df: pd.DataFrame) -> pd.DataFrame:
     t = normalize_columns(df).copy()
-    # parsed + normalized textual fallback
     t["Datum_dt"] = t.get("Datum", pd.Series([], dtype='object')).apply(parse_date_flexible)
 
     def _norm_text_date(s: str) -> str:
@@ -58,8 +50,6 @@ def dedupe_last_then_sort_desc(df: pd.DataFrame) -> pd.DataFrame:
         return s
 
     t["Datum_txt_norm"] = t.get("Datum", "").astype(str).map(_norm_text_date)
-
-    # key prefers parsed date
     t["Datum_key"] = t["Datum_dt"].dt.strftime("%Y-%m-%d")
     t.loc[t["Datum_key"].isna() | (t["Datum_key"] == "NaT"), "Datum_key"] = t["Datum_txt_norm"]
 
