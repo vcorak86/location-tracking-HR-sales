@@ -1168,9 +1168,13 @@ Datum;Ime i prezime;Odjel;Lokacija;Week;Month;Year;godina;mjesec;kvartal;dan;Dat
 16.6.2025;Zubić Petra;Marketing;Špansko;25.0;6;2025;2025.0;6.0;2.0;;2025-06-16
 13.6.2025;Vuzem Nataša;Marketing;Vukovina;24.0;6;2025;2025.0;6.0;2.0;;2025-06-13
 19.09.2025.;Vedran Čorak;Project management;Rad od kuće;38.0;9;2025;;;;;
-12.09.2025.;Boc Marko;Project management;Špansko;37.0;9;2025;;;;Petak;
+12.09.2025.;Boc Marko;Project management;Špansko;37.0;9;2025;;;;;
+11.09.2025.;Boc Marko;Project management;Špansko;37.0;9;2025;;;;;
 10.10.2025.;Vedran Čorak;Project management;Rad od kuće;41.0;10;2025;;;;;
+10.09.2025.;Boc Marko;Project management;Špansko;37.0;9;2025;;;;;
 09.10.2025.;Vedran Čorak;Project management;Vukovina;41.0;10;2025;;;;;
+09.09.2025.;Boc Marko;Project management;Špansko;37.0;9;2025;;;;;
 08.10.2025.;Vedran Čorak;Project management;Vukovina;41.0;10;2025;;;;;
+08.09.2025.;Boc Marko;Project management;Špansko;37.0;9;2025;;;;;
 07.10.2025.;Vedran Čorak;Project management;Vukovina;41.0;10;2025;;;;;
 06.10.2025.;Vedran Čorak;Project management;Špansko;41.0;10;2025;;;;;
