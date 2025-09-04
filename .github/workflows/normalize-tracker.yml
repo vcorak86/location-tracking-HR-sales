@@ -1,0 +1,31 @@
+# .github/workflows/normalize-tracker.yml
+name: Normalize Tracker
+
+on:
+  push:
+    paths:
+      - "data/Tracker.csv"
+      - "utils_tracker.py"
+      - "scripts/normalize_tracker.py"
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install deps
+        run: pip install pandas
+      - name: Normalize file
+        run: python scripts/normalize_tracker.py
+      - name: Commit & push changes if any
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: normalize Tracker.csv (DESC + last-wins)"
+          file_pattern: data/Tracker.csv
