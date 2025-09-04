@@ -1,4 +1,5 @@
 Name;Department;eMail;Manager;Director
+Ivana Kravaršćan; Prodaja i marketing; ikravarscan@intercars.eu; Mirko Rugle, Mirko Rugle
 Alitović Bruno;Call Centar;balitovic@intercars.eu;Ivana Kravaršćan;Ivana Kravaršćan
 Boc Marko;Project management;mboc@intercars.eu;Vedran Čorak;Ivana Kravaršćan
 Boris Omerzo;Tehnički centar;bomerzo@intercars.eu;Ivana Kravaršćan;Ivana Kravaršćan
@@ -612,4 +613,5 @@ Zubić Petra;Marketing;pzubic@intercars.eu;Hrvoje Habuš;Ivana Kravaršćan
 ;;;;
 ;;;;
 ;;;;
+
 
