@@ -8,6 +8,10 @@ import matplotlib.pyplot as plt
 from utils_tracker import normalize_columns, with_parsed_date, dedupe_last_then_sort_desc, is_remote_value, apply_canonical_fields, validate_tracker_schema
 from scripts.make_pdf import make_simple_pdf
 
+# ---- Build metadata ----
+BUILD_VERSION = "v10.3"
+BUILD_TIMESTAMP = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+
 # Optional telemetry
 try:
     import sentry_sdk
@@ -30,7 +34,7 @@ st.set_page_config(page_title="Praćenje lokacije rada", page_icon="🗺️", la
 
 # Telemetry init
 if sentry_sdk and "SENTRY" in st.secrets and st.secrets["SENTRY"].get("dsn"):
-    sentry_sdk.init(dsn=st.secrets["SENTRY"]["dsn"], traces_sample_rate=0.1)
+    sentry_sdk.init(dsn=st.secrets["SENTRY"]["dsn"], traces_sample_rate=float(st.secrets["SENTRY"].get("traces_sample_rate", 0.1)))
 
 st.markdown('''
 <style>
@@ -85,7 +89,7 @@ def read_csv_smart(path:str, force_sep=None, seps=(",", ";", "\t", "|"), encs=("
 # ---------- GitHub helpers with ETag/backoff/pending ----------
 def gh_enabled(): return "GITHUB" in st.secrets and all(k in st.secrets["GITHUB"] for k in ["token","repo"])
 def _gh_headers(extra=None):
-    h={"Authorization": f"Bearer {st.secrets['GITHUB']['token']}","Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"}
+    h={"Authorization": f"Bearer {st.secrets['GITHUB']['token']}", "Accept":"application/vnd.github+json", "X-GitHub-Api-Version":"2022-11-28"}
     if extra: h.update(extra)
     return h
 def _sanitize_repo(repo:str)->str: return repo.strip().strip("/")
@@ -132,68 +136,51 @@ def gh_scopes():
 
 # ---------- Loaders ----------
 @st.cache_data(show_spinner=False)
-def load_employees(path: str) -> pd.DataFrame:
-    # --- 0) Učitaj s forsiranim ';' i fallbackom ako se dobije jedna kolona
-    df = read_csv_smart(path, force_sep=';')
-    if len(df.columns) == 1:
-        col0 = str(df.columns[0])
-        # Ako je header sadrži ';', re-read sa separatorom ';' i različitim encoding fallbackovima
-        if ';' in col0:
-            for enc in ("utf-8", "utf-8-sig", "cp1250", "latin1"):
-                try:
-                    df = pd.read_csv(path, sep=';', engine="python", encoding=enc)
-                    break
-                except Exception:
-                    continue
+def load_employees(path:str)->pd.DataFrame:
+    df=read_csv_smart(path, force_sep=';')
+    if len(df.columns)==1 and ';' in str(df.columns[0]):
+        for enc in ("utf-8","utf-8-sig","cp1250","latin1"):
+            try:
+                df = pd.read_csv(path, sep=';', engine="python", encoding=enc)
+                break
+            except Exception:
+                continue
 
-    # --- 1) Normaliziraj nazive kolona i pronađi alias-e
-    import unicodedata, re
-
-    def norm(s: str) -> str:
-        s = unicodedata.normalize("NFKD", str(s))
-        s = "".join(ch for ch in s if not unicodedata.combining(ch))
-        s = s.lower()
-        s = re.sub(r"[^a-z0-9]+", "", s)
+    import unicodedata
+    def norm(s:str)->str:
+        s=unicodedata.normalize("NFKD", str(s))
+        s="".join(ch for ch in s if not unicodedata.combining(ch))
+        s=s.lower()
+        s=re.sub(r"[^a-z0-9]+","", s)
         return s
-
-    norm_map = {c: norm(c) for c in df.columns}
-    inv = {}
-    for orig, n in norm_map.items():
-        inv.setdefault(n, orig)
-
-    def pick(*candidates):
-        for cand in candidates:
-            n = norm(cand)
-            if n in inv:
-                return inv[n]
+    norm_map={c: norm(c) for c in df.columns}
+    inv={}
+    for orig, n in norm_map.items(): inv.setdefault(n, orig)
+    def pick(*cands):
+        for cand in cands:
+            n=norm(cand)
+            if n in inv: return inv[n]
         return None
+    col_name = pick("Name","Ime i prezime","ImeIPrezime","Zaposlenik","Employee")
+    col_dept = pick("Department","Odjel","Odjeljenje","OrgUnit","Organizacijska jedinica")
+    col_mail = pick("eMail","Email","E-mail","e-mail","mail","Kontakt e-mail","Kontakt email")
+    col_mgr  = pick("Manager","Menadzer","Menadžer","Prvi nadređeni","Nadređeni","Line Manager")
+    col_dir  = pick("Director","Direktor","Drugi nadređeni")
 
-    col_name = pick("Name", "Ime i prezime", "ImeIPrezime", "Zaposlenik", "Employee")
-    col_dept = pick("Department", "Odjel", "Odjeljenje", "OrgUnit", "Organizacijska jedinica")
-    col_mail = pick("eMail", "Email", "E-mail", "e-mail", "mail", "Kontakt e-mail", "Kontakt email")
-    col_mgr  = pick("Manager", "Menadzer", "Menadžer", "Prvi nadređeni", "Nadređeni", "Line Manager")
-    col_dir  = pick("Director", "Direktor", "Drugi nadređeni")
-
-    missing = []
+    missing=[]
     if not col_name: missing.append("Name / Ime i prezime")
     if not col_dept: missing.append("Department / Odjel")
     if not col_mail: missing.append("Email / eMail / E-mail")
-
     if missing:
-        st.error(
-            "U CSV-u nedostaju obavezne kolone: " + ", ".join(missing) +
-            f"\nNađene kolone: {list(df.columns)}"
-        )
+        st.error("U CSV-u nedostaju obavezne kolone: " + ", ".join(missing) + f"\nNađene kolone: {list(df.columns)}")
         st.stop()
 
-    base_cols = {col_name: "Name", col_dept: "Department", col_mail: "eMail"}
-    out = df[list(base_cols.keys())].rename(columns=base_cols)
-
-    out["Manager"] = df[col_mgr].astype(str) if col_mgr else ""
-    out["Director"] = df[col_dir].astype(str) if col_dir else ""
-    out["eMail_lc"] = out["eMail"].astype(str).str.strip().str.lower()
-
-    return out[["Name", "Department", "eMail", "Manager", "Director", "eMail_lc"]]
+    base={col_name:"Name", col_dept:"Department", col_mail:"eMail"}
+    out=df[list(base.keys())].rename(columns=base)
+    out["Manager"]=df[col_mgr].astype(str) if col_mgr else ""
+    out["Director"]=df[col_dir].astype(str) if col_dir else ""
+    out["eMail_lc"]=out["eMail"].astype(str).str.strip().str.lower()
+    return out[["Name","Department","eMail","Manager","Director","eMail_lc"]]
 
 @st.cache_data(show_spinner=False)
 def load_locations(path:str)->list[str]:
@@ -336,8 +323,27 @@ with c_right:
     if st.button("🔔 Provjeri nove zapise", help="Provjeri ima li novog commita u data/Tracker.csv"):
         st.session_state["tracker_version"] = st.session_state.get("tracker_version", 0) + 1
         st.toast("Provjeravam GitHub …", icon="🔔")
-        st.experimental_rerun()
+        st.rerun()
     st.markdown(f"<span class='badge'><span class='badge-dot'></span>{branch} · {path_remote} · @{sha_short}</span>", unsafe_allow_html=True)
+    try:
+        pop = st.popover("ℹ️ O aplikaciji")
+        with pop:
+            st.write(f"**Verzija:** {BUILD_VERSION} · **Build:** {BUILD_TIMESTAMP}")
+            st.write(f"**Branch:** `{branch}` · **Path:** `{path_remote}` · **SHA:** `{sha_short}`")
+            try:
+                import platform, streamlit as _st
+                st.write(f"**Python:** {platform.python_version()} · **Streamlit:** {_st.__version__}")
+            except Exception:
+                pass
+    except Exception:
+        with st.expander("ℹ️ O aplikaciji"):
+            st.write(f"**Verzija:** {BUILD_VERSION} · **Build:** {BUILD_TIMESTAMP}")
+            st.write(f"**Branch:** `{branch}` · **Path:** `{path_remote}` · **SHA:** `{sha_short}`")
+            try:
+                import platform, streamlit as _st
+                st.write(f"**Python:** {platform.python_version()} · **Streamlit:** {_st.__version__}")
+            except Exception:
+                pass
 
 # ---------- Email gate ----------
 email=st.text_input("Unesite svoju eMail adresu").strip().lower()
@@ -354,13 +360,15 @@ st.success(f"Pozdrav, **{full_name}** ({dept})!")
 with st.expander("🛠️ Admin portal"):
     if 'admin_ok' not in st.session_state: st.session_state['admin_ok']=False
     if not st.session_state['admin_ok']:
-        with st.form("admin_unlock"):
-            pin = st.text_input("", type="password", placeholder="PIN", label_visibility="collapsed")
-            submitted = st.form_submit_button("🔓 Otključaj")
-        if submitted and pin == "1986":
-            st.session_state['admin_ok'] = True
-        elif submitted and pin != "":
-            st.error("Neispravan PIN.")
+        with st.form("admin_unlock", clear_on_submit=True):
+            pin = st.text_input("Admin PIN", type="password", placeholder="PIN",
+                                label_visibility="collapsed", key="admin_pin")
+            submitted = st.form_submit_button("🔓")
+        if submitted:
+            if pin == "1986":
+                st.session_state['admin_ok'] = True
+            else:
+                st.error("Neispravan PIN.")
     else:
         colA, colB, colC = st.columns([5,2,1])
         with colA: st.success("Admin pristup odobren.")
@@ -368,6 +376,10 @@ with st.expander("🛠️ Admin portal"):
             if st.button("🔒 Zaključaj", help="Zaključa admin portal"): st.session_state['admin_ok'] = False
         with colC:
             if st.button("🔁 Sync pending"): try_sync_pending()
+        st.divider()
+        if st.button('🧹 Očisti cache'):
+            st.cache_data.clear()
+            st.rerun()
 
         # Healthcheck
         st.markdown("### Healthcheck")
@@ -392,6 +404,26 @@ with st.expander("🛠️ Admin portal"):
                 st.write(f"GET:{rget.status_code} PUT:{rput.status_code}")
         else:
             st.warning("GITHUB secrets nisu postavljeni.")
+
+        # --- Sentry test ---
+        if sentry_sdk and 'SENTRY' in st.secrets and st.secrets['SENTRY'].get('dsn'):
+            st.markdown("### Sentry test")
+            col_st1, col_st2 = st.columns([1,1])
+            if col_st1.button("📡 Pošalji test poruku"):
+                try:
+                    sentry_sdk.capture_message("Sentry test poruka 🎯")
+                    st.success("Poslano u Sentry (message)")
+                except Exception as e:
+                    st.warning(f"Ne mogu poslati poruku: {e}")
+            if col_st2.button("💥 Simuliraj grešku (safe)"):
+                try:
+                    try:
+                        1/0
+                    except Exception as e:
+                        sentry_sdk.capture_exception(e)
+                    st.success("Simulirana greška poslana u Sentry (capture_exception)")
+                except Exception as e:
+                    st.warning(f"Ne mogu poslati grešku: {e}")
 
         # Analitika s filtrima
         all_data = with_parsed_date(normalize_columns(df_init.copy()))
@@ -485,14 +517,14 @@ with st.expander("🛠️ Admin portal"):
             st.markdown("#### KPI po osobi (Ured / Remote / Ostalo) + mjesečni trend")
             office_names={"ured"}
             res=[]
-            for person, g in df.groupby('Ime i prezime'):
+            for person_i, g in df.groupby('Ime i prezime'):
                 locs=g['Lokacija'].astype(str).str.lower()
                 office=int(locs.isin(office_names).sum())
                 remote=int(locs.apply(is_remote_value).sum())
                 total_i=int(len(g))
                 other=int(total_i - office - remote)
                 pct=round(remote/total_i*100,1) if total_i>0 else 0.0
-                res.append({"Ime i prezime":person,"Ured":office,"Remote":remote,"Ostalo":other,"Ukupno":total_i,"% Remote":pct})
+                res.append({"Ime i prezime":person_i,"Ured":office,"Remote":remote,"Ostalo":other,"Ukupno":total_i,"% Remote":pct})
             kpi=pd.DataFrame(res).sort_values(["Remote","% Remote"], ascending=[False,False])
             st.dataframe(kpi, width='stretch', hide_index=True)
 
