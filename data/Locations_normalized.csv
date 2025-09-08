@@ -1,0 +1,10 @@
+﻿Column1;Column2;Column3;Column4
+location_id;name;type;aliases
+L1;Špansko;URED;ured IC
+L2;Vukovina;URED;ured ILS
+L3;Poslovnica;TEREN;teren
+L4;Poslovni put;TEREN;partner|klijent
+L5;Godišnji odmor;OSTALO;slobodni dani
+L6;Bolovanje;OSTALO;slobodni dani
+L7;Rad od kuće;OSTALO;rad od kuće|work from home|home office
+L8;Neradni dan;OSTALO;slobodni dani
