@@ -313,7 +313,7 @@ def save_tracker_rows(new_rows:pd.DataFrame):
         prog.progress(100, text="Spremanje lokalno završeno.")
 
     st.session_state["tracker_version"] = st.session_state.get("tracker_version", 0) + 1
-    st.experimental_rerun()
+    st.rerun()
 
 def try_sync_pending():
     if not PENDING_FILE.exists(): st.info("Nema pending zapisa."); return
