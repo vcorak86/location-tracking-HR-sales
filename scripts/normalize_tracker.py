@@ -1,7 +1,7 @@
-# scripts/normalize_tracker.py
+
 from pathlib import Path
 import pandas as pd
-from utils_tracker import dedupe_last_then_sort_desc
+from utils_tracker import dedupe_last_then_sort_desc, apply_canonical_fields
 
 TRACKER_PATH = Path("data/Tracker.csv")
 
@@ -10,12 +10,13 @@ def main():
         print("No data/Tracker.csv to normalize; skipping.")
         return 0
     df = pd.read_csv(TRACKER_PATH, sep=None, engine="python")
+    df = apply_canonical_fields(df, source='normalize')
     out = dedupe_last_then_sort_desc(df)
-    pref=['Datum','Ime i prezime','Odjel','Lokacija','Week','Month','Year']
+    pref=['Datum','Dan','Ime i prezime','Odjel','Lokacija','Week','Month','Year','date_iso','record_id','created_at','updated_at','source','version']
     cols=[c for c in pref if c in out.columns]+[c for c in out.columns if c not in pref]
     out = out[cols]
     out.to_csv(TRACKER_PATH, index=False)
-    print("Normalized Tracker.csv (DESC + last-wins).")
+    print("Normalized Tracker.csv (DESC + last-wins) with canonical fields.")
     return 0
 
 if __name__ == "__main__":
