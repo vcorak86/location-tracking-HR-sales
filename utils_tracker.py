@@ -1,124 +1,109 @@
 
 from __future__ import annotations
-import re, uuid
+import re, uuid, unicodedata
 from datetime import datetime
 import pandas as pd
 
-def _safe_str(x) -> str:
-    if x is None:
-        return ""
-    try:
-        if pd.isna(x):
-            return ""
-    except Exception:
-        pass
-    return str(x)
+def _norm_colname(s: str) -> str:
+    return re.sub(r"\s+", " ", str(s)).strip()
 
 def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
-    ren={c: re.sub(r"\s+"," ", str(c).strip()).lower() for c in df.columns}
-    t=df.rename(columns=ren)
-    m={}
-    for c in t.columns:
-        if 'datum' in c: m[c]='Datum'
-        elif ('ime' in c and 'prezime' in c) or c in ('ime i prezime','name'): m[c]='Ime i prezime'
-        elif 'odjel' in c: m[c]='Odjel'
-        elif 'lokacija' in c: m[c]='Lokacija'
-        elif c=='week': m[c]='Week'
-        elif c=='month': m[c]='Month'
-        elif c=='year': m[c]='Year'
-        elif c=='dan': m[c]='Dan'
-        elif c in ('record_id','created_at','updated_at','source','version','date_iso'): m[c]=c
-        else: m[c]=c
-    t=t.rename(columns=m)
-    if not t.columns.is_unique:
-        t=t.loc[:, ~t.columns.duplicated(keep='first')]
+    if df is None or df.empty:
+        return pd.DataFrame(columns=["Datum","Dan","Ime i prezime","Odjel","Lokacija","Week","Month","Year"])
+    t = df.copy()
+    t.columns = [_norm_colname(c) for c in t.columns]
+    ren = {}
+    for c in list(t.columns):
+        lc = c.lower()
+        if lc in ("ime i prezime","ime i prezime","name","employee","zaposlenik"):
+            ren[c] = "Ime i prezime"
+        elif lc.startswith("odjel") or lc.startswith("department"):
+            ren[c] = "Odjel"
+        elif lc.startswith("lokacija") or lc.startswith("location"):
+            ren[c] = "Lokacija"
+        elif lc == "datum" or lc == "date":
+            ren[c] = "Datum"
+        elif lc == "dan" or lc == "day":
+            ren[c] = "Dan"
+        elif lc.startswith("week") or lc.startswith("tjedan"):
+            ren[c] = "Week"
+        elif lc.startswith("month") or lc.startswith("mjesec"):
+            ren[c] = "Month"
+        elif lc.startswith("year") or lc.startswith("godina"):
+            ren[c] = "Year"
+    if ren: t = t.rename(columns=ren)
+    for col in ["Datum","Dan","Ime i prezime","Odjel","Lokacija","Week","Month","Year"]:
+        if col not in t.columns:
+            t[col] = ""
     return t
 
-def parse_date_flexible(x) -> pd.Timestamp:
-    if x is None: return pd.NaT
-    s=str(x).strip()
-    s=re.sub(r"\s+"," ", s)
-    s=re.sub(r"\.\s*$", "", s)
-    for dayfirst in (True, False):
-        dt = pd.to_datetime(s, dayfirst=dayfirst, errors="coerce")
-        if not pd.isna(dt): return dt
-    return pd.NaT
+def _strip_accents(s: str) -> str:
+    s = unicodedata.normalize("NFKD", str(s))
+    return "".join(ch for ch in s if not unicodedata.combining(ch))
 
 def with_parsed_date(df: pd.DataFrame) -> pd.DataFrame:
-    t=normalize_columns(df).copy()
-    if 'date_iso' not in t.columns:
-        t['Datum_dt']=t.get('Datum', pd.Series([], dtype='object')).apply(parse_date_flexible)
-        t['date_iso']=t['Datum_dt'].dt.strftime('%Y-%m-%d')
-    else:
-        t['Datum_dt']=pd.to_datetime(t['date_iso'], errors='coerce')
-    t['Godina']=t['Datum_dt'].dt.year
-    t['Mjesec']=t['Datum_dt'].dt.month
-    t['Kvartal']=((t['Mjesec']-1)//3 + 1)
+    t = normalize_columns(df).copy()
+    s = t["Datum"].astype(str).str.strip().str.rstrip(".")
+    dt = pd.to_datetime(s, dayfirst=True, errors="coerce")
+    t["Datum_dt"] = dt
+    t["date_iso"] = t["Datum_dt"].dt.date.astype("str")
+    t["Godina"] = t["Datum_dt"].dt.isocalendar().year.astype("Int64")
+    t["Mjesec"] = t["Datum_dt"].dt.month.astype("Int64")
+    t["Kvartal"] = ((t["Mjesec"] - 1) // 3 + 1).astype("Int64")
+    t["Week"] = pd.to_numeric(t["Week"], errors="coerce").astype("Int64").where(t["Week"].notna(), t["Datum_dt"].dt.isocalendar().week.astype("Int64"))
+    t["Month"] = pd.to_numeric(t["Month"], errors="coerce").astype("Int64").where(t["Month"].notna(), t["Mjesec"])
+    t["Year"] = pd.to_numeric(t["Year"], errors="coerce").astype("Int64").where(t["Year"].notna(), t["Godina"])
     return t
 
-def record_key(name:str, date_iso:str)->str:
-    return f"{_safe_str(name).strip()}|{_safe_str(date_iso)}"
+def is_remote_value(s: str) -> bool:
+    x = _strip_accents(str(s or "")).lower()
+    keys = ["remote","wfh","work from home","home office","rad od kuce","rad od kuće","kuci","kući","doma"]
+    return any(k in x for k in keys)
 
-def new_record_id(name:str, date_iso:str)->str:
-    ns=uuid.UUID('12345678-1234-5678-1234-567812345678')
+def record_key(name: str, date_iso: str) -> str:
+    return f"{str(name or '').strip()}|{str(date_iso or '').strip()}"
+
+def new_record_id(name: str, date_iso: str) -> str:
+    ns = uuid.UUID("12345678-1234-5678-1234-567812345678")
     return str(uuid.uuid5(ns, record_key(name, date_iso)))
 
-def apply_canonical_fields(df: pd.DataFrame, source:str="app") -> pd.DataFrame:
-    t=normalize_columns(df).copy()
-    if 'date_iso' not in t.columns:
-        dt=t.get('Datum', pd.Series([], dtype='object')).apply(parse_date_flexible)
-        t['date_iso']=dt.dt.strftime('%Y-%m-%d')
-    # resolve name
-    if 'Ime i prezime' in t.columns:
-        names=t['Ime i prezime']
+def apply_canonical_fields(df: pd.DataFrame, source: str = "app") -> pd.DataFrame:
+    t = with_parsed_date(df).copy()
+    now = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    for col in ["Ime i prezime","date_iso"]:
+        if col not in t.columns:
+            t[col] = ""
+    names = t["Ime i prezime"].astype(str).fillna("")
+    dates = t["date_iso"].astype(str).fillna("")
+    if "record_id" not in t.columns:
+        t["record_id"] = [new_record_id(n, d) for n, d in zip(names, dates)]
+    if "created_at" not in t.columns:
+        t["created_at"] = now
+    if "updated_at" not in t.columns:
+        t["updated_at"] = now
     else:
-        names=t.get('Name')
-        if names is None:
-            if 'eMail' in t.columns:
-                names=t['eMail'].astype(str).str.replace(r'@.*','', regex=True)
-            else:
-                names=pd.Series(['']*len(t))
-    names=names.apply(_safe_str)
-    dates=t['date_iso'].apply(_safe_str)
-
-    now=datetime.utcnow().isoformat(timespec='seconds')+'Z'
-    if 'record_id' not in t.columns:
-        t['record_id']=[new_record_id(n, d) for n,d in zip(names, dates)]
-    if 'created_at' not in t.columns: t['created_at']=now
-    if 'updated_at' not in t.columns: t['updated_at']=now
-    if 'version' not in t.columns: t['version']=1
-    if 'source' not in t.columns: t['source']=source
+        t["updated_at"] = t["updated_at"].fillna(now).replace("", now)
+    if "version" not in t.columns:
+        t["version"] = 1
+    if "source" not in t.columns:
+        t["source"] = source
     return t
 
 def dedupe_last_then_sort_desc(df: pd.DataFrame) -> pd.DataFrame:
-    t = with_parsed_date(normalize_columns(df)).copy()
-    if 'updated_at' in t.columns:
-        t['_ts']=pd.to_datetime(t['updated_at'], errors='coerce')
-        t=t.sort_values(['Ime i prezime','date_iso','_ts'], ascending=[True,True,True], kind='stable')
-        t=t.drop_duplicates(subset=['Ime i prezime','date_iso'], keep='last')
-        t=t.drop(columns=['_ts'], errors='ignore')
-    else:
-        t=t.drop_duplicates(subset=['Ime i prezime','date_iso'], keep='last')
-    t=t.sort_values(['Datum_dt','Ime i prezime'], ascending=[False, True], na_position='last')
+    if df is None or df.empty:
+        return df
+    t = with_parsed_date(df).copy()
+    if "updated_at" not in t.columns:
+        t["updated_at"] = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    t = t.sort_values(["date_iso","updated_at"], ascending=[False, False], kind="mergesort")
+    if "Ime i prezime" in t.columns and "date_iso" in t.columns:
+        t = t.drop_duplicates(subset=["Ime i prezime","date_iso"], keep="first")
+    # final presentation: global DESC by date
+    t = t.sort_values(["date_iso","Ime i prezime"], ascending=[False, True], kind="mergesort")
     return t
 
-def is_remote_value(s)->bool:
-    if not isinstance(s,str): return False
-    l=s.lower()
-    return ("remote" in l) or ("rad od ku" in l) or ("work from home" in l) or ("home office" in l)
-
-def validate_tracker_schema(df: pd.DataFrame) -> list[str]:
-    t=normalize_columns(df)
-    required=['Datum','Ime i prezime','Odjel','Lokacija','Week','Month','Year','date_iso','record_id','created_at','updated_at','source','version']
-    missing=[c for c in required if c not in t.columns]
-    problems=[]
-    if missing: problems.append(f"Nedostaju kolone: {missing}")
-    if all(c in t.columns for c in ['Ime i prezime','date_iso']):
-        dup=t.duplicated(subset=['Ime i prezime','date_iso'], keep=False)
-        if dup.any():
-            k=t.loc[dup, ['Ime i prezime','date_iso']].drop_duplicates().values.tolist()
-            problems.append(f"Duplikati po (Ime i prezime, date_iso): {k[:5]}{'...' if len(k)>5 else ''}")
-    if 'date_iso' in t.columns:
-        bad_date=t['date_iso'].isna() | (t['date_iso'].astype(str)=='NaT')
-        if bad_date.any(): problems.append("Nevaljani date_iso zapisi postoje.")
-    return problems
+def validate_tracker_schema(df: pd.DataFrame) -> None:
+    required = ["Datum","Dan","Ime i prezime","Odjel","Lokacija","Week","Month","Year","date_iso"]
+    missing = [c for c in required if c not in df.columns]
+    if missing:
+        raise ValueError(f"Nedostaju obavezne kolone u Tracker: {missing}")
