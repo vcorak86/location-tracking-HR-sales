@@ -132,14 +132,72 @@ def gh_scopes():
 
 # ---------- Loaders ----------
 @st.cache_data(show_spinner=False)
-def load_employees(path:str)->pd.DataFrame:
-    df=read_csv_smart(path)
-    ren={c: re.sub(r"\s+"," ", str(c).strip()) for c in df.columns}
-    df=df.rename(columns=ren)
-    if 'Manager' not in df.columns: df['Manager']=''
-    if 'Director' not in df.columns: df['Director']=''
-    df['eMail_lc']=df['eMail'].astype(str).str.strip().str.lower()
-    return df[['Name','Department','eMail','Manager','Director','eMail_lc']]
+def load_employees(path: str) -> pd.DataFrame:
+    df = read_csv_smart(path)
+
+    # 1) Normaliziraj nazive kolona (lower, makni razmake/crtice/točke/diakritike)
+    import unicodedata, re
+
+    def norm(s: str) -> str:
+        s = unicodedata.normalize("NFKD", str(s))
+        s = "".join(ch for ch in s if not unicodedata.combining(ch))
+        s = s.lower()
+        s = re.sub(r"[^a-z0-9]+", "", s)  # makni sve osim slova/brojeva
+        return s
+
+    norm_map = {c: norm(c) for c in df.columns}
+    # obrnuti lookup: normalizirano -> originalni naziv
+    inv = {}
+    for orig, n in norm_map.items():
+        inv.setdefault(n, orig)
+
+    def pick(*candidates):
+        """Vrati prvi postojeći originalni naziv kolone koji odgovara popisu kandidata (po normaliziranom ključu)."""
+        for cand in candidates:
+            n = norm(cand)
+            if n in inv:
+                return inv[n]
+        return None
+
+    # 2) Pronađi kolone po fleksibilnim aliasima
+    col_name = pick("Name", "Ime i prezime", "ImeIPrezime", "Zaposlenik", "Employee")
+    col_dept = pick("Department", "Odjel", "Odjeljenje", "OrgUnit", "Organizacijska jedinica")
+    col_mail = pick("eMail", "Email", "E-mail", "e-mail", "mail", "Kontakt e-mail", "Kontakt email")
+
+    col_mgr  = pick("Manager", "Menadzer", "Menadžer", "Prvi nadređeni", "Nadređeni", "Line Manager")
+    col_dir  = pick("Director", "Direktor", "Drugi nadređeni")
+
+    missing = []
+    if not col_name: missing.append("Name / Ime i prezime")
+    if not col_dept: missing.append("Department / Odjel")
+    if not col_mail: missing.append("Email / eMail / E-mail")
+
+    if missing:
+        st.error(
+            "U CSV-u nedostaju obavezne kolone: " + ", ".join(missing) +
+            f"\nNađene kolone: {list(df.columns)}"
+        )
+        st.stop()
+
+    # 3) Sastavi standardizirani DataFrame s očekivanim imenima kolona
+    base_cols = {col_name: "Name", col_dept: "Department", col_mail: "eMail"}
+    out = df[list(base_cols.keys())].rename(columns=base_cols)
+
+    if col_mgr:
+        out["Manager"] = df[col_mgr].astype(str)
+    else:
+        out["Manager"] = ""
+
+    if col_dir:
+        out["Director"] = df[col_dir].astype(str)
+    else:
+        out["Director"] = ""
+
+    # 4) Dodatna pomoćna kolona (za spajanje po emailu)
+    out["eMail_lc"] = out["eMail"].astype(str).str.strip().str.lower()
+
+    return out[["Name", "Department", "eMail", "Manager", "Director", "eMail_lc"]]
+
 
 @st.cache_data(show_spinner=False)
 def load_locations(path:str)->list[str]:
