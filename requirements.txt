@@ -1,6 +1,11 @@
+
 streamlit
 pandas
 matplotlib
 requests
 openpyxl
 pytest
+charset-normalizer>=3.3
+pyarrow
+reportlab
+sentry-sdk
