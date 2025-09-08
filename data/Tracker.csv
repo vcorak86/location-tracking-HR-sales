@@ -1,1 +1,1388 @@
-Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;location_id;location_name
+Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;location_id;location_name;Ime I prezime;Datum_dt
+;;;;;52.0;1;1900;NaT;;;;
+19.09.2025.;Petak;Vuzem Nataša;Marketing;;38.0;9;2025;2025-09-19;;;;2025-09-19
+19.09.2025.;Petak;Pintarić Ivan;Call Centar;Špansko;38.0;9;2025;2025-09-19;L1;Špansko;;2025-09-19
+19.09.2025.;Petak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-19;L1;Špansko;;2025-09-19
+18.09.2025.;Četvrtak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-18;L1;Špansko;;2025-09-18
+18.09.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;38.0;9;2025;2025-09-18;L1;Špansko;;2025-09-18
+18.09.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;38.0;9;2025;2025-09-18;L1;Špansko;;2025-09-18
+17.09.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;38.0;9;2025;2025-09-17;L1;Špansko;;2025-09-17
+17.09.2025.;Srijeda;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-17;L1;Špansko;;2025-09-17
+17.09.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;38.0;9;2025;2025-09-17;L1;Špansko;;2025-09-17
+16.09.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;38.0;9;2025;2025-09-16;L2;Vukovina;;2025-09-16
+16.09.2025.;Utorak;Pintarić Ivan;Call Centar;Godišnji odmor;38.0;9;2025;2025-09-16;L5;Godišnji odmor;;2025-09-16
+16.09.2025.;Utorak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-16;L1;Špansko;;2025-09-16
+15.09.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;38.0;9;2025;2025-09-15;L2;Vukovina;;2025-09-15
+15.09.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-15;L1;Špansko;;2025-09-15
+15.09.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;GO;38.0;9;2025;2025-09-15;;GO;;2025-09-15
+12.09.2025.;Petak;Boc Marko;Project management;Godišnji odmor;37.0;9;2025;2025-09-12;L5;Godišnji odmor;;2025-09-12
+12.09.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;37.0;9;2025;2025-09-12;L1;Špansko;;2025-09-12
+12.09.2025.;Petak;Šomođi Ante;Call Centar;Špansko;37.0;9;2025;2025-09-12;L1;Špansko;;2025-09-12
+12.09.2025.;Petak;Pintarić Ivan;Call Centar;Godišnji odmor;37.0;9;2025;2025-09-12;L5;Godišnji odmor;;2025-09-12
+12.09.2025.;Petak;Ros Antonio;Marketing;Godišnji odmor;37.0;9;2025;2025-09-12;L5;Godišnji odmor;;2025-09-12
+12.09.2025.;Petak;Zubić Petra;Marketing;Godišnji odmor;37.0;9;2025;2025-09-12;L5;Godišnji odmor;;2025-09-12
+12.09.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;37.0;9;2025;2025-09-12;L1;Špansko;;2025-09-12
+12.09.2025.;Petak;Roso Marko;Call Centar;Špansko;37.0;9;2025;2025-09-12;L1;Špansko;;2025-09-12
+12.09.2025.;Petak;Devčić Dino;Fleet;Rad od kuće;37.0;9;2025;2025-09-12;L7;Rad od kuće;;2025-09-12
+12.09.2025.;Petak;Lalić Marko;Project management;Špansko;37.0;9;2025;2025-09-12;L1;Špansko;;2025-09-12
+12.09.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;37.0;9;2025;2025-09-12;L2;Vukovina;;2025-09-12
+12.09.2025.;Petak;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-12;L2;Vukovina;;2025-09-12
+12.09.2025.;Petak;Boris Smuđ;Tehnički centar;Rad od kuće;37.0;9;2025;2025-09-12;L7;Rad od kuće;;2025-09-12
+12.09.2025.;Petak;Marin Pustak;Tehnički centar;Godišnji odmor;37.0;9;2025;2025-09-12;L5;Godišnji odmor;;2025-09-12
+12.09.2025.;Petak;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-12;L2;Vukovina;;2025-09-12
+12.09.2025.;Petak;Vuzem Nataša;Marketing;Rad od kuće;37.0;9;2025;2025-09-12;L7;Rad od kuće;;2025-09-12
+12.09.2025.;Petak;Habuš Hrvoje;Marketing;Rad od kuće;37.0;9;2025;2025-09-12;L7;Rad od kuće;;2025-09-12
+11.09.2025.;Četvrtak;Lalić Marko;Project management;Špansko;37.0;9;2025;2025-09-11;L1;Špansko;;2025-09-11
+11.09.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;37.0;9;2025;2025-09-11;L1;Špansko;;2025-09-11
+11.09.2025.;Četvrtak;Roso Marko;Call Centar;Špansko;37.0;9;2025;2025-09-11;L1;Špansko;;2025-09-11
+11.09.2025.;Četvrtak;Devčić Dino;Fleet;Špansko;37.0;9;2025;2025-09-11;L1;Špansko;;2025-09-11
+11.09.2025.;Četvrtak;Boris Smuđ;Tehnički centar;Vukovina;37.0;9;2025;2025-09-11;L2;Vukovina;;2025-09-11
+11.09.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Vukovina;37.0;9;2025;2025-09-11;L2;Vukovina;;2025-09-11
+11.09.2025.;Četvrtak;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-11;L2;Vukovina;;2025-09-11
+11.09.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;37.0;9;2025;2025-09-11;L1;Špansko;;2025-09-11
+11.09.2025.;Četvrtak;Marin Pustak;Tehnički centar;Godišnji odmor;37.0;9;2025;2025-09-11;L5;Godišnji odmor;;2025-09-11
+11.09.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-11;L2;Vukovina;;2025-09-11
+11.09.2025.;Četvrtak;Pintarić Ivan;Call Centar;GO;37.0;9;2025;2025-09-11;;GO;;2025-09-11
+11.09.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;37.0;9;2025;2025-09-11;L1;Špansko;;2025-09-11
+11.09.2025.;Četvrtak;Zoroje Branislav;Call Centar;Rad od kuće;37.0;9;2025;2025-09-11;L7;Rad od kuće;;2025-09-11
+11.09.2025.;Četvrtak;Zubić Petra;Marketing;Godišnji odmor;37.0;9;2025;2025-09-11;L5;Godišnji odmor;;2025-09-11
+11.09.2025.;Četvrtak;Ros Antonio;Marketing;Godišnji odmor;37.0;9;2025;2025-09-11;L5;Godišnji odmor;;2025-09-11
+11.09.2025.;Četvrtak;Miletić Bojan;Call Centar;Špansko;37.0;9;2025;2025-09-11;L1;Špansko;;2025-09-11
+11.09.2025.;Četvrtak;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-11;L1;Špansko;;2025-09-11
+11.09.2025.;Četvrtak;Boc Marko;Project management;Godišnji odmor;37.0;9;2025;2025-09-11;L5;Godišnji odmor;;2025-09-11
+10.09.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Lalić Marko;Project management;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Marin Pustak;Tehnički centar;GO;37.0;9;2025;2025-09-10;;GO;;2025-09-10
+10.09.2025.;Srijeda;Pintarić Ivan;Call Centar;Godišnji odmor;37.0;9;2025;2025-09-10;L5;Godišnji odmor;;2025-09-10
+10.09.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Zubić Petra;Marketing;GO;37.0;9;2025;2025-09-10;;GO;;2025-09-10
+10.09.2025.;Srijeda;Boc Marko;Project management;GO;37.0;9;2025;2025-09-10;;GO;;2025-09-10
+10.09.2025.;Srijeda;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-10;L2;Vukovina;;2025-09-10
+10.09.2025.;Srijeda;Boris Omerzo;Tehnički centar;HO;37.0;9;2025;2025-09-10;;HO;;2025-09-10
+10.09.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-10;L2;Vukovina;;2025-09-10
+10.09.2025.;Srijeda;Roso Marko;Call Centar;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Devčić Dino;Fleet;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Boris Smuđ;Tehnički centar;Vukovina;37.0;9;2025;2025-09-10;L2;Vukovina;;2025-09-10
+10.09.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Miletić Bojan;Call Centar;Špansko;37.0;9;2025;2025-09-10;L1;Špansko;;2025-09-10
+10.09.2025.;Srijeda;Ros Antonio;Marketing;Godišnji odmor;37.0;9;2025;2025-09-10;L5;Godišnji odmor;;2025-09-10
+09.09.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Boris Smuđ;Tehnički centar;Vukovina;37.0;9;2025;2025-09-09;L2;Vukovina;;2025-09-09
+09.09.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;37.0;9;2025;2025-09-09;L2;Vukovina;;2025-09-09
+09.09.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;37.0;9;2025;2025-09-09;L2;Vukovina;;2025-09-09
+09.09.2025.;Utorak;Boc Marko;Project management;GO;37.0;9;2025;2025-09-09;;GO;;2025-09-09
+09.09.2025.;Utorak;Devčić Dino;Fleet;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Zubić Petra;Marketing;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Lalić Marko;Project management;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Pintarić Ivan;Call Centar;;37.0;9;2025;2025-09-09;;;;2025-09-09
+09.09.2025.;Utorak;Marin Pustak;Tehnički centar;Godišnji odmor;37.0;9;2025;2025-09-09;L5;Godišnji odmor;;2025-09-09
+09.09.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-09;L2;Vukovina;;2025-09-09
+09.09.2025.;Utorak;Roso Marko;Call Centar;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Miletić Bojan;Call Centar;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-09;L1;Špansko;;2025-09-09
+09.09.2025.;Utorak;Ros Antonio;Marketing;Godišnji odmor;37.0;9;2025;2025-09-09;L5;Godišnji odmor;;2025-09-09
+09.09.2025.;Utorak;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-09;L2;Vukovina;;2025-09-09
+08.09.2025.;Ponedjeljak;Devčić Dino;Fleet;Špansko;37.0;9;2025;2025-09-08;L1;Špansko;;2025-09-08
+08.09.2025.;Ponedjeljak;Boc Marko;Project management;GO;37.0;9;2025;2025-09-08;;GO;;2025-09-08
+08.09.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;Vukovina;37.0;9;2025;2025-09-08;L2;Vukovina;;2025-09-08
+08.09.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;37.0;9;2025;2025-09-08;L1;Špansko;;2025-09-08
+08.09.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;Godišnji odmor;37.0;9;2025;2025-09-08;L5;Godišnji odmor;;2025-09-08
+08.09.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;;37.0;9;2025;2025-09-08;;;;2025-09-08
+08.09.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-08;L1;Špansko;;2025-09-08
+08.09.2025.;Ponedjeljak;Miletić Bojan;Call Centar;Špansko;37.0;9;2025;2025-09-08;L1;Špansko;;2025-09-08
+08.09.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-08;L2;Vukovina;;2025-09-08
+08.09.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;37.0;9;2025;2025-09-08;L2;Vukovina;;2025-09-08
+08.09.2025.;Ponedjeljak;Ros Antonio;Marketing;GO;37.0;9;2025;2025-09-08;;GO;;2025-09-08
+08.09.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Špansko;37.0;9;2025;2025-09-08;L1;Špansko;;2025-09-08
+08.09.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Špansko;37.0;9;2025;2025-09-08;L1;Špansko;;2025-09-08
+08.09.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;37.0;9;2025;2025-09-08;L1;Špansko;;2025-09-08
+08.09.2025.;Ponedjeljak;Roso Marko;Call Centar;Rad od kuće;37.0;9;2025;2025-09-08;L7;Rad od kuće;;2025-09-08
+08.09.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;37.0;9;2025;2025-09-08;L2;Vukovina;;2025-09-08
+08.09.2025.;Ponedjeljak;Lalić Marko;Project management;Rad od kuće;37.0;9;2025;2025-09-08;L7;Rad od kuće;;2025-09-08
+08.09.2025.;Ponedjeljak;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-08;L2;Vukovina;;2025-09-08
+05.09.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;36.0;9;2025;2025-09-05;L1;Špansko;;2025-09-05
+05.09.2025.;Petak;Ros Antonio;Marketing;;36.0;9;2025;2025-09-05;;;;2025-09-05
+05.09.2025.;Petak;Habuš Hrvoje;Marketing;;36.0;9;2025;2025-09-05;;;;2025-09-05
+05.09.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;36.0;9;2025;2025-09-05;L1;Špansko;;2025-09-05
+05.09.2025.;Petak;Boris Smuđ;Tehnički centar;GO;36.0;9;2025;2025-09-05;;GO;;2025-09-05
+05.09.2025.;Petak;Šomođi Ante;Call Centar;Špansko;36.0;9;2025;2025-09-05;L1;Špansko;;2025-09-05
+05.09.2025.;Petak;Pintarić Ivan;Call Centar;;36.0;9;2025;2025-09-05;;;;2025-09-05
+05.09.2025.;Petak;Zubić Petra;Marketing;Rad od kuće;36.0;9;2025;2025-09-05;L7;Rad od kuće;;2025-09-05
+05.09.2025.;Petak;Roso Marko;Call Centar;;36.0;9;2025;2025-09-05;;;;2025-09-05
+05.09.2025.;Petak;Marin Pustak;Tehnički centar;Godišnji odmor;36.0;9;2025;2025-09-05;L5;Godišnji odmor;;2025-09-05
+05.09.2025.;Petak;Davor Hren;Tehnički centar;Vukovina;36.0;9;2025;2025-09-05;L2;Vukovina;;2025-09-05
+05.09.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;36.0;9;2025;2025-09-05;L2;Vukovina;;2025-09-05
+05.09.2025.;Petak;Ramić Bernard;QS;Rad od kuće;36.0;9;2025;2025-09-05;L7;Rad od kuće;;2025-09-05
+05.09.2025.;Petak;Boc Marko;Project management;Špansko;36.0;9;2025;2025-09-05;L1;Špansko;;2025-09-05
+05.09.2025.;Petak;Dolores Pavlović;Tehnički centar;Godišnji odmor;36.0;9;2025;2025-09-05;L5;Godišnji odmor;;2025-09-05
+05.09.2025.;Petak;Vuzem Nataša;Marketing;Godišnji odmor;36.0;9;2025;2025-09-05;L5;Godišnji odmor;;2025-09-05
+5.9.2025;;;Project management;Špansko;36.0;9;2025;2025-09-05;;;Boc Marko;
+05.09.2025.;Petak;Milković Mario;RVP;Rad od kuće;36.0;9;2025;2025-09-05;L7;Rad od kuće;;2025-09-05
+04.09.2025.;Četvrtak;Boc Marko;Project management;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;Vuzem Nataša;Marketing;GO;36.0;9;2025;2025-09-04;;GO;;2025-09-04
+04.09.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;Milković Mario;RVP;Poslovnica;36.0;9;2025;2025-09-04;L3;Poslovnica;;2025-09-04
+04.09.2025.;Četvrtak;Davor Hren;Tehnički centar;Vukovina;36.0;9;2025;2025-09-04;L2;Vukovina;;2025-09-04
+04.09.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Vukovina;36.0;9;2025;2025-09-04;L2;Vukovina;;2025-09-04
+04.09.2025.;Četvrtak;Ramić Bernard;QS;Poslovni put;36.0;9;2025;2025-09-04;L4;Poslovni put;;2025-09-04
+04.09.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;GO;36.0;9;2025;2025-09-04;;GO;;2025-09-04
+04.09.2025.;Četvrtak;Habuš Hrvoje;Marketing;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;Zoroje Branislav;Call Centar;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;Marin Pustak;Tehnički centar;GO;36.0;9;2025;2025-09-04;;GO;;2025-09-04
+04.09.2025.;Četvrtak;Boris Smuđ;Tehnički centar;Godišnji odmor;36.0;9;2025;2025-09-04;L5;Godišnji odmor;;2025-09-04
+4.9.2025;;;Call Centar;Špansko;36.0;9;2025;2025-09-04;;;Leskovar Jelena;
+04.09.2025.;Četvrtak;Miholić Galic Matija;Project management;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;Roso Marko;Call Centar;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;Ros Antonio;Marketing;Vukovina;36.0;9;2025;2025-09-04;L2;Vukovina;;2025-09-04
+04.09.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+04.09.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;36.0;9;2025;2025-09-04;L1;Špansko;;2025-09-04
+03.09.2025.;Srijeda;Marin Pustak;Tehnički centar;GO;36.0;9;2025;2025-09-03;;GO;;2025-09-03
+03.09.2025.;Srijeda;Davor Hren;Tehnički centar;Vukovina;36.0;9;2025;2025-09-03;L2;Vukovina;;2025-09-03
+03.09.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Boris Omerzo;Tehnički centar;Vukovina;36.0;9;2025;2025-09-03;L2;Vukovina;;2025-09-03
+03.09.2025.;Srijeda;Ros Antonio;Marketing;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Leskovar Jelena;Call Centar;GO;36.0;9;2025;2025-09-03;;GO;;2025-09-03
+3.9.2025;;;Marketing;Špansko;36.0;9;2025;2025-09-03;;;Vuzem Nataša;
+03.09.2025.;Srijeda;Boris Smuđ;Tehnički centar;GO;36.0;9;2025;2025-09-03;;GO;;2025-09-03
+03.09.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Zubić Petra;Marketing;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Dolores Pavlović;Tehnički centar;GO;36.0;9;2025;2025-09-03;;GO;;2025-09-03
+03.09.2025.;Srijeda;Ramić Bernard;QS;Poslovni put;36.0;9;2025;2025-09-03;L4;Poslovni put;;2025-09-03
+03.09.2025.;Srijeda;Roso Marko;Call Centar;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Boc Marko;Project management;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+03.09.2025.;Srijeda;Milković Mario;RVP;Špansko;36.0;9;2025;2025-09-03;L1;Špansko;;2025-09-03
+02.09.2025.;Utorak;Ramić Bernard;QS;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Boris Smuđ;Tehnički centar;GO;36.0;9;2025;2025-09-02;;GO;;2025-09-02
+02.09.2025.;Utorak;Boc Marko;Project management;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Marin Pustak;Tehnički centar;Godišnji odmor;36.0;9;2025;2025-09-02;L5;Godišnji odmor;;2025-09-02
+02.09.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;36.0;9;2025;2025-09-02;L2;Vukovina;;2025-09-02
+02.09.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Ros Antonio;Marketing;Vukovina;36.0;9;2025;2025-09-02;L2;Vukovina;;2025-09-02
+02.09.2025.;Utorak;Davor Hren;Tehnički centar;Vukovina;36.0;9;2025;2025-09-02;L2;Vukovina;;2025-09-02
+02.09.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Dolores Pavlović;Tehnički centar;Godišnji odmor;36.0;9;2025;2025-09-02;L5;Godišnji odmor;;2025-09-02
+02.09.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Zubić Petra;Marketing;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Pintarić Ivan;Call Centar;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Miholić Galic Matija;Project management;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Roso Marko;Call Centar;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+2.9.2025;;;Call Centar;Špansko;36.0;9;2025;2025-09-02;;;Roso Marko;
+02.09.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Špansko;36.0;9;2025;2025-09-02;L1;Špansko;;2025-09-02
+02.09.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;36.0;9;2025;2025-09-02;L2;Vukovina;;2025-09-02
+01.09.2025.;Ponedjeljak;Roso Marko;Call Centar;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+01.09.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;GO;36.0;9;2025;2025-09-01;;GO;;2025-09-01
+01.09.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+01.09.2025.;Ponedjeljak;MiRad od kućelić Galic Matija;Project management;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+01.09.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;;36.0;9;2025;2025-09-01;;;;2025-09-01
+01.09.2025.;Ponedjeljak;Miholić Galic Matija;Project management;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+01.09.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+01.09.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+01.09.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;36.0;9;2025;2025-09-01;L2;Vukovina;;2025-09-01
+01.09.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;36.0;9;2025;2025-09-01;L2;Vukovina;;2025-09-01
+01.09.2025.;Ponedjeljak;Davor Hren;Tehnički centar;Vukovina;36.0;9;2025;2025-09-01;L2;Vukovina;;2025-09-01
+01.09.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;GO;36.0;9;2025;2025-09-01;;GO;;2025-09-01
+01.09.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;GO;36.0;9;2025;2025-09-01;;GO;;2025-09-01
+01.09.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+01.09.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;36.0;9;2025;2025-09-01;L2;Vukovina;;2025-09-01
+01.09.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+01.09.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+1.9.2025;;;Marketing;Vukovina;36.0;9;2025;2025-09-01;;;Vuzem Nataša;
+01.09.2025.;Ponedjeljak;Ramić Bernard;QS;Špansko;36.0;9;2025;2025-09-01;L1;Špansko;;2025-09-01
+29.08.2025.;Petak;Ros Antonio;Marketing;;35.0;8;2025;2025-08-29;;;;2025-08-29
+29.08.2025.;Petak;Pintarić Ivan;Call Centar;Špansko;35.0;8;2025;2025-08-29;L1;Špansko;;2025-08-29
+29.08.2025.;Petak;Ramić Bernard;QS;Rad od kuće;35.0;8;2025;2025-08-29;L7;Rad od kuće;;2025-08-29
+29.08.2025.;Petak;Šomođi Ante;Call Centar;Špansko;35.0;8;2025;2025-08-29;L1;Špansko;;2025-08-29
+29.08.2025.;Petak;Roso Marko;Call Centar;Špansko;35.0;8;2025;2025-08-29;L1;Špansko;;2025-08-29
+29.08.2025.;Petak;Leskovar Jelena;Call Centar;Rad od kuće;35.0;8;2025;2025-08-29;L7;Rad od kuće;;2025-08-29
+29.08.2025.;Petak;Boc Marko;Project management;Špansko;35.0;8;2025;2025-08-29;L1;Špansko;;2025-08-29
+29.08.2025.;Petak;Lalić Marko;Project management;Špansko;35.0;8;2025;2025-08-29;L1;Špansko;;2025-08-29
+29.08.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;35.0;8;2025;2025-08-29;L2;Vukovina;;2025-08-29
+29.08.2025.;Petak;Davor Hren;Tehnički centar;Vukovina;35.0;8;2025;2025-08-29;L2;Vukovina;;2025-08-29
+29.08.2025.;Petak;Boris Smuđ;Tehnički centar;Godišnji odmor;35.0;8;2025;2025-08-29;L5;Godišnji odmor;;2025-08-29
+29.08.2025.;Petak;Marin Pustak;Tehnički centar;Vukovina;35.0;8;2025;2025-08-29;L2;Vukovina;;2025-08-29
+29.08.2025.;Petak;Dolores Pavlović;Tehnički centar;Godišnji odmor;35.0;8;2025;2025-08-29;L5;Godišnji odmor;;2025-08-29
+29.08.2025.;Petak;Zubić Petra;Marketing;Rad od kuće;35.0;8;2025;2025-08-29;L7;Rad od kuće;;2025-08-29
+29.08.2025.;Petak;Vedran Čorak;Project management;Godišnji odmor;35.0;8;2025;2025-08-29;L5;Godišnji odmor;;2025-08-29
+29.08.2025.;Petak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;35.0;8;2025;2025-08-29;L5;Godišnji odmor;;2025-08-29
+29.08.2025.;Petak;Habuš Hrvoje;Marketing;Rad od kuće;35.0;8;2025;2025-08-29;L7;Rad od kuće;;2025-08-29
+29.08.2025.;Petak;Devčić Dino;Fleet;Godišnji odmor;35.0;8;2025;2025-08-29;L5;Godišnji odmor;;2025-08-29
+29.08.2025.;Petak;Fogec Davor;RVP;Rad od kuće;35.0;8;2025;2025-08-29;L7;Rad od kuće;;2025-08-29
+29.08.2025.;Petak;Zidar Ivan;RVP;Špansko;35.0;8;2025;2025-08-29;L1;Špansko;;2025-08-29
+29.8.2025;;;Call Centar;Špansko;35.0;8;2025;2025-08-29;;;Šomođi Ante ;
+29.08.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;35.0;8;2025;2025-08-29;L1;Špansko;;2025-08-29
+29.08.2025.;Petak;Miholić Galic Matija;Project management;GO;35.0;8;2025;2025-08-29;;GO;;2025-08-29
+28.08.2025.;Četvrtak;Habuš Hrvoje;Marketing;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;Miholić Galic Matija;Project management;GO;35.0;8;2025;2025-08-28;;GO;;2025-08-28
+28.08.2025.;Četvrtak;Zoroje Branislav;Call Centar;;35.0;8;2025;2025-08-28;;;;2025-08-28
+28.08.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;Godišnji odmor;35.0;8;2025;2025-08-28;L5;Godišnji odmor;;2025-08-28
+28.08.2025.;Četvrtak;Vedran Čorak;Project management;Godišnji odmor;35.0;8;2025;2025-08-28;L5;Godišnji odmor;;2025-08-28
+28.08.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;Zidar Ivan;RVP;Poslovnica;35.0;8;2025;2025-08-28;L3;Poslovnica;;2025-08-28
+28.08.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;Ros Antonio;Marketing;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;Marin Pustak;Tehnički centar;Vukovina;35.0;8;2025;2025-08-28;L2;Vukovina;;2025-08-28
+28.08.2025.;Četvrtak;Fogec Davor;RVP;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;Ramić Bernard;QS;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.8.2025;;;Project management;Špansko;35.0;8;2025;2025-08-28;;;Boc Marko;
+28.08.2025.;Četvrtak;Roso Marko;Call Centar;Rad od kuće;35.0;8;2025;2025-08-28;L7;Rad od kuće;;2025-08-28
+28.08.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;35.0;8;2025;2025-08-28;L5;Godišnji odmor;;2025-08-28
+28.08.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Vukovina;35.0;8;2025;2025-08-28;L2;Vukovina;;2025-08-28
+28.08.2025.;Četvrtak;Boc Marko;Project management;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;Davor Hren;Tehnički centar;Vukovina;35.0;8;2025;2025-08-28;L2;Vukovina;;2025-08-28
+28.08.2025.;Četvrtak;Lalić Marko;Project management;Špansko;35.0;8;2025;2025-08-28;L1;Špansko;;2025-08-28
+28.08.2025.;Četvrtak;Boris Smuđ;Tehnički centar;GO;35.0;8;2025;2025-08-28;;GO;;2025-08-28
+28.08.2025.;Četvrtak;Devčić Dino;Fleet;GO;35.0;8;2025;2025-08-28;;GO;;2025-08-28
+27.08.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;Dolores Pavlović;Tehnički centar;GO;35.0;8;2025;2025-08-27;;GO;;2025-08-27
+27.08.2025.;Srijeda;Davor Hren;Tehnički centar;Vukovina;35.0;8;2025;2025-08-27;L2;Vukovina;;2025-08-27
+27.08.2025.;Srijeda;Marin Pustak;Tehnički centar;Vukovina;35.0;8;2025;2025-08-27;L2;Vukovina;;2025-08-27
+27.08.2025.;Srijeda;Devčić Dino;Fleet;GO;35.0;8;2025;2025-08-27;;GO;;2025-08-27
+27.08.2025.;Srijeda;Fogec Davor;RVP;Poslovnica;35.0;8;2025;2025-08-27;L3;Poslovnica;;2025-08-27
+27.8.2025;;;RVP;Poslovnica;35.0;8;2025;2025-08-27;;;Fogec Davor;
+27.08.2025.;Srijeda;Miholić Galic Matija;Project management;GO;35.0;8;2025;2025-08-27;;GO;;2025-08-27
+27.08.2025.;Srijeda;Boris Smuđ;Tehnički centar;GO;35.0;8;2025;2025-08-27;;GO;;2025-08-27
+27.08.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;Zidar Ivan;RVP;Poslovnica;35.0;8;2025;2025-08-27;L3;Poslovnica;;2025-08-27
+27.08.2025.;Srijeda;Roso Marko;Call Centar;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;Lalić Marko;Project management;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;Ros Antonio;Marketing;Vukovina;35.0;8;2025;2025-08-27;L2;Vukovina;;2025-08-27
+27.08.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;Boris Omerzo;Tehnički centar;Vukovina;35.0;8;2025;2025-08-27;L2;Vukovina;;2025-08-27
+27.08.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;Boc Marko;Project management;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;Zubić Petra;Marketing;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;Vedran Čorak;Project management;Godišnji odmor;35.0;8;2025;2025-08-27;L5;Godišnji odmor;;2025-08-27
+27.08.2025.;Srijeda;Ramić Bernard;QS;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+27.08.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;35.0;8;2025;2025-08-27;L5;Godišnji odmor;;2025-08-27
+27.08.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;35.0;8;2025;2025-08-27;L1;Špansko;;2025-08-27
+26.08.2025.;Utorak;Vedran Čorak;Project management;Godišnji odmor;35.0;8;2025;2025-08-26;L5;Godišnji odmor;;2025-08-26
+26.08.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Boris Smuđ;Tehnički centar;GO;35.0;8;2025;2025-08-26;;GO;;2025-08-26
+26.08.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Ramić Bernard;QS;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Zidar Ivan;RVP;Poslovnica;35.0;8;2025;2025-08-26;L3;Poslovnica;;2025-08-26
+26.08.2025.;Utorak;Roso Marko;Call Centar;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Dolores Pavlović;Tehnički centar;Godišnji odmor;35.0;8;2025;2025-08-26;L5;Godišnji odmor;;2025-08-26
+26.08.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;35.0;8;2025;2025-08-26;L5;Godišnji odmor;;2025-08-26
+26.08.2025.;Utorak;Marin Pustak;Tehnički centar;Vukovina;35.0;8;2025;2025-08-26;L2;Vukovina;;2025-08-26
+26.08.2025.;Utorak;Lalić Marko;Project management;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Boc Marko;Project management;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Devčić Dino;Fleet;Godišnji odmor;35.0;8;2025;2025-08-26;L5;Godišnji odmor;;2025-08-26
+26.08.2025.;Utorak;Zubić Petra;Marketing;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;35.0;8;2025;2025-08-26;L2;Vukovina;;2025-08-26
+26.08.2025.;Utorak;Davor Hren;Tehnički centar;Vukovina;35.0;8;2025;2025-08-26;L2;Vukovina;;2025-08-26
+26.08.2025.;Utorak;Pintarić Ivan;Call Centar;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Fogec Davor;RVP;Poslovnica;35.0;8;2025;2025-08-26;L3;Poslovnica;;2025-08-26
+26.08.2025.;Utorak;Miholić Galic Matija;Project management;GO;35.0;8;2025;2025-08-26;;GO;;2025-08-26
+26.8.2025;;;Call Centar;Špansko;35.0;8;2025;2025-08-26;;;Šomođi Ante ;
+26.08.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+26.08.2025.;Utorak;Ros Antonio;Marketing;Špansko;35.0;8;2025;2025-08-26;L1;Špansko;;2025-08-26
+25.08.2025.;Ponedjeljak;Zidar Ivan;RVP;Poslovnica;35.0;8;2025;2025-08-25;L3;Poslovnica;;2025-08-25
+25.08.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;35.0;8;2025;2025-08-25;L2;Vukovina;;2025-08-25
+25.08.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;35.0;8;2025;2025-08-25;L1;Špansko;;2025-08-25
+25.08.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;35.0;8;2025;2025-08-25;L1;Špansko;;2025-08-25
+25.08.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;35.0;8;2025;2025-08-25;L1;Špansko;;2025-08-25
+25.08.2025.;Ponedjeljak;Lalić Marko;Project management;Rad od kuće;35.0;8;2025;2025-08-25;L7;Rad od kuće;;2025-08-25
+25.08.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;Vukovina;35.0;8;2025;2025-08-25;L2;Vukovina;;2025-08-25
+25.08.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;35.0;8;2025;2025-08-25;L2;Vukovina;;2025-08-25
+25.08.2025.;Ponedjeljak;Roso Marko;Call Centar;Špansko;35.0;8;2025;2025-08-25;L1;Špansko;;2025-08-25
+25.08.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Rad od kuće;35.0;8;2025;2025-08-25;L7;Rad od kuće;;2025-08-25
+25.08.2025.;Ponedjeljak;Ramić Bernard;QS;Poslovni put;35.0;8;2025;2025-08-25;L4;Poslovni put;;2025-08-25
+25.08.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Špansko;35.0;8;2025;2025-08-25;L1;Špansko;;2025-08-25
+25.08.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Špansko;35.0;8;2025;2025-08-25;L1;Špansko;;2025-08-25
+25.08.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Rad od kuće;35.0;8;2025;2025-08-25;L7;Rad od kuće;;2025-08-25
+25.08.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;35.0;8;2025;2025-08-25;L1;Špansko;;2025-08-25
+25.08.2025.;Ponedjeljak;Fogec Davor;RVP;Špansko;35.0;8;2025;2025-08-25;L1;Špansko;;2025-08-25
+25.08.2025.;Ponedjeljak;Miholić Galic Matija;Project management;GO;35.0;8;2025;2025-08-25;;GO;;2025-08-25
+25.08.2025.;Ponedjeljak;Vedran Čorak;Project management;GO;35.0;8;2025;2025-08-25;;GO;;2025-08-25
+25.08.2025.;Ponedjeljak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;35.0;8;2025;2025-08-25;L5;Godišnji odmor;;2025-08-25
+25.08.2025.;Ponedjeljak;Devčić Dino;Fleet;GO;35.0;8;2025;2025-08-25;;GO;;2025-08-25
+25.08.2025.;Ponedjeljak;Davor Hren;Tehnički centar;Vukovina;35.0;8;2025;2025-08-25;L2;Vukovina;;2025-08-25
+25.08.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;Godišnji odmor;35.0;8;2025;2025-08-25;L5;Godišnji odmor;;2025-08-25
+25.08.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;GO;35.0;8;2025;2025-08-25;;GO;;2025-08-25
+25.8.2025;;;Marketing;Špansko;35.0;8;2025;2025-08-25;;;Zubić Petra;
+22.08.2025.;Petak;Šomođi Ante;Call Centar;Špansko;34.0;8;2025;2025-08-22;L1;Špansko;;2025-08-22
+22.08.2025.;Petak;Vedran Čorak;Project management;;34.0;8;2025;2025-08-22;;;;2025-08-22
+22.08.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;34.0;8;2025;2025-08-22;L1;Špansko;;2025-08-22
+22.08.2025.;Petak;Vuzem Nataša;Marketing;GO;34.0;8;2025;2025-08-22;;GO;;2025-08-22
+22.08.2025.;Petak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;34.0;8;2025;2025-08-22;L5;Godišnji odmor;;2025-08-22
+22.08.2025.;Petak;Devčić Dino;Fleet;GO;34.0;8;2025;2025-08-22;;GO;;2025-08-22
+22.08.2025.;Petak;Boc Marko;Project management;Špansko;34.0;8;2025;2025-08-22;L1;Špansko;;2025-08-22
+22.08.2025.;Petak;Marin Pustak;Tehnički centar;Vukovina;34.0;8;2025;2025-08-22;L2;Vukovina;;2025-08-22
+22.08.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;34.0;8;2025;2025-08-22;L2;Vukovina;;2025-08-22
+22.08.2025.;Petak;Dolores Pavlović;Tehnički centar;Vukovina;34.0;8;2025;2025-08-22;L2;Vukovina;;2025-08-22
+22.08.2025.;Petak;Davor Hren;Tehnički centar;Vukovina;34.0;8;2025;2025-08-22;L2;Vukovina;;2025-08-22
+22.08.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;34.0;8;2025;2025-08-22;L1;Špansko;;2025-08-22
+22.08.2025.;Petak;Roso Marko;Call Centar;;34.0;8;2025;2025-08-22;;;;2025-08-22
+22.08.2025.;Petak;Ramić Bernard;QS;;34.0;8;2025;2025-08-22;;;;2025-08-22
+22.08.2025.;Petak;Lalić Marko;Project management;Rad od kuće;34.0;8;2025;2025-08-22;L7;Rad od kuće;;2025-08-22
+22.08.2025.;Petak;Zubić Petra;Marketing;;34.0;8;2025;2025-08-22;;;;2025-08-22
+22.08.2025.;Petak;Boris Smuđ;Tehnički centar;Rad od kuće;34.0;8;2025;2025-08-22;L7;Rad od kuće;;2025-08-22
+22.08.2025.;Petak;Ros Antonio;Marketing;;34.0;8;2025;2025-08-22;;;;2025-08-22
+22.08.2025.;Petak;Pintarić Ivan;Call Centar;Špansko;34.0;8;2025;2025-08-22;L1;Špansko;;2025-08-22
+22.08.2025.;Petak;Miholić Galic Matija;Project management;GO;34.0;8;2025;2025-08-22;;GO;;2025-08-22
+22.8.2025;;;Call Centar;;34.0;8;2025;2025-08-22;;;Roso Marko;
+21.08.2025.;Četvrtak;Vuzem Nataša;Marketing;Godišnji odmor;34.0;8;2025;2025-08-21;L5;Godišnji odmor;;2025-08-21
+21.08.2025.;Četvrtak;Ramić Bernard;QS;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Lalić Marko;Project management;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Vukovina;34.0;8;2025;2025-08-21;L2;Vukovina;;2025-08-21
+21.8.2025;;;Fleet;Godišnji odmor;34.0;8;2025;2025-08-21;;;Devčić Dino;
+21.08.2025.;Četvrtak;Zoroje Branislav;Call Centar;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Ros Antonio;Marketing;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Vedran Čorak;Project management;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Davor Hren;Tehnički centar;Vukovina;34.0;8;2025;2025-08-21;L2;Vukovina;;2025-08-21
+21.08.2025.;Četvrtak;Boris Smuđ;Tehnički centar;Vukovina;34.0;8;2025;2025-08-21;L2;Vukovina;;2025-08-21
+21.08.2025.;Četvrtak;Devčić Dino;Fleet;GO;34.0;8;2025;2025-08-21;;GO;;2025-08-21
+21.08.2025.;Četvrtak;Boc Marko;Project management;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Marin Pustak;Tehnički centar;Vukovina;34.0;8;2025;2025-08-21;L2;Vukovina;;2025-08-21
+21.08.2025.;Četvrtak;Fogec Davor;RVP;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;HO;34.0;8;2025;2025-08-21;;HO;;2025-08-21
+21.08.2025.;Četvrtak;Roso Marko;Call Centar;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Leskovar Jelena;Call Centar;Rad od kuće;34.0;8;2025;2025-08-21;L7;Rad od kuće;;2025-08-21
+21.08.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;34.0;8;2025;2025-08-21;L5;Godišnji odmor;;2025-08-21
+21.08.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;34.0;8;2025;2025-08-21;L1;Špansko;;2025-08-21
+21.08.2025.;Četvrtak;Miholić Galic Matija;Project management;GO;34.0;8;2025;2025-08-21;;GO;;2025-08-21
+20.08.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;Fogec Davor;RVP;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;Davor Hren;Tehnički centar;Vukovina;34.0;8;2025;2025-08-20;L2;Vukovina;;2025-08-20
+20.08.2025.;Srijeda;Boris Smuđ;Tehnički centar;Vukovina;34.0;8;2025;2025-08-20;L2;Vukovina;;2025-08-20
+20.08.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;Ramić Bernard;QS;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;Boris Omerzo;Tehnički centar;Vukovina;34.0;8;2025;2025-08-20;L2;Vukovina;;2025-08-20
+20.08.2025.;Srijeda;Roso Marko;Call Centar;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;Lalić Marko;Project management;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;Marin Pustak;Tehnički centar;Vukovina;34.0;8;2025;2025-08-20;L2;Vukovina;;2025-08-20
+20.08.2025.;Srijeda;Ros Antonio;Marketing;Vukovina;34.0;8;2025;2025-08-20;L2;Vukovina;;2025-08-20
+20.08.2025.;Srijeda;Devčić Dino;Fleet;Godišnji odmor;34.0;8;2025;2025-08-20;L5;Godišnji odmor;;2025-08-20
+20.08.2025.;Srijeda;Vedran Čorak;Project management;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.08.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;34.0;8;2025;2025-08-20;L5;Godišnji odmor;;2025-08-20
+20.08.2025.;Srijeda;Vuzem Nataša;Marketing;GO;34.0;8;2025;2025-08-20;;GO;;2025-08-20
+20.08.2025.;Srijeda;Zubić Petra;Marketing;Špansko;34.0;8;2025;2025-08-20;L1;Špansko;;2025-08-20
+20.8.2025;;;Call Centar;Špansko;34.0;8;2025;2025-08-20;;;Zoroje Branislav;
+20.08.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Vukovina;34.0;8;2025;2025-08-20;L2;Vukovina;;2025-08-20
+20.08.2025.;Srijeda;Miholić Galic Matija;Project management;GO;34.0;8;2025;2025-08-20;;GO;;2025-08-20
+19.08.2025.;Utorak;Marin Pustak;Tehnički centar;Vukovina;34.0;8;2025;2025-08-19;L2;Vukovina;;2025-08-19
+19.08.2025.;Utorak;Vedran Čorak;Project management;Vukovina;34.0;8;2025;2025-08-19;L2;Vukovina;;2025-08-19
+19.08.2025.;Utorak;Dolores Pavlović;Tehnički centar;Vukovina;34.0;8;2025;2025-08-19;L2;Vukovina;;2025-08-19
+19.08.2025.;Utorak;Vuzem Nataša;Marketing;Godišnji odmor;34.0;8;2025;2025-08-19;L5;Godišnji odmor;;2025-08-19
+19.08.2025.;Utorak;Roso Marko;Call Centar;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Pintarić Ivan;Call Centar;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.8.2025;;;Call Centar;Špansko;34.0;8;2025;2025-08-19;;;Zoroje Branislav;
+19.08.2025.;Utorak;Lalić Marko;Project management;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Zubić Petra;Marketing;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Ros Antonio;Marketing;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Boc Marko;Project management;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Ramić Bernard;QS;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+19.08.2025.;Utorak;Miholić Galic Matija;Project management;GO;34.0;8;2025;2025-08-19;;GO;;2025-08-19
+19.08.2025.;Utorak;Boris Smuđ;Tehnički centar;Vukovina;34.0;8;2025;2025-08-19;L2;Vukovina;;2025-08-19
+19.08.2025.;Utorak;Davor Hren;Tehnički centar;Vukovina;34.0;8;2025;2025-08-19;L2;Vukovina;;2025-08-19
+19.08.2025.;Utorak;Devčić Dino;Fleet;Godišnji odmor;34.0;8;2025;2025-08-19;L5;Godišnji odmor;;2025-08-19
+19.08.2025.;Utorak;Boris Omerzo;Tehnički centar;Rad od kuće;34.0;8;2025;2025-08-19;L7;Rad od kuće;;2025-08-19
+19.08.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;34.0;8;2025;2025-08-19;L5;Godišnji odmor;;2025-08-19
+19.08.2025.;Utorak;Fogec Davor;RVP;Špansko;34.0;8;2025;2025-08-19;L1;Špansko;;2025-08-19
+18.08.2025.;Ponedjeljak;Miholić Galic Matija;Project management;GO;34.0;8;2025;2025-08-18;;GO;;2025-08-18
+18.08.2025.;Ponedjeljak;Davor Hren;Tehnički centar;Vukovina;34.0;8;2025;2025-08-18;L2;Vukovina;;2025-08-18
+18.08.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Špansko;34.0;8;2025;2025-08-18;L1;Špansko;;2025-08-18
+18.08.2025.;Ponedjeljak;Roso Marko;Call Centar;Špansko;34.0;8;2025;2025-08-18;L1;Špansko;;2025-08-18
+18.08.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Rad od kuće;34.0;8;2025;2025-08-18;L7;Rad od kuće;;2025-08-18
+18.08.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;Vukovina;34.0;8;2025;2025-08-18;L2;Vukovina;;2025-08-18
+18.08.2025.;Ponedjeljak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;34.0;8;2025;2025-08-18;L5;Godišnji odmor;;2025-08-18
+18.08.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;34.0;8;2025;2025-08-18;L1;Špansko;;2025-08-18
+18.08.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;34.0;8;2025;2025-08-18;L1;Špansko;;2025-08-18
+18.08.2025.;Ponedjeljak;Lalić Marko;Project management;Špansko;34.0;8;2025;2025-08-18;L1;Špansko;;2025-08-18
+18.08.2025.;Ponedjeljak;Vedran Čorak;Project management;Špansko;34.0;8;2025;2025-08-18;L1;Špansko;;2025-08-18
+18.08.2025.;Ponedjeljak;Devčić Dino;Fleet;Godišnji odmor;34.0;8;2025;2025-08-18;L5;Godišnji odmor;;2025-08-18
+18.08.2025.;Ponedjeljak;Ramić Bernard;QS;Godišnji odmor;34.0;8;2025;2025-08-18;L5;Godišnji odmor;;2025-08-18
+18.08.2025.;Ponedjeljak;Fogec Davor;RVP;Špansko;34.0;8;2025;2025-08-18;L1;Špansko;;2025-08-18
+18.08.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;34.0;8;2025;2025-08-18;L2;Vukovina;;2025-08-18
+18.08.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;;34.0;8;2025;2025-08-18;;;;2025-08-18
+18.08.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;34.0;8;2025;2025-08-18;L1;Špansko;;2025-08-18
+18.08.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;Vukovina;34.0;8;2025;2025-08-18;L2;Vukovina;;2025-08-18
+18.08.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;34.0;8;2025;2025-08-18;L2;Vukovina;;2025-08-18
+18.08.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;Vukovina;34.0;8;2025;2025-08-18;L2;Vukovina;;2025-08-18
+18.08.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Godišnji odmor;34.0;8;2025;2025-08-18;L5;Godišnji odmor;;2025-08-18
+18.8.2025;;;Tehnički centar;Vukovina;34.0;8;2025;2025-08-18;;;Dolores Pavlović;
+15.08.2025.;Petak;Vedran Čorak;Project management;Rad od kuće;33.0;8;2025;2025-08-15;L7;Rad od kuće;;2025-08-15
+15.8.2025;;;Project management;;33.0;8;2025;2025-08-15;;;Vedran Čorak;
+14.08.2025.;Četvrtak;Fogec Davor;RVP;Špansko;33.0;8;2025;2025-08-14;L1;Špansko;;2025-08-14
+14.08.2025.;Četvrtak;Boris Smuđ;Tehnički centar;Vukovina;33.0;8;2025;2025-08-14;L2;Vukovina;;2025-08-14
+14.08.2025.;Četvrtak;Vuzem Nataša;Marketing;Godišnji odmor;33.0;8;2025;2025-08-14;L5;Godišnji odmor;;2025-08-14
+14.08.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;33.0;8;2025;2025-08-14;L1;Špansko;;2025-08-14
+14.08.2025.;Četvrtak;Ramić Bernard;QS;Godišnji odmor;33.0;8;2025;2025-08-14;L5;Godišnji odmor;;2025-08-14
+14.08.2025.;Četvrtak;Pintarić Ivan;Call Centar;Godišnji odmor;33.0;8;2025;2025-08-14;L5;Godišnji odmor;;2025-08-14
+14.08.2025.;Četvrtak;Vedran Čorak;Project management;Godišnji odmor;33.0;8;2025;2025-08-14;L5;Godišnji odmor;;2025-08-14
+14.08.2025.;Četvrtak;Boc Marko;Project management;Špansko;33.0;8;2025;2025-08-14;L1;Špansko;;2025-08-14
+14.08.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Špansko;33.0;8;2025;2025-08-14;L1;Špansko;;2025-08-14
+14.08.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;33.0;8;2025;2025-08-14;L1;Špansko;;2025-08-14
+14.08.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Vukovina;33.0;8;2025;2025-08-14;L2;Vukovina;;2025-08-14
+14.08.2025.;Četvrtak;Davor Hren;Tehnički centar;Vukovina;33.0;8;2025;2025-08-14;L2;Vukovina;;2025-08-14
+14.08.2025.;Četvrtak;Marin Pustak;Tehnički centar;Vukovina;33.0;8;2025;2025-08-14;L2;Vukovina;;2025-08-14
+14.8.2025;;;Call Centar;Špansko;33.0;8;2025;2025-08-14;;;Leskovar Jelena;
+14.08.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;Vukovina;33.0;8;2025;2025-08-14;L2;Vukovina;;2025-08-14
+14.08.2025.;Četvrtak;Zoroje Branislav;Call Centar;Rad od kuće;33.0;8;2025;2025-08-14;L7;Rad od kuće;;2025-08-14
+14.08.2025.;Četvrtak;Ros Antonio;Marketing;Rad od kuće;33.0;8;2025;2025-08-14;L7;Rad od kuće;;2025-08-14
+14.08.2025.;Četvrtak;Zubić Petra;Marketing;Rad od kuće;33.0;8;2025;2025-08-14;L7;Rad od kuće;;2025-08-14
+14.08.2025.;Četvrtak;Devčić Dino;Fleet;Špansko;33.0;8;2025;2025-08-14;L1;Špansko;;2025-08-14
+14.08.2025.;Četvrtak;Miholić Galic Matija;Project management;Špansko;33.0;8;2025;2025-08-14;L1;Špansko;;2025-08-14
+13.08.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.08.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.08.2025.;Srijeda;Ramić Bernard;QS;GO;33.0;8;2025;2025-08-13;;GO;;2025-08-13
+13.08.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Vukovina;33.0;8;2025;2025-08-13;L2;Vukovina;;2025-08-13
+13.08.2025.;Srijeda;Boris Omerzo;Tehnički centar;Vukovina;33.0;8;2025;2025-08-13;L2;Vukovina;;2025-08-13
+13.08.2025.;Srijeda;Ros Antonio;Marketing;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.08.2025.;Srijeda;Davor Hren;Tehnički centar;Vukovina;33.0;8;2025;2025-08-13;L2;Vukovina;;2025-08-13
+13.08.2025.;Srijeda;Boris Smuđ;Tehnički centar;Vukovina;33.0;8;2025;2025-08-13;L2;Vukovina;;2025-08-13
+13.08.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.08.2025.;Srijeda;Boc Marko;Project management;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.08.2025.;Srijeda;Marin Pustak;Tehnički centar;Vukovina;33.0;8;2025;2025-08-13;L2;Vukovina;;2025-08-13
+13.08.2025.;Srijeda;Zubić Petra;Marketing;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.8.2025;;;Call Centar;Godišnji odmor;33.0;8;2025;2025-08-13;;;Pintarić Ivan;
+13.08.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.08.2025.;Srijeda;Fogec Davor;RVP;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.08.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;33.0;8;2025;2025-08-13;L1;Špansko;;2025-08-13
+13.08.2025.;Srijeda;Vedran Čorak;Project management;GO;33.0;8;2025;2025-08-13;;GO;;2025-08-13
+13.08.2025.;Srijeda;Devčić Dino;Fleet;Poslovni put;33.0;8;2025;2025-08-13;L4;Poslovni put;;2025-08-13
+13.08.2025.;Srijeda;Pintarić Ivan;Call Centar;GO;33.0;8;2025;2025-08-13;;GO;;2025-08-13
+13.08.2025.;Srijeda;Vuzem Nataša;Marketing;GO;33.0;8;2025;2025-08-13;;GO;;2025-08-13
+12.08.2025.;Utorak;Vuzem Nataša;Marketing;Godišnji odmor;33.0;8;2025;2025-08-12;L5;Godišnji odmor;;2025-08-12
+12.08.2025.;Utorak;Devčić Dino;Fleet;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Marin Pustak;Tehnički centar;Vukovina;33.0;8;2025;2025-08-12;L2;Vukovina;;2025-08-12
+12.08.2025.;Utorak;Zubić Petra;Marketing;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Ros Antonio;Marketing;Vukovina;33.0;8;2025;2025-08-12;L2;Vukovina;;2025-08-12
+12.08.2025.;Utorak;Boc Marko;Project management;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Dolores Pavlović;Tehnički centar;Rad od kuće;33.0;8;2025;2025-08-12;L7;Rad od kuće;;2025-08-12
+12.08.2025.;Utorak;Pintarić Ivan;Call Centar;Godišnji odmor;33.0;8;2025;2025-08-12;L5;Godišnji odmor;;2025-08-12
+12.08.2025.;Utorak;Davor Hren;Tehnički centar;Godišnji odmor;33.0;8;2025;2025-08-12;L5;Godišnji odmor;;2025-08-12
+12.08.2025.;Utorak;Ramić Bernard;QS;Godišnji odmor;33.0;8;2025;2025-08-12;L5;Godišnji odmor;;2025-08-12
+12.08.2025.;Utorak;Fogec Davor;RVP;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;33.0;8;2025;2025-08-12;L2;Vukovina;;2025-08-12
+12.8.2025;;;Call Centar;Špansko;33.0;8;2025;2025-08-12;;;Šomođi Ante ;
+12.08.2025.;Utorak;Miholić Galic Matija;Project management;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Vedran Čorak;Project management;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Miletić Bojan;Call Centar;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+12.08.2025.;Utorak;Boris Smuđ;Tehnički centar;Vukovina;33.0;8;2025;2025-08-12;L2;Vukovina;;2025-08-12
+12.08.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Špansko;33.0;8;2025;2025-08-12;L1;Špansko;;2025-08-12
+11.08.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;33.0;8;2025;2025-08-11;L1;Špansko;;2025-08-11
+11.08.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;Vukovina;33.0;8;2025;2025-08-11;L2;Vukovina;;2025-08-11
+11.08.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;33.0;8;2025;2025-08-11;L1;Špansko;;2025-08-11
+11.08.2025.;Ponedjeljak;Ros Antonio;Marketing;Špansko;33.0;8;2025;2025-08-11;L1;Špansko;;2025-08-11
+11.08.2025.;Ponedjeljak;Vedran Čorak;Project management;Špansko;33.0;8;2025;2025-08-11;L1;Špansko;;2025-08-11
+11.08.2025.;Ponedjeljak;Ramić Bernard;QS;Godišnji odmor;33.0;8;2025;2025-08-11;L5;Godišnji odmor;;2025-08-11
+11.08.2025.;Ponedjeljak;Devčić Dino;Fleet;Rad od kuće;33.0;8;2025;2025-08-11;L7;Rad od kuće;;2025-08-11
+11.08.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Godišnji odmor;33.0;8;2025;2025-08-11;L5;Godišnji odmor;;2025-08-11
+11.08.2025.;Ponedjeljak;Fogec Davor;RVP;Rad od kuće;33.0;8;2025;2025-08-11;L7;Rad od kuće;;2025-08-11
+11.08.2025.;Ponedjeljak;Miletić Bojan;Call Centar;Špansko;33.0;8;2025;2025-08-11;L1;Špansko;;2025-08-11
+11.08.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Špansko;33.0;8;2025;2025-08-11;L1;Špansko;;2025-08-11
+11.8.2025;;;Call Centar;;33.0;8;2025;2025-08-11;;;Pintarić Ivan;
+11.08.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Rad od kuće;33.0;8;2025;2025-08-11;L7;Rad od kuće;;2025-08-11
+11.08.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;33.0;8;2025;2025-08-11;L2;Vukovina;;2025-08-11
+11.08.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;33.0;8;2025;2025-08-11;L1;Špansko;;2025-08-11
+11.08.2025.;Ponedjeljak;Davor Hren;Tehnički centar;Godišnji odmor;33.0;8;2025;2025-08-11;L5;Godišnji odmor;;2025-08-11
+11.08.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;HO;33.0;8;2025;2025-08-11;;HO;;2025-08-11
+11.08.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;Godišnji odmor;33.0;8;2025;2025-08-11;L5;Godišnji odmor;;2025-08-11
+08.08.2025.;Petak;Miletić Bojan;Call Centar;Špansko;32.0;8;2025;2025-08-08;L1;Špansko;;2025-08-08
+08.08.2025.;Petak;Ros Antonio;Marketing;;32.0;8;2025;2025-08-08;;;;2025-08-08
+08.08.2025.;Petak;Devčić Dino;Fleet;;32.0;8;2025;2025-08-08;;;;2025-08-08
+08.08.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;32.0;8;2025;2025-08-08;L1;Špansko;;2025-08-08
+08.08.2025.;Petak;Boc Marko;Project management;Špansko;32.0;8;2025;2025-08-08;L1;Špansko;;2025-08-08
+08.08.2025.;Petak;Vuzem Nataša;Marketing;GO;32.0;8;2025;2025-08-08;;GO;;2025-08-08
+08.08.2025.;Petak;Miholić Galic Matija;Project management;Špansko;32.0;8;2025;2025-08-08;L1;Špansko;;2025-08-08
+08.08.2025.;Petak;Pintarić Ivan;Call Centar;Špansko;32.0;8;2025;2025-08-08;L1;Špansko;;2025-08-08
+08.08.2025.;Petak;Davor Hren;Tehnički centar;GO;32.0;8;2025;2025-08-08;;GO;;2025-08-08
+08.08.2025.;Petak;Marin Pustak;Tehnički centar;Vukovina;32.0;8;2025;2025-08-08;L2;Vukovina;;2025-08-08
+08.08.2025.;Petak;Šomođi Ante;Call Centar;Špansko;32.0;8;2025;2025-08-08;L1;Špansko;;2025-08-08
+08.08.2025.;Petak;Zubić Petra;Marketing;Špansko;32.0;8;2025;2025-08-08;L1;Špansko;;2025-08-08
+08.08.2025.;Petak;Ramić Bernard;QS;GO;32.0;8;2025;2025-08-08;;GO;;2025-08-08
+08.08.2025.;Petak;Boris Smuđ;Tehnički centar;Vukovina;32.0;8;2025;2025-08-08;L2;Vukovina;;2025-08-08
+08.08.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;32.0;8;2025;2025-08-08;L2;Vukovina;;2025-08-08
+8.8.2025;;;Tehnički centar;Vukovina;32.0;8;2025;2025-08-08;;;Marin Pustak;
+08.08.2025.;Petak;Dolores Pavlović;Tehnički centar;HO;32.0;8;2025;2025-08-08;;HO;;2025-08-08
+08.08.2025.;Petak;Vedran Čorak;Project management;;32.0;8;2025;2025-08-08;;;;2025-08-08
+08.08.2025.;Petak;MiRad od kućelić Galic Matija;Project management;Špansko;32.0;8;2025;2025-08-08;L1;Špansko;;2025-08-08
+07.08.2025.;Četvrtak;Vuzem Nataša;Marketing;GO;32.0;8;2025;2025-08-07;;GO;;2025-08-07
+07.08.2025.;Četvrtak;Ramić Bernard;QS;GO;32.0;8;2025;2025-08-07;;GO;;2025-08-07
+07.08.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Vukovina;32.0;8;2025;2025-08-07;L2;Vukovina;;2025-08-07
+07.08.2025.;Četvrtak;Miletić Bojan;Call Centar;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Devčić Dino;Fleet;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Fogec Davor;RVP;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Zoroje Branislav;Call Centar;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Boris Smuđ;Tehnički centar;Vukovina;32.0;8;2025;2025-08-07;L2;Vukovina;;2025-08-07
+07.08.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Ros Antonio;Marketing;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;Vukovina;32.0;8;2025;2025-08-07;L2;Vukovina;;2025-08-07
+07.08.2025.;Četvrtak;Vedran Čorak;Project management;Vukovina;32.0;8;2025;2025-08-07;L2;Vukovina;;2025-08-07
+07.08.2025.;Četvrtak;Davor Hren;Tehnički centar;GO;32.0;8;2025;2025-08-07;;GO;;2025-08-07
+7.8.2025;;;RVP;Špansko;32.0;8;2025;2025-08-07;;;Fogec Davor;
+07.08.2025.;Četvrtak;Boc Marko;Project management;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Miholić Galic Matija;Project management;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+07.08.2025.;Četvrtak;Marin Pustak;Tehnički centar;Vukovina;32.0;8;2025;2025-08-07;L2;Vukovina;;2025-08-07
+07.08.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Špansko;32.0;8;2025;2025-08-07;L1;Špansko;;2025-08-07
+06.08.2025.;Srijeda;Ros Antonio;Marketing;Vukovina;32.0;8;2025;2025-08-06;L2;Vukovina;;2025-08-06
+06.08.2025.;Srijeda;Vuzem Nataša;Marketing;GO;32.0;8;2025;2025-08-06;;GO;;2025-08-06
+06.08.2025.;Srijeda;Boris Omerzo;Tehnički centar;HO;32.0;8;2025;2025-08-06;;HO;;2025-08-06
+06.08.2025.;Srijeda;Davor Hren;Tehnički centar;GO;32.0;8;2025;2025-08-06;;GO;;2025-08-06
+06.08.2025.;Srijeda;Boris Smuđ;Tehnički centar;Vukovina;32.0;8;2025;2025-08-06;L2;Vukovina;;2025-08-06
+06.08.2025.;Srijeda;Miletić Bojan;Call Centar;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+06.08.2025.;Srijeda;Ramić Bernard;QS;GO;32.0;8;2025;2025-08-06;;GO;;2025-08-06
+06.08.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+06.08.2025.;Srijeda;Fogec Davor;RVP;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+06.08.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+06.08.2025.;Srijeda;Šomođi Ante;call Centar;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+06.08.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+06.08.2025.;Srijeda;Marin Pustak;Tehnički centar;Vukovina;32.0;8;2025;2025-08-06;L2;Vukovina;;2025-08-06
+06.08.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Vukovina;32.0;8;2025;2025-08-06;L2;Vukovina;;2025-08-06
+06.08.2025.;Srijeda;Vedran Čorak;Project management;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+6.8.2025;;;Marketing;Godišnji odmor;32.0;8;2025;2025-08-06;;;Vuzem Nataša;
+06.08.2025.;Srijeda;Devčić Dino;Fleet;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+06.08.2025.;Srijeda;Zubić Petra;Marketing;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+06.08.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;32.0;8;2025;2025-08-06;L1;Špansko;;2025-08-06
+05.08.2025.;Utorak;Vedran Čorak;Project management;;32.0;8;2025;2025-08-05;;;;2025-08-05
+05.08.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;32.0;8;2025;2025-08-05;L2;Vukovina;;2025-08-05
+05.08.2025.;Utorak;Dolores Pavlović;Tehnički centar;Vukovina;32.0;8;2025;2025-08-05;L2;Vukovina;;2025-08-05
+05.08.2025.;Utorak;Marin Pustak;Tehnički centar;Vukovina;32.0;8;2025;2025-08-05;L2;Vukovina;;2025-08-05
+05.08.2025.;Utorak;Devčić Dino;Fleet;Rad od kuće;32.0;8;2025;2025-08-05;L7;Rad od kuće;;2025-08-05
+05.08.2025.;Utorak;Davor Hren;Tehnički centar;GO;32.0;8;2025;2025-08-05;;GO;;2025-08-05
+05.08.2025.;Utorak;Boris Smuđ;Tehnički centar;Vukovina;32.0;8;2025;2025-08-05;L2;Vukovina;;2025-08-05
+5.8.2025;;;Tehnički centar;Vukovina;32.0;8;2025;2025-08-05;;;Dolores Pavlović;
+04.08.2025.;Ponedjeljak;Devčić Dino;Fleet;Špansko;32.0;8;2025;2025-08-04;L1;Špansko;;2025-08-04
+04.08.2025.;Ponedjeljak;Fogec Davor;RVP;Špansko;32.0;8;2025;2025-08-04;L1;Špansko;;2025-08-04
+04.08.2025.;Ponedjeljak;Davor Hren;Tehnički centar;GO;32.0;8;2025;2025-08-04;;GO;;2025-08-04
+04.08.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;Vukovina;32.0;8;2025;2025-08-04;L2;Vukovina;;2025-08-04
+04.08.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;GO;32.0;8;2025;2025-08-04;;GO;;2025-08-04
+04.08.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;32.0;8;2025;2025-08-04;L1;Špansko;;2025-08-04
+04.08.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;32.0;8;2025;2025-08-04;L2;Vukovina;;2025-08-04
+04.08.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Špansko;32.0;8;2025;2025-08-04;L1;Špansko;;2025-08-04
+04.08.2025.;Ponedjeljak;Ramić Bernard;QS;GO;32.0;8;2025;2025-08-04;;GO;;2025-08-04
+04.08.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;;32.0;8;2025;2025-08-04;;;;2025-08-04
+04.08.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;32.0;8;2025;2025-08-04;L2;Vukovina;;2025-08-04
+4.8.2025;;;Tehnički centar;Godišnji odmor;32.0;8;2025;2025-08-04;;;Dolores Pavlović;
+04.08.2025.;Ponedjeljak;Boc Marko;Project management;GO;32.0;8;2025;2025-08-04;;GO;;2025-08-04
+04.08.2025.;Ponedjeljak;Zubić Petra;Marketing;;32.0;8;2025;2025-08-04;;;;2025-08-04
+04.08.2025.;Ponedjeljak;Vedran Čorak;Project management;Špansko;32.0;8;2025;2025-08-04;L1;Špansko;;2025-08-04
+04.08.2025.;Ponedjeljak;Vuzem Nataša;Marketing;GO;32.0;8;2025;2025-08-04;;GO;;2025-08-04
+04.08.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;Vukovina;32.0;8;2025;2025-08-04;L2;Vukovina;;2025-08-04
+01.08.2025.;Petak;Šomođi Ante;Call Centar;Špansko;31.0;8;2025;2025-08-01;L1;Špansko;;2025-08-01
+01.08.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;31.0;8;2025;2025-08-01;L1;Špansko;;2025-08-01
+01.08.2025.;Petak;Fogec Davor;RVP;GO;31.0;8;2025;2025-08-01;;GO;;2025-08-01
+01.08.2025.;Petak;Vuzem Nataša;Marketing;Rad od kuće;31.0;8;2025;2025-08-01;L7;Rad od kuće;;2025-08-01
+01.08.2025.;Petak;Boc Marko;Project management;GO;31.0;8;2025;2025-08-01;;GO;;2025-08-01
+01.08.2025.;Petak;Miholić Galic Matija;Project management;Špansko;31.0;8;2025;2025-08-01;L1;Špansko;;2025-08-01
+01.08.2025.;Petak;Pleša Patrik;Call Centar;;31.0;8;2025;2025-08-01;;;;2025-08-01
+01.08.2025.;Petak;Ramić Bernard;QS;GO;31.0;8;2025;2025-08-01;;GO;;2025-08-01
+01.08.2025.;Petak;Pintarić Ivan;Call Centar;;31.0;8;2025;2025-08-01;;;;2025-08-01
+01.08.2025.;Petak;Vedran Čorak;Project management;Špansko;31.0;8;2025;2025-08-01;L1;Špansko;;2025-08-01
+01.08.2025.;Petak;Zubić Petra;Marketing;Špansko;31.0;8;2025;2025-08-01;L1;Špansko;;2025-08-01
+01.08.2025.;Petak;Ros Antonio;Marketing;Špansko;31.0;8;2025;2025-08-01;L1;Špansko;;2025-08-01
+1.8.2025;;;Marketing;;31.0;8;2025;2025-08-01;;;Vuzem Nataša;
+01.08.2025.;Petak;MiRad od kućelić Galic Matija;Project management;Špansko;31.0;8;2025;2025-08-01;L1;Špansko;;2025-08-01
+31.07.2025.;Četvrtak;Fogec Davor;RVP;Poslovnica;31.0;7;2025;2025-07-31;L3;Poslovnica;;2025-07-31
+31.07.2025.;Četvrtak;Pleša Patrik;Call Centar;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+31.07.2025.;Četvrtak;Zrnić Aleksandar;Marketing;Rad od kuće;31.0;7;2025;2025-07-31;L7;Rad od kuće;;2025-07-31
+31.07.2025.;Četvrtak;Zubić Petra;Marketing;;31.0;7;2025;2025-07-31;;;;2025-07-31
+31.07.2025.;Četvrtak;Vedran Čorak;Project management;Vukovina;31.0;7;2025;2025-07-31;L2;Vukovina;;2025-07-31
+31.07.2025.;Četvrtak;Devčić Dino;Fleet;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+31.07.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+31.07.2025.;Četvrtak;Zoroje Branislav;Call Centar;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+31.07.2025.;Četvrtak;Boc Marko;Project management;GO;31.0;7;2025;2025-07-31;;GO;;2025-07-31
+31.07.2025.;Četvrtak;Ramić Bernard;QS;Poslovni put;31.0;7;2025;2025-07-31;L4;Poslovni put;;2025-07-31
+31.07.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+31.07.2025.;Četvrtak;Ros Antonio;Marketing;;31.0;7;2025;2025-07-31;;;;2025-07-31
+31.7.2025;;;Marketing;;31.0;7;2025;2025-07-31;;;Zubić Petra;
+31.07.2025.;Četvrtak;Miholić Galic Matija;Project management;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+31.07.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+31.07.2025.;Četvrtak;Miletić Bojan;Call Centar;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+31.07.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Špansko;31.0;7;2025;2025-07-31;L1;Špansko;;2025-07-31
+30.07.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Zubić Petra;Marketing;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Ros Antonio;Marketing;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Habuš Hrvoje;Marketing;;31.0;7;2025;2025-07-30;;;;2025-07-30
+30.07.2025.;Srijeda;Miletić Bojan;Call Centar;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.7.2025;;;Marketing;Špansko;31.0;7;2025;2025-07-30;;;Zrnić Aleksandar;
+30.07.2025.;Srijeda;Fogec Davor;RVP;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Devčić Dino;Fleet;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Boc Marko;Project management;GO;31.0;7;2025;2025-07-30;;GO;;2025-07-30
+30.07.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Vedran Čorak;Project management;Vukovina;31.0;7;2025;2025-07-30;L2;Vukovina;;2025-07-30
+30.07.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Pleša Patrik;Call Centar;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Ramić Bernard;QS;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+30.07.2025.;Srijeda;Zrnić Aleksandar;Marketing;Špansko;31.0;7;2025;2025-07-30;L1;Špansko;;2025-07-30
+29.07.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;Fogec Davor;RVP;Poslovnica;31.0;7;2025;2025-07-29;L3;Poslovnica;;2025-07-29
+29.07.2025.;Utorak;Pintarić Ivan;Call Centar;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;Boc Marko;Project management;Godišnji odmor;31.0;7;2025;2025-07-29;L5;Godišnji odmor;;2025-07-29
+29.07.2025.;Utorak;Zrnić Aleksandar;Marketing;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;Vedran Čorak;Project management;Vukovina;31.0;7;2025;2025-07-29;L2;Vukovina;;2025-07-29
+29.07.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;Ramić Bernard;QS;Vukovina;31.0;7;2025;2025-07-29;L2;Vukovina;;2025-07-29
+29.07.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;31.0;7;2025;2025-07-29;L2;Vukovina;;2025-07-29
+29.7.2025;;;RVP;Poslovnica;31.0;7;2025;2025-07-29;;;Fogec Davor;
+29.07.2025.;Utorak;Miletić Bojan;Call Centar;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;Zubić Petra;Marketing;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;Pleša Patrik;Call Centar;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;Devčić Dino;Fleet;Poslovni put;31.0;7;2025;2025-07-29;L4;Poslovni put;;2025-07-29
+29.07.2025.;Utorak;Ros Antonio;Marketing;Vukovina;31.0;7;2025;2025-07-29;L2;Vukovina;;2025-07-29
+29.07.2025.;Utorak;Miholić Galic Matija;Project management;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+29.07.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Špansko;31.0;7;2025;2025-07-29;L1;Špansko;;2025-07-29
+28.07.2025.;Ponedjeljak;Vedran Čorak;Project management;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.07.2025.;Ponedjeljak;Miletić Bojan;Call Centar;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.07.2025.;Ponedjeljak;Zrnić Aleksandar;Marketing;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.07.2025.;Ponedjeljak;Pleša Patrik;Call Centar;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.07.2025.;Ponedjeljak;Devčić Dino;Fleet;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.07.2025.;Ponedjeljak;Boc Marko;Project management;GO;31.0;7;2025;2025-07-28;;GO;;2025-07-28
+28.07.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;31.0;7;2025;2025-07-28;L2;Vukovina;;2025-07-28
+28.07.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;31.0;7;2025;2025-07-28;L2;Vukovina;;2025-07-28
+28.07.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.07.2025.;Ponedjeljak;Ramić Bernard;QS;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.7.2025;;;QS;Špansko;31.0;7;2025;2025-07-28;;;Ramić Bernard;
+28.07.2025.;Ponedjeljak;Fogec Davor;RVP;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.07.2025.;Ponedjeljak;Zubić Petra;Marketing;Vukovina;31.0;7;2025;2025-07-28;L2;Vukovina;;2025-07-28
+28.07.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Špansko;31.0;7;2025;2025-07-28;L1;Špansko;;2025-07-28
+28.07.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;;31.0;7;2025;2025-07-28;;;;2025-07-28
+28.07.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Vukovina;31.0;7;2025;2025-07-28;L2;Vukovina;;2025-07-28
+25.07.2025.;Petak;Ramić Bernard;QS;;30.0;7;2025;2025-07-25;;;;2025-07-25
+25.07.2025.;Petak;Miletić Bojan;Call Centar;Špansko;30.0;7;2025;2025-07-25;L1;Špansko;;2025-07-25
+25.07.2025.;Petak;Fogec Davor;RVP;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Vuzem Nataša;Marketing;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Pintarić Ivan;Call Centar;Godišnji odmor;30.0;7;2025;2025-07-25;L5;Godišnji odmor;;2025-07-25
+25.07.2025.;Petak;Zidar Ivan;RVP;Godišnji odmor;30.0;7;2025;2025-07-25;L5;Godišnji odmor;;2025-07-25
+25.07.2025.;Petak;Zubić Petra;Marketing;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Leskovar Jelena;Call Centar;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Zrnić Aleksandar;Marketing;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Habuš Hrvoje;Marketing;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Ros Antonio;Marketing;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;30.0;7;2025;2025-07-25;L1;Špansko;;2025-07-25
+25.07.2025.;Petak;Milković Mario;RVP;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Lalić Marko;Project management;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Vedran Čorak;Project management;Godišnji odmor;30.0;7;2025;2025-07-25;L5;Godišnji odmor;;2025-07-25
+25.07.2025.;Petak;Devčić Dino;Fleet;Rad od kuće;30.0;7;2025;2025-07-25;L7;Rad od kuće;;2025-07-25
+25.07.2025.;Petak;Šomođi Ante;Call Centar;Špansko;30.0;7;2025;2025-07-25;L1;Špansko;;2025-07-25
+25.07.2025.;Petak;Boc Marko;Project management;Godišnji odmor;30.0;7;2025;2025-07-25;L5;Godišnji odmor;;2025-07-25
+25.07.2025.;Petak;;;;30.0;7;2025;2025-07-25;;;;2025-07-25
+24.07.2025.;Četvrtak;Zidar Ivan;RVP;Godišnji odmor;30.0;7;2025;2025-07-24;L5;Godišnji odmor;;2025-07-24
+24.07.2025.;Četvrtak;Pintarić Ivan;Call Centar;Godišnji odmor;30.0;7;2025;2025-07-24;L5;Godišnji odmor;;2025-07-24
+24.07.2025.;Četvrtak;Fogec Davor;RVP;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Lalić Marko;Project management;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Roso Marko;Call Centar;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Miletić Bojan;Call Centar;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Devčić Dino;Fleet;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Milković Mario;RVP;Poslovnica;30.0;7;2025;2025-07-24;L3;Poslovnica;;2025-07-24
+24.07.2025.;Četvrtak;Boc Marko;Project management;Godišnji odmor;30.0;7;2025;2025-07-24;L5;Godišnji odmor;;2025-07-24
+24.07.2025.;Četvrtak;Zrnić Aleksandar;Marketing;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Vedran Čorak;Project management;Vukovina;30.0;7;2025;2025-07-24;L2;Vukovina;;2025-07-24
+24.07.2025.;Četvrtak;Habuš Hrvoje;Marketing;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Miholić Galic Matija;Project management;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Ros Antonio;Marketing;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.07.2025.;Četvrtak;Ramić Bernard;QS;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+24.7.2025;;;Marketing;Špansko;30.0;7;2025;2025-07-24;;;Zrnić Aleksandar;
+24.07.2025.;Četvrtak;Zoroje Branislav;Call Centar;Špansko;30.0;7;2025;2025-07-24;L1;Špansko;;2025-07-24
+23.07.2025.;Srijeda;Milković Mario;RVP;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Roso Marko;Call Centar;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Pintarić Ivan;Call Centar;GO;30.0;7;2025;2025-07-23;;GO;;2025-07-23
+23.07.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Zubić Petra;Marketing;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.7.2025;;;Call Centar;Špansko;30.0;7;2025;2025-07-23;;;Miletić Bojan;
+23.07.2025.;Srijeda;Miletić Bojan;Call Centar;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Fogec Davor;RVP;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Ros Antonio;Marketing;Vukovina;30.0;7;2025;2025-07-23;L2;Vukovina;;2025-07-23
+23.07.2025.;Srijeda;Zidar Ivan;RVP;GO;30.0;7;2025;2025-07-23;;GO;;2025-07-23
+23.07.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Zrnić Aleksandar;Marketing;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Lalić Marko;Project management;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Devčić Dino;Fleet;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Ramić Bernard;QS;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Vedran Čorak;Project management;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+23.07.2025.;Srijeda;Boc Marko;Project management;Godišnji odmor;30.0;7;2025;2025-07-23;L5;Godišnji odmor;;2025-07-23
+23.07.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;30.0;7;2025;2025-07-23;L1;Špansko;;2025-07-23
+22.07.2025.;Utorak;Lalić Marko;Project management;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Pintarić Ivan;Call Centar;GO;30.0;7;2025;2025-07-22;;GO;;2025-07-22
+22.07.2025.;Utorak;Vedran Čorak;Project management;Vukovina;30.0;7;2025;2025-07-22;L2;Vukovina;;2025-07-22
+22.07.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Zidar Ivan;RVP;Godišnji odmor;30.0;7;2025;2025-07-22;L5;Godišnji odmor;;2025-07-22
+22.07.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Ros Antonio;Marketing;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Zubić Petra;Marketing;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Devčić Dino;Fleet;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Miletić Bojan;Call Centar;Rad od kuće;30.0;7;2025;2025-07-22;L7;Rad od kuće;;2025-07-22
+22.07.2025.;Utorak;Fogec Davor;RVP;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Milković Mario;RVP;Poslovnica;30.0;7;2025;2025-07-22;L3;Poslovnica;;2025-07-22
+22.07.2025.;Utorak;Boc Marko;Project management;Godišnji odmor;30.0;7;2025;2025-07-22;L5;Godišnji odmor;;2025-07-22
+22.07.2025.;Utorak;Zrnić Aleksandar;Marketing;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Roso Marko;Call Centar;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Ramić Bernard;QS;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.07.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;30.0;7;2025;2025-07-22;L2;Vukovina;;2025-07-22
+22.07.2025.;Utorak;Miholić Galic Matija;Project management;Špansko;30.0;7;2025;2025-07-22;L1;Špansko;;2025-07-22
+22.7.2025;;;Call Centar;;30.0;7;2025;2025-07-22;;;Miletić Bojan;
+21.07.2025.;Ponedjeljak;Fogec Davor;RVP;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Zrnić Aleksandar;Marketing;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Roso Marko;Call Centar;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;30.0;7;2025;2025-07-21;L2;Vukovina;;2025-07-21
+21.07.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Rad od kuće;30.0;7;2025;2025-07-21;L7;Rad od kuće;;2025-07-21
+21.07.2025.;Ponedjeljak;Vedran Čorak;Project management;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Lalić Marko;Project management;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Miletić Bojan;Call Centar;Godišnji odmor;30.0;7;2025;2025-07-21;L5;Godišnji odmor;;2025-07-21
+21.07.2025.;Ponedjeljak;Zidar Ivan;RVP;GO;30.0;7;2025;2025-07-21;;GO;;2025-07-21
+21.07.2025.;Ponedjeljak;Boc Marko;Project management;Godišnji odmor;30.0;7;2025;2025-07-21;L5;Godišnji odmor;;2025-07-21
+21.07.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Godišnji odmor;30.0;7;2025;2025-07-21;L5;Godišnji odmor;;2025-07-21
+21.07.2025.;Ponedjeljak;Devčić Dino;Fleet;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Milković Mario;RVP;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;30.0;7;2025;2025-07-21;L2;Vukovina;;2025-07-21
+21.07.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;Ramić Bernard;QS;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.7.2025;;;Marketing;Vukovina;30.0;7;2025;2025-07-21;;;Ros Antonio;
+21.07.2025.;Ponedjeljak;Miholić Galic Matija;Project management;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+21.07.2025.;Ponedjeljak;MiRad od kućelić Galic Matija;Project management;Špansko;30.0;7;2025;2025-07-21;L1;Špansko;;2025-07-21
+18.07.2025.;Petak;Zubić Petra;Marketing;Špansko;29.0;7;2025;2025-07-18;L1;Špansko;;2025-07-18
+18.07.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;29.0;7;2025;2025-07-18;L1;Špansko;;2025-07-18
+18.07.2025.;Petak;Pintarić Ivan;Call Centar;Godišnji odmor;29.0;7;2025;2025-07-18;L5;Godišnji odmor;;2025-07-18
+18.07.2025.;Petak;Šomođi Ante;Call Centar;Špansko;29.0;7;2025;2025-07-18;L1;Špansko;;2025-07-18
+18.07.2025.;Petak;Roso Marko;Call Centar;Špansko;29.0;7;2025;2025-07-18;L1;Špansko;;2025-07-18
+18.07.2025.;Petak;Zrnić Aleksandar;Marketing;Godišnji odmor;29.0;7;2025;2025-07-18;L5;Godišnji odmor;;2025-07-18
+18.07.2025.;Petak;Habuš Hrvoje;Marketing;Rad od kuće;29.0;7;2025;2025-07-18;L7;Rad od kuće;;2025-07-18
+18.07.2025.;Petak;Milković Mario;RVP;Rad od kuće;29.0;7;2025;2025-07-18;L7;Rad od kuće;;2025-07-18
+18.07.2025.;Petak;Zidar Ivan;RVP;GO;29.0;7;2025;2025-07-18;;GO;;2025-07-18
+18.07.2025.;Petak;Vedran Čorak;Project management;Špansko;29.0;7;2025;2025-07-18;L1;Špansko;;2025-07-18
+18.07.2025.;Petak;Devčić Dino;Fleet;Špansko;29.0;7;2025;2025-07-18;L1;Špansko;;2025-07-18
+18.07.2025.;Petak;Lalić Marko;Project management;Špansko;29.0;7;2025;2025-07-18;L1;Špansko;;2025-07-18
+18.7.2025;;;Call Centar;Špansko;29.0;7;2025;2025-07-18;;;Leskovar Jelena;
+18.07.2025.;Petak;Vuzem Nataša;Marketing;Rad od kuće;29.0;7;2025;2025-07-18;L7;Rad od kuće;;2025-07-18
+18.07.2025.;Petak;Ramić Bernard;QS;Rad od kuće;29.0;7;2025;2025-07-18;L7;Rad od kuće;;2025-07-18
+18.07.2025.;Petak;Ros Antonio;Marketing;GO;29.0;7;2025;2025-07-18;;GO;;2025-07-18
+18.07.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;29.0;7;2025;2025-07-18;L1;Špansko;;2025-07-18
+17.07.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Devčić Dino;Fleet;Rad od kuće;29.0;7;2025;2025-07-17;L7;Rad od kuće;;2025-07-17
+17.07.2025.;Četvrtak;Zidar Ivan;RVP;Godišnji odmor;29.0;7;2025;2025-07-17;L5;Godišnji odmor;;2025-07-17
+17.07.2025.;Četvrtak;Boc Marko;Project management;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Lalić Marko;Project management;Rad od kuće;29.0;7;2025;2025-07-17;L7;Rad od kuće;;2025-07-17
+17.07.2025.;Četvrtak;Milković Mario;RVP;Poslovnica;29.0;7;2025;2025-07-17;L3;Poslovnica;;2025-07-17
+17.07.2025.;Četvrtak;Miletić Bojan;Call Centar;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Miholić Galic Matija;Project management;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Habuš Hrvoje;Marketing;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Zrnić Aleksandar;Marketing;;29.0;7;2025;2025-07-17;;;;2025-07-17
+17.07.2025.;Četvrtak;Ros Antonio;Marketing;Godišnji odmor;29.0;7;2025;2025-07-17;L5;Godišnji odmor;;2025-07-17
+17.07.2025.;Četvrtak;Zoroje Branislav;Call Centar;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.7.2025;;;Call Centar;Špansko;29.0;7;2025;2025-07-17;;;Leskovar Jelena;
+17.07.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Vedran Čorak;Project management;Vukovina;29.0;7;2025;2025-07-17;L2;Vukovina;;2025-07-17
+17.07.2025.;Četvrtak;Roso Marko;Call Centar;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Ramić Bernard;QS;Špansko;29.0;7;2025;2025-07-17;L1;Špansko;;2025-07-17
+17.07.2025.;Četvrtak;Pintarić Ivan;Call Centar;GO;29.0;7;2025;2025-07-17;;GO;;2025-07-17
+16.07.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Roso Marko;Call Centar;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Pintarić Ivan;Call Centar;GO;29.0;7;2025;2025-07-16;;GO;;2025-07-16
+16.07.2025.;Srijeda;Milković Mario;RVP;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Miletić Bojan;Call Centar;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Devčić Dino;Fleet;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Boc Marko;Project management;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Lalić Marko;Project management;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Vedran Čorak;Project management;Vukovina;29.0;7;2025;2025-07-16;L2;Vukovina;;2025-07-16
+16.07.2025.;Srijeda;Zidar Ivan;RVP;GO;29.0;7;2025;2025-07-16;;GO;;2025-07-16
+16.07.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Zubić Petra;Marketing;;29.0;7;2025;2025-07-16;;;;2025-07-16
+16.07.2025.;Srijeda;Ros Antonio;Marketing;Godišnji odmor;29.0;7;2025;2025-07-16;L5;Godišnji odmor;;2025-07-16
+16.7.2025;;;Marketing;Špansko;29.0;7;2025;2025-07-16;;;Habuš Hrvoje;
+16.07.2025.;Srijeda;Ramić Bernard;QS;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Zrnić Aleksandar;Marketing;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+16.07.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;29.0;7;2025;2025-07-16;L1;Špansko;;2025-07-16
+15.07.2025.;Utorak;Vedran Čorak;Project management;Vukovina;29.0;7;2025;2025-07-15;L2;Vukovina;;2025-07-15
+15.07.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.7.2025;;;Project management;Špansko;29.0;7;2025;2025-07-15;;;Boc Marko;
+15.07.2025.;Utorak;Devčić Dino;Fleet;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;29.0;7;2025;2025-07-15;L2;Vukovina;;2025-07-15
+15.07.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Boc Marko;Project management;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Lalić Marko;Project management;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Ramić Bernard;QS;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Miletić Bojan;Call Centar;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Roso Marko;Call Centar;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Ros Antonio;Marketing;GO;29.0;7;2025;2025-07-15;;GO;;2025-07-15
+15.07.2025.;Utorak;Zidar Ivan;RVP;Godišnji odmor;29.0;7;2025;2025-07-15;L5;Godišnji odmor;;2025-07-15
+15.07.2025.;Utorak;Zubić Petra;Marketing;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Zrnić Aleksandar;Marketing;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Pintarić Ivan;Call Centar;Godišnji odmor;29.0;7;2025;2025-07-15;L5;Godišnji odmor;;2025-07-15
+15.07.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Milković Mario;RVP;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+15.07.2025.;Utorak;Miholić Galic Matija;Project management;Špansko;29.0;7;2025;2025-07-15;L1;Špansko;;2025-07-15
+14.07.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;29.0;7;2025;2025-07-14;L2;Vukovina;;2025-07-14
+14.07.2025.;Ponedjeljak;Milković Mario;RVP;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Ros Antonio;Marketing;Godišnji odmor;29.0;7;2025;2025-07-14;L5;Godišnji odmor;;2025-07-14
+14.07.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Roso Marko;Call Centar;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Vedran Čorak;Project management;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Zrnić Aleksandar;Marketing;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Zidar Ivan;RVP;Godišnji odmor;29.0;7;2025;2025-07-14;L5;Godišnji odmor;;2025-07-14
+14.07.2025.;Ponedjeljak;Ramić Bernard;QS;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Rad od kuće;29.0;7;2025;2025-07-14;L7;Rad od kuće;;2025-07-14
+14.07.2025.;Ponedjeljak;Miletić Bojan;Call Centar;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;GO;29.0;7;2025;2025-07-14;;GO;;2025-07-14
+14.07.2025.;Ponedjeljak;Lalić Marko;Project management;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;Devčić Dino;Fleet;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.7.2025;;;Marketing;Godišnji odmor;29.0;7;2025;2025-07-14;;;Ros Antonio;
+14.07.2025.;Ponedjeljak;Miholić Galic Matija;Project management;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+14.07.2025.;Ponedjeljak;MiRad od kućelić Galic Matija;Project management;Špansko;29.0;7;2025;2025-07-14;L1;Špansko;;2025-07-14
+13.07.2025.;Nedjelja;Leskovar Jelena;Call Centar;Špansko;28.0;7;2025;2025-07-13;L1;Špansko;;2025-07-13
+13.7.2025;;;Call Centar;Špansko;28.0;7;2025;2025-07-13;;;Leskovar Jelena;
+12.07.2025.;Subota;Leskovar Jelena;Call Centar;Špansko;28.0;7;2025;2025-07-12;L1;Špansko;;2025-07-12
+12.7.2025;;;Call Centar;Špansko;28.0;7;2025;2025-07-12;;;Leskovar Jelena;
+11.07.2025.;Petak;Pleša Patrik;;GO;28.0;7;2025;2025-07-11;;GO;;2025-07-11
+11.07.2025.;Petak;Ramić Bernard;QS;Rad od kuće;28.0;7;2025;2025-07-11;L7;Rad od kuće;;2025-07-11
+11.07.2025.;Petak;Zubić Petra;Marketing;Špansko;28.0;7;2025;2025-07-11;L1;Špansko;;2025-07-11
+11.07.2025.;Petak;Zoroje Branislav;Call Centar;GO;28.0;7;2025;2025-07-11;;GO;;2025-07-11
+11.07.2025.;Petak;Roso Marko;Call Centar;Špansko;28.0;7;2025;2025-07-11;L1;Špansko;;2025-07-11
+11.07.2025.;Petak;Zidar Ivan;RVP;;28.0;7;2025;2025-07-11;;;;2025-07-11
+11.07.2025.;Petak;Zrnić Aleksandar;Marketing;;28.0;7;2025;2025-07-11;;;;2025-07-11
+11.07.2025.;Petak;Ros Antonio;Marketing;Godišnji odmor;28.0;7;2025;2025-07-11;L5;Godišnji odmor;;2025-07-11
+11.07.2025.;Petak;Lalić Marko;Project management;Rad od kuće;28.0;7;2025;2025-07-11;L7;Rad od kuće;;2025-07-11
+11.07.2025.;Petak;Šomođi Ante;Call Centar;Špansko;28.0;7;2025;2025-07-11;L1;Špansko;;2025-07-11
+11.07.2025.;Petak;Habuš Hrvoje;Marketing;Rad od kuće;28.0;7;2025;2025-07-11;L7;Rad od kuće;;2025-07-11
+11.07.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;28.0;7;2025;2025-07-11;L1;Špansko;;2025-07-11
+11.07.2025.;Petak;Marin Pustak;Tehnički centar;Vukovina;28.0;7;2025;2025-07-11;L2;Vukovina;;2025-07-11
+11.07.2025.;Petak;Milković Mario;RVP;;28.0;7;2025;2025-07-11;;;;2025-07-11
+11.07.2025.;Petak;Pintarić Ivan;Call Centar;Rad od kuće;28.0;7;2025;2025-07-11;L7;Rad od kuće;;2025-07-11
+11.07.2025.;Petak;Vedran Čorak;Project management;Rad od kuće;28.0;7;2025;2025-07-11;L7;Rad od kuće;;2025-07-11
+11.07.2025.;Petak;Boc Marko;Project management;Špansko;28.0;7;2025;2025-07-11;L1;Špansko;;2025-07-11
+11.07.2025.;Petak;Devčić Dino;Fleet;Rad od kuće;28.0;7;2025;2025-07-11;L7;Rad od kuće;;2025-07-11
+11.07.2025.;Petak;Davor Hren;Tehnički centar;Vukovina;28.0;7;2025;2025-07-11;L2;Vukovina;;2025-07-11
+11.07.2025.;Petak;Boris Smuđ;Tehnički centar;HO;28.0;7;2025;2025-07-11;;HO;;2025-07-11
+11.07.2025.;Petak;Vuzem Nataša;Marketing;;28.0;7;2025;2025-07-11;;;;2025-07-11
+11.07.2025.;Petak;Dolores Pavlović;Tehnički centar;Vukovina;28.0;7;2025;2025-07-11;L2;Vukovina;;2025-07-11
+11.07.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;28.0;7;2025;2025-07-11;L2;Vukovina;;2025-07-11
+11.7.2025;;;Marketing;Godišnji odmor;28.0;7;2025;2025-07-11;;;Ros Antonio;
+10.07.2025.;Četvrtak;Habuš Hrvoje;Marketing;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;Vukovina;28.0;7;2025;2025-07-10;L2;Vukovina;;2025-07-10
+10.07.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Marin Pustak;Tehnički centar;Vukovina;28.0;7;2025;2025-07-10;L2;Vukovina;;2025-07-10
+10.07.2025.;Četvrtak;Milković Mario;RVP;Poslovnica;28.0;7;2025;2025-07-10;L3;Poslovnica;;2025-07-10
+10.07.2025.;Četvrtak;Roso Marko;Call Centar;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Boris Smuđ;Tehnički centar;Vukovina;28.0;7;2025;2025-07-10;L2;Vukovina;;2025-07-10
+10.07.2025.;Četvrtak;Zidar Ivan;RVP;Poslovnica;28.0;7;2025;2025-07-10;L3;Poslovnica;;2025-07-10
+10.07.2025.;Četvrtak;Davor Hren;Tehnički centar;Vukovina;28.0;7;2025;2025-07-10;L2;Vukovina;;2025-07-10
+10.07.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Rad od kuće;28.0;7;2025;2025-07-10;L7;Rad od kuće;;2025-07-10
+10.07.2025.;Četvrtak;Ros Antonio;Marketing;Godišnji odmor;28.0;7;2025;2025-07-10;L5;Godišnji odmor;;2025-07-10
+10.07.2025.;Četvrtak;Pleša Patrik;Call Centar;Rad od kuće;28.0;7;2025;2025-07-10;L7;Rad od kuće;;2025-07-10
+10.07.2025.;Četvrtak;Miletić Bojan;Call Centar;Rad od kuće;28.0;7;2025;2025-07-10;L7;Rad od kuće;;2025-07-10
+10.07.2025.;Četvrtak;Zrnić Aleksandar;Marketing;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Vedran Čorak;Project management;Vukovina;28.0;7;2025;2025-07-10;L2;Vukovina;;2025-07-10
+10.07.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Devčić Dino;Fleet;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Boc Marko;Project management;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.7.2025;;;;;28.0;7;2025;2025-07-10;;;Pleša Patrik;
+10.07.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Zoroje Branislav;Call Centar;GO;28.0;7;2025;2025-07-10;;GO;;2025-07-10
+10.07.2025.;Četvrtak;Lalić Marko;Project management;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Ramić Bernard;QS;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+10.07.2025.;Četvrtak;Miholić Galic Matija;Project management;Špansko;28.0;7;2025;2025-07-10;L1;Špansko;;2025-07-10
+09.07.2025.;Srijeda;Roso Marko;Call Centar;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Ramić Bernard;QS;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Pleša Patrik;;;28.0;7;2025;2025-07-09;;;;2025-07-09
+09.07.2025.;Srijeda;Zubić Petra;Marketing;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Davor Hren;Tehnički centar;Vukovina;28.0;7;2025;2025-07-09;L2;Vukovina;;2025-07-09
+09.07.2025.;Srijeda;Ros Antonio;Marketing;Godišnji odmor;28.0;7;2025;2025-07-09;L5;Godišnji odmor;;2025-07-09
+09.07.2025.;Srijeda;Boris Smuđ;Tehnički centar;Vukovina;28.0;7;2025;2025-07-09;L2;Vukovina;;2025-07-09
+09.07.2025.;Srijeda;Lalić Marko;Project management;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Boris Omerzo;Tehnički centar;Vukovina;28.0;7;2025;2025-07-09;L2;Vukovina;;2025-07-09
+09.07.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Habuš Hrvoje;Marketing;Vukovina;28.0;7;2025;2025-07-09;L2;Vukovina;;2025-07-09
+09.07.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Vedran Čorak;Project management;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Milković Mario;RVP;Poslovnica;28.0;7;2025;2025-07-09;L3;Poslovnica;;2025-07-09
+09.07.2025.;Srijeda;Marin Pustak;Tehnički centar;Vukovina;28.0;7;2025;2025-07-09;L2;Vukovina;;2025-07-09
+09.07.2025.;Srijeda;Boc Marko;Project management;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Vukovina;28.0;7;2025;2025-07-09;L2;Vukovina;;2025-07-09
+09.07.2025.;Srijeda;Zoroje Branislav;Call Centar;Godišnji odmor;28.0;7;2025;2025-07-09;L5;Godišnji odmor;;2025-07-09
+09.07.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Devčić Dino;Fleet;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Miletić Bojan;Call Centar;;28.0;7;2025;2025-07-09;;;;2025-07-09
+09.07.2025.;Srijeda;Zidar Ivan;RVP;Poslovnica;28.0;7;2025;2025-07-09;L3;Poslovnica;;2025-07-09
+9.7.2025;;;Call Centar;Špansko;28.0;7;2025;2025-07-09;;;Leskovar Jelena;
+09.07.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Zrnić Aleksandar;Marketing;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+09.07.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;28.0;7;2025;2025-07-09;L1;Špansko;;2025-07-09
+08.07.2025.;Utorak;Milković Mario;RVP;Poslovnica;28.0;7;2025;2025-07-08;L3;Poslovnica;;2025-07-08
+08.07.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Zrnić Aleksandar;Marketing;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;28.0;7;2025;2025-07-08;L2;Vukovina;;2025-07-08
+08.07.2025.;Utorak;Boc Marko;Project management;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Lalić Marko;Project management;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Zubić Petra;Marketing;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Zoroje Branislav;Call Centar;Godišnji odmor;28.0;7;2025;2025-07-08;L5;Godišnji odmor;;2025-07-08
+8.7.2025;;;Tehnički centar;Vukovina;28.0;7;2025;2025-07-08;;;Boris Smuđ;
+08.07.2025.;Utorak;Ramić Bernard;QS;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Devčić Dino;Fleet;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Dolores Pavlović;Tehnički centar;Vukovina;28.0;7;2025;2025-07-08;L2;Vukovina;;2025-07-08
+08.07.2025.;Utorak;Pintarić Ivan;Call Centar;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Roso Marko;Call Centar;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Davor Hren;Tehnički centar;Vukovina;28.0;7;2025;2025-07-08;L2;Vukovina;;2025-07-08
+08.07.2025.;Utorak;Pleša Patrik;Call Centar;;28.0;7;2025;2025-07-08;;;;2025-07-08
+08.07.2025.;Utorak;Marin Pustak;Tehnički centar;Vukovina;28.0;7;2025;2025-07-08;L2;Vukovina;;2025-07-08
+08.07.2025.;Utorak;Miholić Galic Matija;Project management;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Boris Smuđ;Tehnički centar;Vukovina;28.0;7;2025;2025-07-08;L2;Vukovina;;2025-07-08
+08.07.2025.;Utorak;Ros Antonio;Marketing;GO;28.0;7;2025;2025-07-08;;GO;;2025-07-08
+08.07.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;28.0;7;2025;2025-07-08;L2;Vukovina;;2025-07-08
+08.07.2025.;Utorak;Vedran Čorak;Project management;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Miletić Bojan;Call Centar;;28.0;7;2025;2025-07-08;;;;2025-07-08
+08.07.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;28.0;7;2025;2025-07-08;L1;Špansko;;2025-07-08
+08.07.2025.;Utorak;Zidar Ivan;RVP;Poslovnica;28.0;7;2025;2025-07-08;L3;Poslovnica;;2025-07-08
+07.07.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Zubić Petra;Marketing;;28.0;7;2025;2025-07-07;;;;2025-07-07
+07.07.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;HO;28.0;7;2025;2025-07-07;;HO;;2025-07-07
+07.07.2025.;Ponedjeljak;Zidar Ivan;RVP;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Devčić Dino;Fleet;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Ramić Bernard;QS;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+7.7.2025;;;Project management;Špansko;28.0;7;2025;2025-07-07;;;MiRad od kućelić Galic Matija;
+07.07.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Zrnić Aleksandar;Marketing;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;Vukovina;28.0;7;2025;2025-07-07;L2;Vukovina;;2025-07-07
+07.07.2025.;Ponedjeljak;Miletić Bojan;Call Centar;;28.0;7;2025;2025-07-07;;;;2025-07-07
+07.07.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;28.0;7;2025;2025-07-07;L2;Vukovina;;2025-07-07
+07.07.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;28.0;7;2025;2025-07-07;L2;Vukovina;;2025-07-07
+07.07.2025.;Ponedjeljak;Ros Antonio;Marketing;;28.0;7;2025;2025-07-07;;;;2025-07-07
+07.07.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;Vukovina;28.0;7;2025;2025-07-07;L2;Vukovina;;2025-07-07
+07.07.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;GO;28.0;7;2025;2025-07-07;;GO;;2025-07-07
+07.07.2025.;Ponedjeljak;Vedran Čorak;Project management;Vukovina;28.0;7;2025;2025-07-07;L2;Vukovina;;2025-07-07
+07.07.2025.;Ponedjeljak;Lalić Marko;Project management;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;GO;28.0;7;2025;2025-07-07;;GO;;2025-07-07
+07.07.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Pleša Patrik;Call Centar;;28.0;7;2025;2025-07-07;;;;2025-07-07
+07.07.2025.;Ponedjeljak;Milković Mario;RVP;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Davor Hren;Tehnički centar;Vukovina;28.0;7;2025;2025-07-07;L2;Vukovina;;2025-07-07
+07.07.2025.;Ponedjeljak;Roso Marko;Call Centar;;28.0;7;2025;2025-07-07;;;;2025-07-07
+07.07.2025.;Ponedjeljak;MiRad od kućelić Galic Matija;Project management;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+07.07.2025.;Ponedjeljak;Miholić Galic Matija;Project management;Špansko;28.0;7;2025;2025-07-07;L1;Špansko;;2025-07-07
+06.07.2025.;Nedjelja;Lalić Marko;Project management;Špansko;27.0;7;2025;2025-07-06;L1;Špansko;;2025-07-06
+6.7.2025;;;Project management;Špansko;28.0;7;2025;2025-07-06;;;Lalić Marko;
+04.07.2025.;Petak;Šomođi Ante;Call Centar;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+04.07.2025.;Petak;Zidar Ivan;RVP;Poslovnica;27.0;7;2025;2025-07-04;L3;Poslovnica;;2025-07-04
+04.07.2025.;Petak;Boc Marko;Project management;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+04.07.2025.;Petak;Fogec Davor;RVP;;27.0;7;2025;2025-07-04;;;;2025-07-04
+04.07.2025.;Petak;Miholić Galic Matija;Project management;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+04.07.2025.;Petak;Pintarić Ivan;Call Centar;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+04.07.2025.;Petak;Zoroje Branislav;Call Centar;GO;27.0;7;2025;2025-07-04;;GO;;2025-07-04
+04.07.2025.;Petak;Vuzem Nataša;Marketing;Rad od kuće;27.0;7;2025;2025-07-04;L7;Rad od kuće;;2025-07-04
+04.07.2025.;Petak;Zubić Petra;Marketing;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+04.07.2025.;Petak;Vasić Ilija;Call Centar;Rad od kuće;27.0;7;2025;2025-07-04;L7;Rad od kuće;;2025-07-04
+04.07.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+04.07.2025.;Petak;Štrk Sanjin;Call Centar;Rad od kuće;27.0;7;2025;2025-07-04;L7;Rad od kuće;;2025-07-04
+04.07.2025.;Petak;Alitović Bruno;Call Centar;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+04.07.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;27.0;7;2025;2025-07-04;L2;Vukovina;;2025-07-04
+04.07.2025.;Petak;Davor Hren;Tehnički centar;Vukovina;27.0;7;2025;2025-07-04;L2;Vukovina;;2025-07-04
+04.07.2025.;Petak;Boris Smuđ;Tehnički centar;Rad od kuće;27.0;7;2025;2025-07-04;L7;Rad od kuće;;2025-07-04
+04.07.2025.;Petak;Marin Pustak;Tehnički centar;Vukovina;27.0;7;2025;2025-07-04;L2;Vukovina;;2025-07-04
+04.07.2025.;Petak;Ros Antonio;Marketing;;27.0;7;2025;2025-07-04;;;;2025-07-04
+04.07.2025.;Petak;Milković Mario;RVP;;27.0;7;2025;2025-07-04;;;;2025-07-04
+04.07.2025.;Petak;Zrnić Aleksandar;Marketing;;27.0;7;2025;2025-07-04;;;;2025-07-04
+04.07.2025.;Petak;Roso Marko;Call Centar;;27.0;7;2025;2025-07-04;;;;2025-07-04
+04.07.2025.;Petak;Prolić Zoran;RVP;;27.0;7;2025;2025-07-04;;;;2025-07-04
+04.07.2025.;Petak;Habuš Hrvoje;Marketing;;27.0;7;2025;2025-07-04;;;;2025-07-04
+04.07.2025.;Petak;Miletić Bojan;Call Centar;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+4.7.2025;;;Call Centar;Špansko;27.0;7;2025;2025-07-04;;;Šomođi Ante ;
+04.07.2025.;Petak;Dolores Pavlović;Tehnički centar;Vukovina;27.0;7;2025;2025-07-04;L2;Vukovina;;2025-07-04
+04.07.2025.;Petak;MiRad od kućelić Galic Matija;Project management;Špansko;27.0;7;2025;2025-07-04;L1;Špansko;;2025-07-04
+03.07.2025.;Četvrtak;Zoroje Branislav;Call Centar;Godišnji odmor;27.0;7;2025;2025-07-03;L5;Godišnji odmor;;2025-07-03
+03.07.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;HO;27.0;7;2025;2025-07-03;;HO;;2025-07-03
+03.07.2025.;Četvrtak;Miletić Bojan;Call Centar;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Habuš Hrvoje;Marketing;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Zrnić Aleksandar;Marketing;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Fogec Davor;RVP;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Roso Marko;Call Centar;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Boc Marko;Project management;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Zidar Ivan;RVP;Poslovnica;27.0;7;2025;2025-07-03;L3;Poslovnica;;2025-07-03
+03.07.2025.;Četvrtak;Ros Antonio;Marketing;Vukovina;27.0;7;2025;2025-07-03;L2;Vukovina;;2025-07-03
+03.07.2025.;Četvrtak;Alitović Bruno;Call Centar;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Milković Mario;RVP;Poslovnica;27.0;7;2025;2025-07-03;L3;Poslovnica;;2025-07-03
+03.07.2025.;Četvrtak;Boris Smuđ;Tehnički centar;Vukovina;27.0;7;2025;2025-07-03;L2;Vukovina;;2025-07-03
+03.07.2025.;Četvrtak;Davor Hren;Tehnički centar;Vukovina;27.0;7;2025;2025-07-03;L2;Vukovina;;2025-07-03
+03.07.2025.;Četvrtak;Štrk Sanjin;Call Centar;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Vasić Ilija;Call Centar;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Vukovina;27.0;7;2025;2025-07-03;L2;Vukovina;;2025-07-03
+03.07.2025.;Četvrtak;Marin Pustak;Tehnički centar;Vukovina;27.0;7;2025;2025-07-03;L2;Vukovina;;2025-07-03
+03.07.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;27.0;7;2025;2025-07-03;L1;Špansko;;2025-07-03
+03.07.2025.;Četvrtak;Prolić Zoran;RVP;Poslovnica;27.0;7;2025;2025-07-03;L3;Poslovnica;;2025-07-03
+3.7.2025;;;RVP;Poslovnica;27.0;7;2025;2025-07-03;;;Milković Mario;
+02.07.2025.;Srijeda;Boris Omerzo;Tehnički centar;HO;27.0;7;2025;2025-07-02;;HO;;2025-07-02
+02.07.2025.;Srijeda;Davor Hren;Tehnički centar;Vukovina;27.0;7;2025;2025-07-02;L2;Vukovina;;2025-07-02
+02.07.2025.;Srijeda;Štrk Sanjin;Call Centar;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Vasić Ilija;Call Centar;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Zidar Ivan;RVP;Poslovnica;27.0;7;2025;2025-07-02;L3;Poslovnica;;2025-07-02
+02.07.2025.;Srijeda;Zrnić Aleksandar;Marketing;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Prolić Zoran;RVP;Poslovnica;27.0;7;2025;2025-07-02;L3;Poslovnica;;2025-07-02
+02.07.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Miletić Bojan;Call Centar;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Alitović Bruno;Call Centar;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Marin Pustak;Tehnički centar;Vukovina;27.0;7;2025;2025-07-02;L2;Vukovina;;2025-07-02
+02.07.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Boc Marko;Project management;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+2.7.2025;;;Call Centar;Godišnji odmor;27.0;7;2025;2025-07-02;;;Zoroje Branislav;
+02.07.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Roso Marko;Call Centar;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Boris Smuđ;Tehnički centar;Vukovina;27.0;7;2025;2025-07-02;L2;Vukovina;;2025-07-02
+02.07.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Vukovina;27.0;7;2025;2025-07-02;L2;Vukovina;;2025-07-02
+02.07.2025.;Srijeda;Milković Mario;RVP;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Zubić Petra;Marketing;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Ros Antonio;Marketing;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+02.07.2025.;Srijeda;Zoroje Branislav;Call Centar;GO;27.0;7;2025;2025-07-02;;GO;;2025-07-02
+02.07.2025.;Srijeda;Fogec Davor;RVP;Poslovnica;27.0;7;2025;2025-07-02;L3;Poslovnica;;2025-07-02
+02.07.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;27.0;7;2025;2025-07-02;L1;Špansko;;2025-07-02
+01.07.2025.;Utorak;Roso Marko;Call Centar;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Zubić Petra;Marketing;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Ros Antonio;Marketing;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Zidar Ivan;RVP;Poslovnica;27.0;7;2025;2025-07-01;L3;Poslovnica;;2025-07-01
+01.07.2025.;Utorak;Marin Pustak;Tehnički centar;Vukovina;27.0;7;2025;2025-07-01;L2;Vukovina;;2025-07-01
+01.07.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Zoroje Branislav;Call Centar;GO;27.0;7;2025;2025-07-01;;GO;;2025-07-01
+1.7.2025;;;Call Centar;Špansko;27.0;7;2025;2025-07-01;;;Pintarić Ivan;
+01.07.2025.;Utorak;Dolores Pavlović;Tehnički centar;Vukovina;27.0;7;2025;2025-07-01;L2;Vukovina;;2025-07-01
+01.07.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;27.0;7;2025;2025-07-01;L2;Vukovina;;2025-07-01
+01.07.2025.;Utorak;Miletić Bojan;Call Centar;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Alitović Bruno;Call Centar;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Milković Mario;RVP;Poslovnica;27.0;7;2025;2025-07-01;L3;Poslovnica;;2025-07-01
+01.07.2025.;Utorak;Boc Marko;Project management;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Vasić Ilija;Call Centar;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Boris Smuđ;Tehnički centar;Vukovina;27.0;7;2025;2025-07-01;L2;Vukovina;;2025-07-01
+01.07.2025.;Utorak;Štrk Sanjin;Call Centar;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Davor Hren;Tehnički centar;Vukovina;27.0;7;2025;2025-07-01;L2;Vukovina;;2025-07-01
+01.07.2025.;Utorak;Zrnić Aleksandar;Marketing;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Fogec Davor;RVP;Poslovnica;27.0;7;2025;2025-07-01;L3;Poslovnica;;2025-07-01
+01.07.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;27.0;7;2025;2025-07-01;L2;Vukovina;;2025-07-01
+01.07.2025.;Utorak;Pintarić Ivan;Call Centar;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+01.07.2025.;Utorak;Prolić Zoran;RVP;Poslovnica;27.0;7;2025;2025-07-01;L3;Poslovnica;;2025-07-01
+01.07.2025.;Utorak;Miholić Galic Matija;Project management;Špansko;27.0;7;2025;2025-07-01;L1;Špansko;;2025-07-01
+30.06.2025.;Ponedjeljak;Vedran Čorak;Project management;Godišnji odmor;27.0;6;2025;2025-06-30;L5;Godišnji odmor;;2025-06-30
+30.06.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;27.0;6;2025;2025-06-30;L2;Vukovina;;2025-06-30
+30.06.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;27.0;6;2025;2025-06-30;L2;Vukovina;;2025-06-30
+30.06.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Rad od kuće;27.0;6;2025;2025-06-30;L7;Rad od kuće;;2025-06-30
+30.06.2025.;Ponedjeljak;Alitović Bruno;Call Centar;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Vasić Ilija;Call Centar;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Davor Hren;Tehnički centar;Vukovina;27.0;6;2025;2025-06-30;L2;Vukovina;;2025-06-30
+30.06.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.6.2025;;;Marketing;Špansko;27.0;6;2025;2025-06-30;;;Habuš Hrvoje;
+30.06.2025.;Ponedjeljak;Zrnić Aleksandar;Marketing;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Fogec Davor;RVP;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;27.0;6;2025;2025-06-30;L2;Vukovina;;2025-06-30
+30.06.2025.;Ponedjeljak;Miholić Galic Matija;Project management;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;HO;27.0;6;2025;2025-06-30;;HO;;2025-06-30
+30.06.2025.;Ponedjeljak;Prolić Zoran;RVP;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Milković Mario;RVP;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;Vukovina;27.0;6;2025;2025-06-30;L2;Vukovina;;2025-06-30
+30.06.2025.;Ponedjeljak;Roso Marko;Call Centar;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Štrk Sanjin;Call Centar;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Godišnji odmor;27.0;6;2025;2025-06-30;L5;Godišnji odmor;;2025-06-30
+30.06.2025.;Ponedjeljak;Zidar Ivan;RVP;GO;27.0;6;2025;2025-06-30;;GO;;2025-06-30
+30.06.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+30.06.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;Vukovina;27.0;6;2025;2025-06-30;L2;Vukovina;;2025-06-30
+30.06.2025.;Ponedjeljak;MiRad od kućelić Galic Matija;Project management;Špansko;27.0;6;2025;2025-06-30;L1;Špansko;;2025-06-30
+27.06.2025.;Petak;Boc Marko;Project management;Špansko;26.0;6;2025;2025-06-27;L1;Špansko;;2025-06-27
+27.06.2025.;Petak;Šomođi Ante;Call Centar;Špansko;26.0;6;2025;2025-06-27;L1;Špansko;;2025-06-27
+27.06.2025.;Petak;Marin Pustak;Tehnički centar;Vukovina;26.0;6;2025;2025-06-27;L2;Vukovina;;2025-06-27
+27.06.2025.;Petak;Boris Smuđ;Tehnički centar;Vukovina;26.0;6;2025;2025-06-27;L2;Vukovina;;2025-06-27
+27.06.2025.;Petak;Davor Hren;Tehnički centar;Godišnji odmor;26.0;6;2025;2025-06-27;L5;Godišnji odmor;;2025-06-27
+27.06.2025.;Petak;Dolores Pavlović;Tehnički centar;Vukovina;26.0;6;2025;2025-06-27;L2;Vukovina;;2025-06-27
+27.06.2025.;Petak;Boris Omerzo;Tehnički centar;Rad od kuće;26.0;6;2025;2025-06-27;L7;Rad od kuće;;2025-06-27
+27.06.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;26.0;6;2025;2025-06-27;L1;Špansko;;2025-06-27
+27.06.2025.;Petak;Ros Antonio;Marketing;Godišnji odmor;26.0;6;2025;2025-06-27;L5;Godišnji odmor;;2025-06-27
+27.06.2025.;Petak;Habuš Hrvoje;Marketing;;26.0;6;2025;2025-06-27;;;;2025-06-27
+27.06.2025.;Petak;Vuzem Nataša;Marketing;Rad od kuće;26.0;6;2025;2025-06-27;L7;Rad od kuće;;2025-06-27
+27.06.2025.;Petak;Zubić Petra;Marketing;Špansko;26.0;6;2025;2025-06-27;L1;Špansko;;2025-06-27
+27.06.2025.;Petak;Vedran Čorak;Project management;Godišnji odmor;26.0;6;2025;2025-06-27;L5;Godišnji odmor;;2025-06-27
+27.06.2025.;Petak;Vasić Ilija;Call Centar;;26.0;6;2025;2025-06-27;;;;2025-06-27
+27.06.2025.;Petak;Štrk Sanjin;Call Centar;;26.0;6;2025;2025-06-27;;;;2025-06-27
+27.06.2025.;Petak;Milković Mario;RVP;Godišnji odmor;26.0;6;2025;2025-06-27;L5;Godišnji odmor;;2025-06-27
+27.06.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;26.0;6;2025;2025-06-27;L1;Špansko;;2025-06-27
+27.06.2025.;Petak;Zrnić Aleksandar;Marketing;;26.0;6;2025;2025-06-27;;;;2025-06-27
+27.06.2025.;Petak;Prolić Zoran;RVP;;26.0;6;2025;2025-06-27;;;;2025-06-27
+27.06.2025.;Petak;Pleša Patrik;Call Centar;GO;26.0;6;2025;2025-06-27;;GO;;2025-06-27
+27.06.2025.;Petak;Alitović Bruno;Call Centar;GO;26.0;6;2025;2025-06-27;;GO;;2025-06-27
+27.06.2025.;Petak;Roso Marko;Call Centar;Špansko;26.0;6;2025;2025-06-27;L1;Špansko;;2025-06-27
+27.06.2025.;Petak;Zidar Ivan;RVP;GO;26.0;6;2025;2025-06-27;;GO;;2025-06-27
+27.06.2025.;Petak;Miholić Galic Matija;Project management;GO;26.0;6;2025;2025-06-27;;GO;;2025-06-27
+27.6.2025;;;RVP;Godišnji odmor;26.0;6;2025;2025-06-27;;;Milković Mario;
+27.06.2025.;Petak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;26.0;6;2025;2025-06-27;L5;Godišnji odmor;;2025-06-27
+26.06.2025.;Četvrtak;Prolić Zoran;RVP;Poslovnica;26.0;6;2025;2025-06-26;L3;Poslovnica;;2025-06-26
+26.06.2025.;Četvrtak;Zrnić Aleksandar;Marketing;Vukovina;26.0;6;2025;2025-06-26;L2;Vukovina;;2025-06-26
+26.06.2025.;Četvrtak;Alitović Bruno;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Ros Antonio;Marketing;Godišnji odmor;26.0;6;2025;2025-06-26;L5;Godišnji odmor;;2025-06-26
+26.06.2025.;Četvrtak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;26.0;6;2025;2025-06-26;L5;Godišnji odmor;;2025-06-26
+26.06.2025.;Četvrtak;Roso Marko;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Boris Smuđ;Tehnički centar;Vukovina;26.0;6;2025;2025-06-26;L2;Vukovina;;2025-06-26
+26.06.2025.;Četvrtak;Marin Pustak;Tehnički centar;Vukovina;26.0;6;2025;2025-06-26;L2;Vukovina;;2025-06-26
+26.06.2025.;Četvrtak;Zidar Ivan;RVP;GO;26.0;6;2025;2025-06-26;;GO;;2025-06-26
+26.06.2025.;Četvrtak;Vasić Ilija;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Pleša Patrik;Call Centar;Godišnji odmor;26.0;6;2025;2025-06-26;L5;Godišnji odmor;;2025-06-26
+26.06.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Štrk Sanjin;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;Vukovina;26.0;6;2025;2025-06-26;L2;Vukovina;;2025-06-26
+26.06.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Habuš Hrvoje;Marketing;Vukovina;26.0;6;2025;2025-06-26;L2;Vukovina;;2025-06-26
+26.06.2025.;Četvrtak;Zubić Petra;Marketing;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Vedran Čorak;Project management;Vukovina;26.0;6;2025;2025-06-26;L2;Vukovina;;2025-06-26
+26.06.2025.;Četvrtak;Boris Omerzo;Tehnički centar;Vukovina;26.0;6;2025;2025-06-26;L2;Vukovina;;2025-06-26
+26.6.2025;;;Project management;Vukovina;26.0;6;2025;2025-06-26;;;Vedran Čorak;
+26.06.2025.;Četvrtak;Zoroje Branislav;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Šomođi Ante;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+26.06.2025.;Četvrtak;Miholić Galic Matija;Project management;GO;26.0;6;2025;2025-06-26;;GO;;2025-06-26
+26.06.2025.;Četvrtak;Milković Mario;RVP;GO;26.0;6;2025;2025-06-26;;GO;;2025-06-26
+26.06.2025.;Četvrtak;Davor Hren;Tehnički centar;GO;26.0;6;2025;2025-06-26;;GO;;2025-06-26
+26.06.2025.;Četvrtak;Miletić Bojan;Call Centar;Špansko;26.0;6;2025;2025-06-26;L1;Špansko;;2025-06-26
+25.06.2025.;Srijeda;Ros Antonio;Marketing;GO;26.0;6;2025;2025-06-25;;GO;;2025-06-25
+25.06.2025.;Srijeda;Boris Omerzo;Tehnički centar;Vukovina;26.0;6;2025;2025-06-25;L2;Vukovina;;2025-06-25
+25.06.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Zrnić Aleksandar;Marketing;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Boris Smuđ;Tehnički centar;Vukovina;26.0;6;2025;2025-06-25;L2;Vukovina;;2025-06-25
+25.06.2025.;Srijeda;Miholić Galic Matija;Project management;GO;26.0;6;2025;2025-06-25;;GO;;2025-06-25
+25.6.2025;;;Marketing;Godišnji odmor;26.0;6;2025;2025-06-25;;;Ros Antonio;
+25.06.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Marin Pustak;Tehnički centar;Vukovina;26.0;6;2025;2025-06-25;L2;Vukovina;;2025-06-25
+25.06.2025.;Srijeda;Zubić Petra;Marketing;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Zidar Ivan;RVP;GO;26.0;6;2025;2025-06-25;;GO;;2025-06-25
+25.06.2025.;Srijeda;Vasić Ilija;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Fogec Davor;RVP;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Vedran Čorak;Project management;Vukovina;26.0;6;2025;2025-06-25;L2;Vukovina;;2025-06-25
+25.06.2025.;Srijeda;Alitović Bruno;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Pleša Patrik;Call Centar;GO;26.0;6;2025;2025-06-25;;GO;;2025-06-25
+25.06.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Miletić Bojan;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Štrk Sanjin;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Milković Mario;RVP;GO;26.0;6;2025;2025-06-25;;GO;;2025-06-25
+25.06.2025.;Srijeda;Roso Marko;Call Centar;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Prolić Zoran;RVP;Poslovnica;26.0;6;2025;2025-06-25;L3;Poslovnica;;2025-06-25
+25.06.2025.;Srijeda;Boc Marko;Project management;Špansko;26.0;6;2025;2025-06-25;L1;Špansko;;2025-06-25
+25.06.2025.;Srijeda;Davor Hren;Tehnički centar;GO;26.0;6;2025;2025-06-25;;GO;;2025-06-25
+25.06.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Vukovina;26.0;6;2025;2025-06-25;L2;Vukovina;;2025-06-25
+25.06.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;26.0;6;2025;2025-06-25;L5;Godišnji odmor;;2025-06-25
+24.06.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;26.0;6;2025;2025-06-24;L2;Vukovina;;2025-06-24
+24.06.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;26.0;6;2025;2025-06-24;L2;Vukovina;;2025-06-24
+24.06.2025.;Utorak;Miletić Bojan;Call Centar;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Dolores Pavlović;Tehnički centar;Vukovina;26.0;6;2025;2025-06-24;L2;Vukovina;;2025-06-24
+24.06.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Pintarić Ivan;Call Centar;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Pleša Patrik;Call Centar;GO;26.0;6;2025;2025-06-24;;GO;;2025-06-24
+24.06.2025.;Utorak;Zubić Petra;Marketing;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Boris Smuđ;Tehnički centar;Vukovina;26.0;6;2025;2025-06-24;L2;Vukovina;;2025-06-24
+24.06.2025.;Utorak;Štrk Sanjin;Call Centar;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Vedran Čorak;Project management;Vukovina;26.0;6;2025;2025-06-24;L2;Vukovina;;2025-06-24
+24.06.2025.;Utorak;Alitović Bruno;Call Centar;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Ros Antonio;Marketing;GO;26.0;6;2025;2025-06-24;;GO;;2025-06-24
+24.06.2025.;Utorak;Davor Hren;Tehnički centar;GO;26.0;6;2025;2025-06-24;;GO;;2025-06-24
+24.06.2025.;Utorak;Prolić Zoran;RVP;Poslovnica;26.0;6;2025;2025-06-24;L3;Poslovnica;;2025-06-24
+24.06.2025.;Utorak;Marin Pustak;Tehnički centar;Vukovina;26.0;6;2025;2025-06-24;L2;Vukovina;;2025-06-24
+24.06.2025.;Utorak;Zrnić Aleksandar;Marketing;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Milković Mario;RVP;GO;26.0;6;2025;2025-06-24;;GO;;2025-06-24
+24.06.2025.;Utorak;Zidar Ivan;RVP;GO;26.0;6;2025;2025-06-24;;GO;;2025-06-24
+24.06.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Vasić Ilija;Call Centar;Špansko;26.0;6;2025;2025-06-24;L1;Špansko;;2025-06-24
+24.06.2025.;Utorak;Roso Marko;Call Centar;GO;26.0;6;2025;2025-06-24;;GO;;2025-06-24
+24.06.2025.;Utorak;Fogec Davor;RVP;Poslovnica;26.0;6;2025;2025-06-24;L3;Poslovnica;;2025-06-24
+24.6.2025;;;Marketing;Špansko;26.0;6;2025;2025-06-24;;;Zubić Petra;
+23.06.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;Vukovina;26.0;6;2025;2025-06-23;L2;Vukovina;;2025-06-23
+23.06.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;;26.0;6;2025;2025-06-23;;;;2025-06-23
+23.6.2025;;;Call Centar;Špansko;26.0;6;2025;2025-06-23;;;Štrk Sanjin;
+23.06.2025.;Ponedjeljak;Ros Antonio;Marketing;GO;26.0;6;2025;2025-06-23;;GO;;2025-06-23
+23.06.2025.;Ponedjeljak;Fogec Davor;RVP;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Davor Hren;Tehnički centar;GO;26.0;6;2025;2025-06-23;;GO;;2025-06-23
+23.06.2025.;Ponedjeljak;Zidar Ivan;RVP;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Štrk Sanjin;Call Centar;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Vedran Čorak;Project management;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Milković Mario;RVP;Godišnji odmor;26.0;6;2025;2025-06-23;L5;Godišnji odmor;;2025-06-23
+23.06.2025.;Ponedjeljak;Boc Marko;Project management;Poslovni put;26.0;6;2025;2025-06-23;L4;Poslovni put;;2025-06-23
+23.06.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;26.0;6;2025;2025-06-23;L2;Vukovina;;2025-06-23
+23.06.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;Vukovina;26.0;6;2025;2025-06-23;L2;Vukovina;;2025-06-23
+23.06.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;Godišnji odmor;26.0;6;2025;2025-06-23;L5;Godišnji odmor;;2025-06-23
+23.06.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Rad od kuće;26.0;6;2025;2025-06-23;L7;Rad od kuće;;2025-06-23
+23.06.2025.;Ponedjeljak;Miletić Bojan;Call Centar;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Zrnić Aleksandar;Marketing;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Prolić Zoran;RVP;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Alitović Bruno;Call Centar;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Pleša Patrik;Call Centar;Godišnji odmor;26.0;6;2025;2025-06-23;L5;Godišnji odmor;;2025-06-23
+23.06.2025.;Ponedjeljak;Roso Marko;Call Centar;Godišnji odmor;26.0;6;2025;2025-06-23;L5;Godišnji odmor;;2025-06-23
+23.06.2025.;Ponedjeljak;MiRad od kućelić Galic Matija;Project management;Poslovni put;26.0;6;2025;2025-06-23;L4;Poslovni put;;2025-06-23
+23.06.2025.;Ponedjeljak;Vasić Ilija;Call Centar;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;26.0;6;2025;2025-06-23;L1;Špansko;;2025-06-23
+23.06.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;26.0;6;2025;2025-06-23;L2;Vukovina;;2025-06-23
+23.06.2025.;Ponedjeljak;Miholić Galic Matija;Project management;Poslovni put;26.0;6;2025;2025-06-23;L4;Poslovni put;;2025-06-23
+20.06.2025.;Petak;Davor Hren;Tehnički centar;Godišnji odmor;25.0;6;2025;2025-06-20;L5;Godišnji odmor;;2025-06-20
+20.06.2025.;Petak;Vedran Čorak;Project management;Godišnji odmor;25.0;6;2025;2025-06-20;L5;Godišnji odmor;;2025-06-20
+20.06.2025.;Petak;Milković Mario;RVP;GO;25.0;6;2025;2025-06-20;;GO;;2025-06-20
+20.06.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;25.0;6;2025;2025-06-20;L1;Špansko;;2025-06-20
+20.06.2025.;Petak;Zrnić Aleksandar;Marketing;Godišnji odmor;25.0;6;2025;2025-06-20;L5;Godišnji odmor;;2025-06-20
+20.06.2025.;Petak;Boc Marko;Project management;Poslovni put;25.0;6;2025;2025-06-20;L4;Poslovni put;;2025-06-20
+20.06.2025.;Petak;Marin Pustak;Tehnički centar;Vukovina;25.0;6;2025;2025-06-20;L2;Vukovina;;2025-06-20
+20.06.2025.;Petak;MiRad od kućelić Galic Matija;Project management;Poslovni put;25.0;6;2025;2025-06-20;L4;Poslovni put;;2025-06-20
+20.06.2025.;Petak;Boris Smuđ;Tehnički centar;Rad od kuće;25.0;6;2025;2025-06-20;L7;Rad od kuće;;2025-06-20
+20.06.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;25.0;6;2025;2025-06-20;L1;Špansko;;2025-06-20
+20.06.2025.;Petak;Šomođi Ante;Call Centar;Špansko;25.0;6;2025;2025-06-20;L1;Špansko;;2025-06-20
+20.06.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;25.0;6;2025;2025-06-20;L2;Vukovina;;2025-06-20
+20.6.2025;;;Call Centar;Godišnji odmor;25.0;6;2025;2025-06-20;;;Pintarić Ivan;
+20.06.2025.;Petak;Pintarić Ivan;Call Centar;Godišnji odmor;25.0;6;2025;2025-06-20;L5;Godišnji odmor;;2025-06-20
+20.06.2025.;Petak;Ros Antonio;Marketing;Rad od kuće;25.0;6;2025;2025-06-20;L7;Rad od kuće;;2025-06-20
+20.06.2025.;Petak;Zubić Petra;Marketing;Rad od kuće;25.0;6;2025;2025-06-20;L7;Rad od kuće;;2025-06-20
+20.06.2025.;Petak;Zidar Ivan;RVP;;25.0;6;2025;2025-06-20;;;;2025-06-20
+20.06.2025.;Petak;Prolić Zoran;RVP;Špansko;25.0;6;2025;2025-06-20;L1;Špansko;;2025-06-20
+20.06.2025.;Petak;Vuzem Nataša;Marketing;;25.0;6;2025;2025-06-20;;;;2025-06-20
+20.06.2025.;Petak;Dolores Pavlović;Tehnički centar;GO;25.0;6;2025;2025-06-20;;GO;;2025-06-20
+20.06.2025.;Petak;Miholić Galic Matija;Project management;Poslovni put;25.0;6;2025;2025-06-20;L4;Poslovni put;;2025-06-20
+18.06.2025.;Srijeda;Ros Antonio;Marketing;Vukovina;25.0;6;2025;2025-06-18;L2;Vukovina;;2025-06-18
+18.06.2025.;Srijeda;Zidar Ivan;RVP;Poslovnica;25.0;6;2025;2025-06-18;L3;Poslovnica;;2025-06-18
+18.06.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Boc Marko;Project management;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Fogec Davor;RVP;Poslovnica;25.0;6;2025;2025-06-18;L3;Poslovnica;;2025-06-18
+18.06.2025.;Srijeda;Prolić Zoran;RVP;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;MiRad od kućelić Galic Matija;Project management;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Pleša Patrik;Call Centar;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Bolovanje;25.0;6;2025;2025-06-18;L6;Bolovanje;;2025-06-18
+18.06.2025.;Srijeda;Miholić Galic Matija;Project management;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Davor Hren;Tehnički centar;YCM 2025;25.0;6;2025;2025-06-18;;YCM 2025;;2025-06-18
+18.06.2025.;Srijeda;Boris Omerzo;Tehnički centar;Vukovina;25.0;6;2025;2025-06-18;L2;Vukovina;;2025-06-18
+18.06.2025.;Srijeda;Boris Smuđ;Tehnički centar;Vukovina;25.0;6;2025;2025-06-18;L2;Vukovina;;2025-06-18
+18.06.2025.;Srijeda;Marin Pustak;Tehnički centar;GO;25.0;6;2025;2025-06-18;;GO;;2025-06-18
+18.06.2025.;Srijeda;Pintarić Ivan;Call Centar;GO;25.0;6;2025;2025-06-18;;GO;;2025-06-18
+18.06.2025.;Srijeda;Zubić Petra;Marketing;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Vedran Čorak;Project management;Vukovina;25.0;6;2025;2025-06-18;L2;Vukovina;;2025-06-18
+18.6.2025;;;Marketing;Špansko;25.0;6;2025;2025-06-18;;;Vuzem Nataša;
+18.06.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Renata Žeželj;Call Centar;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Miletić Bojan;Call Centar;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Milković Mario;RVP;Poslovnica;25.0;6;2025;2025-06-18;L3;Poslovnica;;2025-06-18
+18.06.2025.;Srijeda;Šomođi Ante;Call Centar;Špansko;25.0;6;2025;2025-06-18;L1;Špansko;;2025-06-18
+18.06.2025.;Srijeda;Zrnić Aleksandar;Marketing;Godišnji odmor;25.0;6;2025;2025-06-18;L5;Godišnji odmor;;2025-06-18
+17.06.2025.;Utorak;Milković Mario;RVP;Poslovnica;25.0;6;2025;2025-06-17;L3;Poslovnica;;2025-06-17
+17.06.2025.;Utorak;Zidar Ivan;RVP;Poslovnica;25.0;6;2025;2025-06-17;L3;Poslovnica;;2025-06-17
+17.06.2025.;Utorak;Fogec Davor;RVP;Poslovnica;25.0;6;2025;2025-06-17;L3;Poslovnica;;2025-06-17
+17.06.2025.;Utorak;Marin Pustak;Tehnički centar;GO;25.0;6;2025;2025-06-17;;GO;;2025-06-17
+17.06.2025.;Utorak;Boris Smuđ;Tehnički centar;Vukovina;25.0;6;2025;2025-06-17;L2;Vukovina;;2025-06-17
+17.06.2025.;Utorak;Zrnić Aleksandar;Marketing;;25.0;6;2025;2025-06-17;;;;2025-06-17
+17.06.2025.;Utorak;Prolić Zoran;RVP;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Pleša Patrik;Call Centar;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Vedran Čorak;Project management;Vukovina;25.0;6;2025;2025-06-17;L2;Vukovina;;2025-06-17
+17.06.2025.;Utorak;Roso Marko;Call Centar;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Boc Marko;Project management;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Miletić Bojan;Call Centar;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Ros Antonio;Marketing;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;25.0;6;2025;2025-06-17;L2;Vukovina;;2025-06-17
+17.06.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Zubić Petra;Marketing;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Miholić Galic Matija;Project management;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.6.2025;;;Marketing;Špansko;25.0;6;2025;2025-06-17;;;Ros Antonio;
+17.06.2025.;Utorak;Zoroje Branislav;Call Centar;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Davor Hren;Tehnički centar;YCM 2025;25.0;6;2025;2025-06-17;;YCM 2025;;2025-06-17
+17.06.2025.;Utorak;Šomođi Ante;Call Centar;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Renata Žeželj;Call Centar;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Boris Omerzo;Tehnički centar;Vukovina;25.0;6;2025;2025-06-17;L2;Vukovina;;2025-06-17
+17.06.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;MiRad od kućelić Galic Matija;Project management;Špansko;25.0;6;2025;2025-06-17;L1;Špansko;;2025-06-17
+17.06.2025.;Utorak;Dolores Pavlović;Tehnički centar;Bolovanje;25.0;6;2025;2025-06-17;L6;Bolovanje;;2025-06-17
+16.6.2025;;;Call Centar;Špansko;25.0;6;2025;2025-06-16;;;Miletić Bojan;
+16.06.2025.;Ponedjeljak;Zidar Ivan;RVP;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Zrnić Aleksandar;Marketing;Vukovina;25.0;6;2025;2025-06-16;L2;Vukovina;;2025-06-16
+16.06.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;Bolovanje;25.0;6;2025;2025-06-16;L6;Bolovanje;;2025-06-16
+16.06.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;;25.0;6;2025;2025-06-16;;;;2025-06-16
+16.06.2025.;Ponedjeljak;Boris Smuđ;Tehnički centar;Vukovina;25.0;6;2025;2025-06-16;L2;Vukovina;;2025-06-16
+16.06.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;GO;25.0;6;2025;2025-06-16;;GO;;2025-06-16
+16.06.2025.;Ponedjeljak;Prolić Zoran;RVP;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Fogec Davor;RVP;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;;25.0;6;2025;2025-06-16;;;;2025-06-16
+16.06.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;25.0;6;2025;2025-06-16;L2;Vukovina;;2025-06-16
+16.06.2025.;Ponedjeljak;Miletić Bojan;Call Centar;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Šomođi Ante;Call Centar;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Vedran Čorak;Project management;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;25.0;6;2025;2025-06-16;L2;Vukovina;;2025-06-16
+16.06.2025.;Ponedjeljak;Zubić Petra;Marketing;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Milković Mario;RVP;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Pleša Patrik;Call Centar;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Renata Žeželj;Call Centar;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Davor Hren;Tehnički centar;YCM 2025;25.0;6;2025;2025-06-16;;YCM 2025;;2025-06-16
+16.06.2025.;Ponedjeljak;Boris Omerzo;Tehnički centar;Vukovina;25.0;6;2025;2025-06-16;L2;Vukovina;;2025-06-16
+16.06.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+16.06.2025.;Ponedjeljak;Roso Marko;Call Centar;Špansko;25.0;6;2025;2025-06-16;L1;Špansko;;2025-06-16
+13.6.2025;;;Marketing;Vukovina;24.0;6;2025;2025-06-13;;;Vuzem Nataša;
+13.06.2025.;Petak;Vuzem Nataša;Marketing;Vukovina;24.0;6;2025;2025-06-13;L2;Vukovina;;2025-06-13
