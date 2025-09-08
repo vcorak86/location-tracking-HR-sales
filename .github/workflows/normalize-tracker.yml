@@ -1,5 +1,5 @@
-# .github/workflows/normalize-tracker.yml
-name: Normalize Tracker
+
+name: Normalize & Parquet
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
       - "data/Tracker.csv"
       - "utils_tracker.py"
       - "scripts/normalize_tracker.py"
+      - "scripts/generate_parquet.py"
 
 permissions:
   contents: write
@@ -21,11 +22,15 @@ jobs:
           python-version: "3.11"
           cache: "pip"
       - name: Install deps
-        run: pip install pandas
-      - name: Normalize file
+        run: pip install pandas pyarrow
+      - name: Normalize CSV
         run: python scripts/normalize_tracker.py
+      - name: Build Parquet
+        run: python scripts/generate_parquet.py
       - name: Commit & push changes if any
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: normalize Tracker.csv (DESC + last-wins)"
-          file_pattern: data/Tracker.csv
+          commit_message: "chore: normalize Tracker.csv + build Parquet"
+          file_pattern: |
+            data/Tracker.csv
+            data/Tracker.parquet

@@ -1,26 +1,59 @@
-# .github/workflows/tests.yml
-name: Tests
+
+name: Tests & Lint & Schema
 
 on:
   push:
     branches: ["**"]
   pull_request:
     branches: ["**"]
+  schedule:
+    - cron: "17 3 * * *"
 
 jobs:
-  pytest:
+  lint:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    concurrency:
-      group: tests-${{ github.ref }}
-      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install tools
+        run: pip install ruff black mypy
+      - name: Ruff
+        run: ruff check .
+      - name: Black (check)
+        run: black --check .
+      - name: Mypy
+        run: mypy --ignore-missing-imports .
+
+  tests:
+    runs-on: ubuntu-latest
+    needs: lint
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Install deps
+        run: pip install -r requirements.txt pytest-cov
       - name: Run tests
-        run: pytest -q
+        run: pytest -q --cov=. --cov-report=xml
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-xml
+          path: coverage.xml
+
+  schema_check:
+    runs-on: ubuntu-latest
+    needs: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pandas
+        run: pip install pandas
+      - name: Schema check
+        run: python scripts/schema_check.py
