@@ -133,37 +133,44 @@ def gh_scopes():
 # ---------- Loaders ----------
 @st.cache_data(show_spinner=False)
 def load_employees(path: str) -> pd.DataFrame:
-    df = read_csv_smart(path)
+    # --- 0) Učitaj s forsiranim ';' i fallbackom ako se dobije jedna kolona
+    df = read_csv_smart(path, force_sep=';')
+    if len(df.columns) == 1:
+        col0 = str(df.columns[0])
+        # Ako je header sadrži ';', re-read sa separatorom ';' i različitim encoding fallbackovima
+        if ';' in col0:
+            for enc in ("utf-8", "utf-8-sig", "cp1250", "latin1"):
+                try:
+                    df = pd.read_csv(path, sep=';', engine="python", encoding=enc)
+                    break
+                except Exception:
+                    continue
 
-    # 1) Normaliziraj nazive kolona (lower, makni razmake/crtice/točke/diakritike)
+    # --- 1) Normaliziraj nazive kolona i pronađi alias-e
     import unicodedata, re
 
     def norm(s: str) -> str:
         s = unicodedata.normalize("NFKD", str(s))
         s = "".join(ch for ch in s if not unicodedata.combining(ch))
         s = s.lower()
-        s = re.sub(r"[^a-z0-9]+", "", s)  # makni sve osim slova/brojeva
+        s = re.sub(r"[^a-z0-9]+", "", s)
         return s
 
     norm_map = {c: norm(c) for c in df.columns}
-    # obrnuti lookup: normalizirano -> originalni naziv
     inv = {}
     for orig, n in norm_map.items():
         inv.setdefault(n, orig)
 
     def pick(*candidates):
-        """Vrati prvi postojeći originalni naziv kolone koji odgovara popisu kandidata (po normaliziranom ključu)."""
         for cand in candidates:
             n = norm(cand)
             if n in inv:
                 return inv[n]
         return None
 
-    # 2) Pronađi kolone po fleksibilnim aliasima
     col_name = pick("Name", "Ime i prezime", "ImeIPrezime", "Zaposlenik", "Employee")
     col_dept = pick("Department", "Odjel", "Odjeljenje", "OrgUnit", "Organizacijska jedinica")
     col_mail = pick("eMail", "Email", "E-mail", "e-mail", "mail", "Kontakt e-mail", "Kontakt email")
-
     col_mgr  = pick("Manager", "Menadzer", "Menadžer", "Prvi nadređeni", "Nadređeni", "Line Manager")
     col_dir  = pick("Director", "Direktor", "Drugi nadređeni")
 
@@ -179,25 +186,14 @@ def load_employees(path: str) -> pd.DataFrame:
         )
         st.stop()
 
-    # 3) Sastavi standardizirani DataFrame s očekivanim imenima kolona
     base_cols = {col_name: "Name", col_dept: "Department", col_mail: "eMail"}
     out = df[list(base_cols.keys())].rename(columns=base_cols)
 
-    if col_mgr:
-        out["Manager"] = df[col_mgr].astype(str)
-    else:
-        out["Manager"] = ""
-
-    if col_dir:
-        out["Director"] = df[col_dir].astype(str)
-    else:
-        out["Director"] = ""
-
-    # 4) Dodatna pomoćna kolona (za spajanje po emailu)
+    out["Manager"] = df[col_mgr].astype(str) if col_mgr else ""
+    out["Director"] = df[col_dir].astype(str) if col_dir else ""
     out["eMail_lc"] = out["eMail"].astype(str).str.strip().str.lower()
 
     return out[["Name", "Department", "eMail", "Manager", "Director", "eMail_lc"]]
-
 
 @st.cache_data(show_spinner=False)
 def load_locations(path:str)->list[str]:
