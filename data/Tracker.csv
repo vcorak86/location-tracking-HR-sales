@@ -1,5 +1,10 @@
 Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;location_id;location_name;created_at;updated_at;source;version;Datum_dt
 ;;;;;52.0;1;1900;NaT;5c80e95e-e80a-50c8-9d13-ae17ef5ce8a4;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;
+26.09.2025.;Petak;Vedran Čorak;Project management;Vukovina;39.0;9;2025;2025-09-26;40c60c0d-b265-542f-97ef-717acfe63412;L2;Vukovina;2025-09-09T13:27:39Z;2025-09-09T13:27:39Z;;;
+25.09.2025.;Četvrtak;Vedran Čorak;Project management;Vukovina;39.0;9;2025;2025-09-25;6f7df8c5-8192-54b3-8e62-aa776956bcf7;L2;Vukovina;2025-09-09T13:27:39Z;2025-09-09T13:27:39Z;;;
+24.09.2025.;Srijeda;Vedran Čorak;Project management;Poslovni put;39.0;9;2025;2025-09-24;d2e179c0-f34e-5ee1-ab7d-9073027c7313;L4;Poslovni put;2025-09-09T13:27:39Z;2025-09-09T13:27:39Z;;;
+23.09.2025.;Utorak;Vedran Čorak;Project management;Godišnji odmor;39.0;9;2025;2025-09-23;28f08867-4573-5823-af8b-35787a8668fa;L5;Godišnji odmor;2025-09-09T13:27:39Z;2025-09-09T13:27:39Z;;;
+22.09.2025.;Ponedjeljak;Vedran Čorak;Project management;Poslovnica;39.0;9;2025;2025-09-22;5c8b0f22-92c9-5776-9188-ee48c6126d85;L3;Poslovnica;2025-09-09T13:27:39Z;2025-09-09T13:27:39Z;;;
 19.09.2025.;Petak;Alitović Bruno;Call Centar;Špansko;38.0;9;2025;2025-09-19;faf12b5c-fc5a-57cc-b039-22b1dc42fbad;L1;Špansko;2025-09-09T10:45:10Z;2025-09-09T10:45:10Z;;;
 19.09.2025.;Petak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-19;947c412b-cbc9-5060-808c-ad2175278e9a;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-19
 19.09.2025.;Petak;Habuš Hrvoje;Marketing;Rad od kuće;38.0;9;2025;2025-09-19;c42e036c-646a-56f4-b5d9-45596303a626;L7;Rad od kuće;2025-09-09T11:32:47Z;2025-09-09T11:32:47Z;;;
