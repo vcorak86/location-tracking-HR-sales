@@ -36,7 +36,7 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 12.09.2025.;Petak;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-12;a8f111ab-4851-5137-abeb-d87b271b3fb0;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
 12.09.2025.;Petak;Devčić Dino;Fleet;Rad od kuće;37.0;9;2025;2025-09-12;20ccda09-38da-5cab-a7ef-f74d73d7e01f;L7;Rad od kuće;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
 12.09.2025.;Petak;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-12;6f51c0fc-6ee3-50f0-bd39-4702e8f33740;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
-12.09.2025.;Petak;Habuš Hrvoje;Marketing;Rad od kuće;37.0;9;2025;2025-09-12;5c450032-26cd-5338-abc8-ea1c0b28a12e;L7;Rad od kuće;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
+12.09.2025.;Petak;Habuš Hrvoje;Marketing;Rad od kuće;37.0;9;2025;2025-09-12;5c450032-26cd-5338-abc8-ea1c0b28a12e;L7;Rad od kuće;2025-09-09T11:31:25Z;2025-09-09T11:31:25Z;;;
 12.09.2025.;Petak;Lalić Marko;Project management;Špansko;37.0;9;2025;2025-09-12;bc54537a-efb7-57d9-93c9-5d7c5334d44a;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
 12.09.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;37.0;9;2025;2025-09-12;b71bb4af-0977-5a82-ac16-294d5756f3e2;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
 12.09.2025.;Petak;Marin Pustak;Tehnički centar;Godišnji odmor;37.0;9;2025;2025-09-12;d218f8fd-8c5d-58cf-acec-2de3c03048b4;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
@@ -55,7 +55,7 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 11.09.2025.;Četvrtak;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-11;d403d92e-3b37-5fcb-a6d2-042f12c8da21;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-11
 11.09.2025.;Četvrtak;Devčić Dino;Fleet;Špansko;37.0;9;2025;2025-09-11;e35d115f-99b4-5785-a619-1efce97870f7;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-11
 11.09.2025.;Četvrtak;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-11;b0615aa7-5b8d-575e-a7de-c2205bcaac10;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-11
-11.09.2025.;Četvrtak;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-11;6ba9bff8-7cb9-505c-990e-d5fffe6b2b6e;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-11
+11.09.2025.;Četvrtak;Habuš Hrvoje;Marketing;Rad od kuće;37.0;9;2025;2025-09-11;6ba9bff8-7cb9-505c-990e-d5fffe6b2b6e;L7;Rad od kuće;2025-09-09T11:31:25Z;2025-09-09T11:31:25Z;;;
 11.09.2025.;Četvrtak;Lalić Marko;Project management;Špansko;37.0;9;2025;2025-09-11;d391875a-1e6e-5f67-8ab0-26c94738242a;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-11
 11.09.2025.;Četvrtak;Leskovar Jelena;Call Centar;Špansko;37.0;9;2025;2025-09-11;bed7094d-528b-57b1-871d-30452c42b1cb;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-11
 11.09.2025.;Četvrtak;Marin Pustak;Tehnički centar;Godišnji odmor;37.0;9;2025;2025-09-11;2d9aadc5-a094-56aa-85a6-018f5b5b6dbf;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-11
@@ -75,7 +75,7 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 10.09.2025.;Srijeda;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-10;ad83a663-be8b-5f46-83e3-bdff9906399f;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-10
 10.09.2025.;Srijeda;Devčić Dino;Fleet;Špansko;37.0;9;2025;2025-09-10;2d435f56-7a0d-5c69-894d-6f93f597fee7;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-10
 10.09.2025.;Srijeda;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-10;7ac99824-f8b8-51d6-8118-a35b39ea233b;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-10
-10.09.2025.;Srijeda;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-10;4f83bb96-c5ca-52dc-ae70-25bb23383bd3;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-10
+10.09.2025.;Srijeda;Habuš Hrvoje;Marketing;Rad od kuće;37.0;9;2025;2025-09-10;4f83bb96-c5ca-52dc-ae70-25bb23383bd3;L7;Rad od kuće;2025-09-09T11:31:25Z;2025-09-09T11:31:25Z;;;
 10.09.2025.;Srijeda;Lalić Marko;Project management;Špansko;37.0;9;2025;2025-09-10;171f16eb-1a11-5131-af06-bad966cdb6d3;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-10
 10.09.2025.;Srijeda;Leskovar Jelena;Call Centar;Špansko;37.0;9;2025;2025-09-10;ec199a54-d26f-5ddd-bad4-b97b699da273;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-10
 10.09.2025.;Srijeda;Marin Pustak;Tehnički centar;GO;37.0;9;2025;2025-09-10;93acac57-2b18-5ff4-85c0-6fa11ab3d3b2;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-10
@@ -95,7 +95,7 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 09.09.2025.;Utorak;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-09;cc032ae2-c4b7-5401-b8d5-e774c32994c5;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-09
 09.09.2025.;Utorak;Devčić Dino;Fleet;Špansko;37.0;9;2025;2025-09-09;ce45809e-27df-5bb1-8d67-15258ee89976;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-09
 09.09.2025.;Utorak;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-09;605dad6c-d85d-5a2e-a85e-a8c65b79f4d8;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-09
-09.09.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-09;bfc66755-f7d4-52e8-b889-a933cc51397c;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-09
+09.09.2025.;Utorak;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-09;bfc66755-f7d4-52e8-b889-a933cc51397c;L1;Špansko;2025-09-09T11:31:25Z;2025-09-09T11:31:25Z;;;
 09.09.2025.;Utorak;Lalić Marko;Project management;Špansko;37.0;9;2025;2025-09-09;db11b076-ec70-5bdf-9b1d-e1e8c32f5830;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-09
 09.09.2025.;Utorak;Leskovar Jelena;Call Centar;Špansko;37.0;9;2025;2025-09-09;57fcd383-d7d8-54b5-8c16-f14decfdcb61;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-09
 09.09.2025.;Utorak;Marin Pustak;Tehnički centar;Godišnji odmor;37.0;9;2025;2025-09-09;95af7bbc-4484-5a24-a32a-14acbc154e5e;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-09
@@ -115,7 +115,7 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 08.09.2025.;Ponedjeljak;Davor Hren;Tehnički centar;Vukovina;37.0;9;2025;2025-09-08;44fd5076-a073-5bc9-ac06-5b63e916ad2d;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-08
 08.09.2025.;Ponedjeljak;Devčić Dino;Fleet;Špansko;37.0;9;2025;2025-09-08;544401c5-ad03-5b9f-9d93-13efb5029aa3;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-08
 08.09.2025.;Ponedjeljak;Dolores Pavlović;Tehnički centar;Vukovina;37.0;9;2025;2025-09-08;74c21799-7c0c-55b6-99b8-280a09cb0270;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-08
-08.09.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-08;bee52476-15aa-5d41-81df-d067043249ef;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-08
+08.09.2025.;Ponedjeljak;Habuš Hrvoje;Marketing;Špansko;37.0;9;2025;2025-09-08;bee52476-15aa-5d41-81df-d067043249ef;L1;Špansko;2025-09-09T11:31:25Z;2025-09-09T11:31:25Z;;;
 08.09.2025.;Ponedjeljak;Lalić Marko;Project management;Rad od kuće;37.0;9;2025;2025-09-08;19af4561-d543-5bbe-a3f9-f54b5eec475c;L7;Rad od kuće;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-08
 08.09.2025.;Ponedjeljak;Leskovar Jelena;Call Centar;;37.0;9;2025;2025-09-08;739bd2f0-8a98-5155-8ed6-bcd325714f4b;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-08
 08.09.2025.;Ponedjeljak;Marin Pustak;Tehnički centar;Godišnji odmor;37.0;9;2025;2025-09-08;c0841bab-1ae0-5dd4-8ace-7f7c87cf628b;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-08
