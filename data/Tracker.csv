@@ -2,18 +2,23 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 ;;;;;52.0;1;1900;NaT;5c80e95e-e80a-50c8-9d13-ae17ef5ce8a4;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;
 19.09.2025.;Petak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-19;947c412b-cbc9-5060-808c-ad2175278e9a;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-19
 19.09.2025.;Petak;Pintarić Ivan;Call Centar;Špansko;38.0;9;2025;2025-09-19;ca72cbc4-aa4c-531c-a87e-29dcac2df17b;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-19
+19.09.2025.;Petak;Vedran Čorak;Project management;Rad od kuće;38.0;9;2025;2025-09-19;3811b420-1937-5f48-8352-41d725210728;L7;Rad od kuće;2025-09-09T09:21:03Z;2025-09-09T09:21:03Z;;;
 19.09.2025.;Petak;Vuzem Nataša;Marketing;;38.0;9;2025;2025-09-19;78078897-8b80-5c24-b98a-5c544c93224f;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-19
 18.09.2025.;Četvrtak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-18;24ea9b08-aed9-5f66-b010-c184d4459c79;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-18
 18.09.2025.;Četvrtak;Pintarić Ivan;Call Centar;Špansko;38.0;9;2025;2025-09-18;17bfeb6b-5ac3-5fae-a120-cf4249b78492;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-18
+18.09.2025.;Četvrtak;Vedran Čorak;Project management;Vukovina;38.0;9;2025;2025-09-18;f974f534-99a5-5c99-9b93-b614520896f4;L2;Vukovina;2025-09-09T09:21:03Z;2025-09-09T09:21:03Z;;;
 18.09.2025.;Četvrtak;Vuzem Nataša;Marketing;Špansko;38.0;9;2025;2025-09-18;3e5d771d-e2b2-5b06-a381-8534fa7c8169;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-18
 17.09.2025.;Srijeda;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-17;0110183c-23ea-528f-a55d-14d1ade3520f;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-17
 17.09.2025.;Srijeda;Pintarić Ivan;Call Centar;Špansko;38.0;9;2025;2025-09-17;adb21d9c-141e-5c42-9b0b-f7a0dc0d1213;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-17
+17.09.2025.;Srijeda;Vedran Čorak;Project management;Vukovina;38.0;9;2025;2025-09-17;23251e65-9739-5b1d-8ebc-c61ed457ee3f;L2;Vukovina;2025-09-09T09:21:03Z;2025-09-09T09:21:03Z;;;
 17.09.2025.;Srijeda;Vuzem Nataša;Marketing;Špansko;38.0;9;2025;2025-09-17;28d67826-3306-5bad-ae31-80cac2048e66;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-17
 16.09.2025.;Utorak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-16;6b240164-e4f1-58a2-ade7-fb504eb8b2f2;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-16
 16.09.2025.;Utorak;Pintarić Ivan;Call Centar;Godišnji odmor;38.0;9;2025;2025-09-16;1d491101-7e9c-577f-8c3b-332e99d95d44;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-16
+16.09.2025.;Utorak;Vedran Čorak;Project management;Vukovina;38.0;9;2025;2025-09-16;d4522745-202a-54b2-9e56-031543a88c3a;L2;Vukovina;2025-09-09T09:21:03Z;2025-09-09T09:21:03Z;;;
 16.09.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;38.0;9;2025;2025-09-16;b785a935-aafb-5b6a-a1c8-24816d11a57f;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-16
 15.09.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-15;14ae2c20-a2b8-5385-8e18-44a4b46d9ff1;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-15
 15.09.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;GO;38.0;9;2025;2025-09-15;999d146c-f7b5-584c-a524-ac79b2c11145;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-15
+15.09.2025.;Ponedjeljak;Vedran Čorak;Project management;Vukovina;38.0;9;2025;2025-09-15;dcb44cb0-ba51-581e-b86b-2c670a754c34;L2;Vukovina;2025-09-09T09:21:03Z;2025-09-09T09:21:03Z;;;
 15.09.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;38.0;9;2025;2025-09-15;b95ca12f-c556-58a8-8696-8220413f475b;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-15
 12.09.2025.;Petak;Boc Marko;Project management;Godišnji odmor;37.0;9;2025;2025-09-12;c66c0ad4-4491-596c-9c8e-1e561d1d94ae;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
 12.09.2025.;Petak;Boris Omerzo;Tehnički centar;Vukovina;37.0;9;2025;2025-09-12;7a0fcd51-fdd6-5cbe-8af1-4b4dea04f2b1;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
