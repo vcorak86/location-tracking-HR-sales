@@ -106,18 +106,22 @@ def apply_canonical_fields(df: pd.DataFrame, source: str = "app") -> pd.DataFram
         src = t["Datum"].astype(str).str.strip().str.rstrip(".")
         t.loc[need_iso, "date_iso"] = pd.to_datetime(src, dayfirst=True, errors="coerce").dt.date.astype("str")
 
-    # Safe Series for names/dates
-    names = t["Ime i prezime"].astype(str).fillna("")
-    dates = t["date_iso"].astype(str).fillna("")
-
-    # row-wise generation to avoid length mismatches
-    t["record_id"] = [
-        new_record_id(n, d) for n, d in zip(names.tolist(), dates.tolist())
-    ] if "record_id" not in t.columns else t["record_id"]
+    # Safe per-row generation to avoid any shape mismatch (even if duplicate headers sneaked in)
+    if "record_id" not in t.columns or t["record_id"].isna().any() or (t["record_id"].astype(str).str.strip() == "").any():
+        t["record_id"] = t.apply(
+            lambda r: new_record_id(str(r.get("Ime i prezime","")), str(r.get("date_iso",""))),
+            axis=1
+        )
 
     now = datetime.utcnow().isoformat(timespec="seconds") + "Z"
     if "created_at" not in t.columns: t["created_at"] = now
+    else:
+        t["created_at"] = t["created_at"].fillna("").astype(str)
+        t.loc[t["created_at"].str.strip()=="", "created_at"] = now
     if "updated_at" not in t.columns: t["updated_at"] = now
+    else:
+        t["updated_at"] = t["updated_at"].fillna("").astype(str)
+        t.loc[t["updated_at"].str.strip()=="", "updated_at"] = now
     if "version" not in t.columns: t["version"] = 1
     if "source" not in t.columns: t["source"] = str(source or "app")
 
