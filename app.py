@@ -6,6 +6,7 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 
+# utils
 from utils_tracker import (
     normalize_columns,
     with_parsed_date,
@@ -14,21 +15,22 @@ from utils_tracker import (
     apply_canonical_fields,
 )
 
-BUILD_VERSION = "v12.2"
+BUILD_VERSION = "v12.3"
 BUILD_TIMESTAMP = datetime.utcnow().isoformat(timespec="seconds") + "Z"
 
+# ----- Paths / files -----
 EMP_FILE = "data/Popis_djelatnika_HR_Sales.csv"
-LOC_NORM_FILE = "data/Locations_normalized.csv"
+LOC_NORM_FILE = "data/Locations_normalized.csv"   # jedini izvor lokacija
 HOL_FILE = "data/CroatianHolidays.csv"
 GH_TRACKER_PATH_DEFAULT = "data/Tracker.csv"
 LOCAL_FALLBACK_LOG = Path("data/Tracker.local.csv")
 DEFAULT_GH_SEP = ";"
 HR_DAYS = ["Ponedjeljak","Utorak","Srijeda","Četvrtak","Petak"]
-MONTHS_HR = ["Siječanj","Veljača","Ožujak","Travanj","Svibanj","Lipanj","Srpanj","Kolovoz","Rujan","Listopad","Studeni","Prosinac"]
 
 st.set_page_config(page_title="Praćenje lokacije rada", page_icon="🗺️", layout="wide")
 
-st.markdown("""
+# ---------- Styles ----------
+st.markdown('''
 <style>
 .hday-cell { background:#fff7d6; padding:10px 12px; border-top:1px solid #f1c40f55; border-bottom:1px solid #f1c40f55; }
 .hday-left { border-left:1px solid #f1c40f55; border-top-left-radius:10px; border-bottom-left-radius:10px; }
@@ -40,8 +42,9 @@ st.markdown("""
 .badge-dot { height:8px; width:8px; border-radius:50%; display:inline-block; background:#10b981; margin-right:6px; vertical-align:middle;}
 .small { font-size:12px; color:#475569; }
 </style>
-""", unsafe_allow_html=True)
+''', unsafe_allow_html=True)
 
+# ---------- Encoding detection ----------
 def detect_encoding(path: str):
     try:
         from charset_normalizer import from_bytes
@@ -53,7 +56,7 @@ def detect_encoding(path: str):
         pass
     return None
 
-def read_csv_smart(path:str, force_sep=None, seps=(",", ";", "\t", "|"), encs=("utf-8","utf-8-sig","cp1250","latin1" )):
+def read_csv_smart(path:str, force_sep=None, seps=(",", ";", "\t", "|"), encs=("utf-8","utf-8-sig","cp1250","latin1")):
     if not Path(path).exists():
         return pd.DataFrame()
     enc_detected = detect_encoding(path)
@@ -79,6 +82,7 @@ def read_csv_smart(path:str, force_sep=None, seps=(",", ";", "\t", "|"), encs=("
     if last_err: raise last_err
     raise RuntimeError(f"Ne mogu učitati CSV: {path}")
 
+# ---------- GitHub helpers ----------
 def gh_enabled(): return "GITHUB" in st.secrets and all(k in st.secrets["GITHUB"] for k in ["token","repo"])
 def _gh_headers(extra=None):
     h={"Authorization": f"Bearer {st.secrets['GITHUB']['token']}", "Accept":"application/vnd.github+json", "X-GitHub-Api-Version":"2022-11-28"}
@@ -103,11 +107,13 @@ def gh_put_file(repo,path,branch,content_bytes,message,sha=None,committer_name=N
     r=requests.put(url, headers=_gh_headers(), json=data, timeout=60)
     return r
 
+# ---------- Loaders ----------
 @st.cache_data(show_spinner=False)
 def load_employees(path:str)->pd.DataFrame:
     df=read_csv_smart(path, force_sep=';')
     if df.empty:
         return pd.DataFrame(columns=["Name","Department","eMail","Manager","Director","eMail_lc"])
+    # Normalize headers
     import unicodedata
     def norm(s:str)->str:
         s=unicodedata.normalize("NFKD", str(s))
@@ -151,6 +157,7 @@ def load_locations_norm(path:str)->pd.DataFrame:
     df=read_csv_smart(path, force_sep=";")
     if df.empty:
         return pd.DataFrame(columns=['location_id','name','type','aliases'])
+    # header fix if needed
     if all(str(c).lower().startswith("column") for c in df.columns) and len(df)>0:
         new_header=[str(x).strip() for x in df.iloc[0].tolist()]
         df=df.iloc[1:].reset_index(drop=True)
@@ -180,6 +187,7 @@ employees = load_employees(EMP_FILE)
 LOC_NORM   = load_locations_norm(LOC_NORM_FILE)
 HOLIDAYS   = load_holidays_csv(HOL_FILE)
 
+# ---------- Location catalog ----------
 def _norm_key(s: str) -> str:
     s = unicodedata.normalize("NFKD", str(s or ""))
     s = "".join(ch for ch in s if not unicodedata.combining(ch))
@@ -195,15 +203,15 @@ def build_location_catalog(norm_df: pd.DataFrame):
     type_map = {}
     id_map   = {}
     for _, r in norm_df.iterrows():
-        canon = str(r.get("name",""))..strip()
+        canon = str(r.get("name","")).strip()
         if not canon: continue
         typ = str(r.get("type","")).strip().upper()
-        lid = str(r.get("location_id",""))..strip()
+        lid = str(r.get("location_id","")).strip()
         if canon not in names: names.append(canon)
         type_map[_norm_key(canon)] = typ
         id_map[_norm_key(canon)]   = lid
         alias_map[_norm_key(canon)] = canon
-        ali = str(r.get("aliases",""))..strip()
+        ali = str(r.get("aliases","")).strip()
         if ali:
             for a in ali.split("|"):
                 a = a.strip()
@@ -229,6 +237,7 @@ def is_remote_by_catalog(loc_value: str) -> bool:
     if typ in {"REMOTE"}: return True
     return is_remote_value(str(canon))
 
+# ---------- CSV parse helper for remote Tracker fetch ----------
 def parse_csv_bytes(b:bytes, preferred_sep=";"):
     for sep in [preferred_sep]+[s for s in [",",";","\t","|"] if s!=preferred_sep]:
         try:
@@ -237,32 +246,12 @@ def parse_csv_bytes(b:bytes, preferred_sep=";"):
         except Exception: pass
     df=pd.read_csv(io.BytesIO(b), sep=None, engine="python"); return df, None
 
-def gh_enabled(): return "GITHUB" in st.secrets and all(k in st.secrets["GITHUB"] for k in ["token","repo"])
-def _sanitize_repo(repo:str)->str: return repo.strip().strip("/")
-def _gh_config():
-    s=st.secrets["GITHUB"]
-    return {"repo":_sanitize_repo(s["repo"]), "branch":s.get("branch","main"), "path":s.get("path", GH_TRACKER_PATH_DEFAULT),
-            "committer_name":s.get("committer_name",None), "committer_email":s.get("committer_email",None),
-            "csv_sep":s.get("csv_sep", DEFAULT_GH_SEP)}
-def _gh_headers(extra=None):
-    h={"Authorization": f"Bearer {st.secrets['GITHUB']['token']}", "Accept":"application/vnd.github+json", "X-GitHub-Api-Version":"2022-11-28"}
-    if extra: h.update(extra)
-    return h
-def gh_get_file(repo,path,branch, etag=None):
-    headers=_gh_headers({"If-None-Match": etag} if etag else None)
-    url=f"https://api.github.com/repos/{repo}/contents/{path}?ref={branch}"
-    r=requests.get(url, headers=headers, timeout=30)
-    return r
-def gh_put_file(repo,path,branch,content_bytes,message,sha=None,committer_name=None,committer_email=None):
-    data={"message":message,"content":base64.b64encode(content_bytes).decode("utf-8"),"branch":branch}
-    if sha: data["sha"]=sha
-    if committer_name and committer_email: data["committer"]={"name":committer_name,"email":committer_email}
-    url=f"https://api.github.com/repos/{repo}/contents/{path}"
-    r=requests.put(url, headers=_gh_headers(), json=data, timeout=60)
-    return r
+# ---------- Tracker loader ----------
+def gh_config_or_none():
+    return _gh_config() if gh_enabled() else None
 
 def load_tracker_and_meta():
-    cfg=_gh_config() if gh_enabled() else None
+    cfg=gh_config_or_none()
     etag_prev=st.session_state.get("tracker_etag")
     if gh_enabled():
         r=gh_get_file(cfg['repo'], cfg['path'], cfg['branch'], etag=etag_prev)
@@ -292,6 +281,7 @@ def load_tracker_and_meta():
         sha=None; etag=None
     return df, sha, etag, cfg
 
+# ---------- “Last completed week” helper ----------
 def monday_of_week(d:date)->date: return (pd.Timestamp(d)-pd.Timedelta(days=d.weekday())).date()
 def last_completed_week_end(today: date) -> date:
     start_this = monday_of_week(today)
@@ -301,6 +291,7 @@ def iso_week(dt:date)->int: return pd.Timestamp(dt).isocalendar().week
 def week_bounds(monday:date):
     end=(pd.Timestamp(monday)+pd.Timedelta(days=6)).date(); return monday, end
 
+# ---------- Save helper (adds location_id & location_name) ----------
 def canonicalize_rows(df_rows: pd.DataFrame) -> pd.DataFrame:
     rows = df_rows.copy()
     rows['location_name'] = ''
@@ -319,16 +310,21 @@ def canonicalize_rows(df_rows: pd.DataFrame) -> pd.DataFrame:
     return rows
 
 def save_tracker_rows(new_rows:pd.DataFrame):
+    # canonicalize
     can = canonicalize_rows(new_rows)
     prog = st.progress(0, text="Spremam zapise …")
     existing,_sha,_etag,_cfg = load_tracker_and_meta(); prog.progress(20, text="Spajam …")
     merged=pd.concat([existing, can], ignore_index=True)
     merged=apply_canonical_fields(merged, source='app'); prog.progress(45, text="Normaliziram (DESC + last-wins) …")
     merged=dedupe_last_then_sort_desc(merged)
+
+    # local write
     try:
         prog.progress(60, text="Lokalni zapis …")
         LOCAL_FALLBACK_LOG.parent.mkdir(parents=True, exist_ok=True); merged.to_csv(LOCAL_FALLBACK_LOG, index=False)
     except Exception: pass
+
+    # push to GH
     if gh_enabled():
         cfg=_gh_config()
         pref=['Datum','Dan','Ime i prezime','Odjel','Lokacija',
@@ -354,6 +350,7 @@ def save_tracker_rows(new_rows:pd.DataFrame):
     st.session_state["tracker_version"] = st.session_state.get("tracker_version", 0) + 1
     st.rerun()
 
+# ---------- Title + header ----------
 df_init, sha_init, etag_init, cfg = load_tracker_and_meta()
 sha_short = (sha_init or "local")[:7] if sha_init else "local"
 branch = (cfg['branch'] if cfg else "local")
@@ -369,20 +366,18 @@ with c_right:
         st.rerun()
     st.markdown(f"<span class='badge'><span class='badge-dot'></span>{branch} · {path_remote} · @{sha_short}</span>", unsafe_allow_html=True)
 
+# ---------- Email gate ----------
 email=st.text_input("Unesite svoju eMail adresu").strip().lower()
 if not email: st.stop()
 
-def load_employees_proxy():
-    try: return load_employees(EMP_FILE)
-    except Exception as e:
-        st.error(f"Problem s Popis_djelatnika_HR_Sales.csv: {e}")
-        return pd.DataFrame(columns=["Name","Department","eMail","Manager","Director","eMail_lc"])
-df_emp=load_employees_proxy()
+# Base data
+df_emp=load_employees(EMP_FILE)
 row=df_emp[df_emp['eMail_lc']==email]
 if row.empty: st.error("E-mail nije pronađen u popisu djelatnika."); st.stop()
 person=row.iloc[0]; full_name=str(person['Name']); dept=str(person['Department'])
 st.success(f"Pozdrav, **{full_name}** ({dept})!")
 
+# ---------- Admin portal + Debug panel ----------
 with st.expander("🛠️ Admin portal", expanded=False):
     if 'admin_ok' not in st.session_state: st.session_state['admin_ok']=False
     if not st.session_state['admin_ok']:
@@ -403,7 +398,9 @@ with st.expander("🛠️ Admin portal", expanded=False):
             if st.button("🔒 Zaključaj", help="Zaključa admin portal"): st.session_state['admin_ok'] = False; st.rerun()
         with colC:
             st.write("")
+
         st.divider()
+        # Healthcheck + GH meta
         st.markdown("### Healthcheck")
         if gh_enabled():
             try:
@@ -418,6 +415,7 @@ with st.expander("🛠️ Admin portal", expanded=False):
         else:
             st.warning("GITHUB secrets nisu postavljeni.")
 
+        # ---- DEBUG PANEL ----
         st.markdown("### 🧪 Debug panel")
         st.caption("Pregled sadržaja koji će se spremiti, preview merge-a te status zadnjih GitHub poziva.")
         dbg_cols = st.columns(3)
@@ -434,9 +432,6 @@ with st.expander("🛠️ Admin portal", expanded=False):
                 st.write("**TAIL (10)**"); st.dataframe(df_dbg.tail(10), width='stretch', hide_index=True)
         with dbg_cols[2]:
             st.write(f"Last GET: {st.session_state.get('last_get_status','-')} · Last PUT: {st.session_state.get('last_put_status','-')}")
-        if 'last_put_text' in st.session_state and st.session_state['last_put_text']:
-            with st.expander("Raw PUT response"):
-                st.code(st.session_state['last_put_text'])
 
         if 'debug_to_save' in st.session_state and isinstance(st.session_state['debug_to_save'], pd.DataFrame):
             st.markdown("#### Payload za spremanje (preview)")
@@ -448,6 +443,7 @@ with st.expander("🛠️ Admin portal", expanded=False):
                 st.write("**Preview nakon merge-a (TOP 25, DESC)**")
                 st.dataframe(merged.sort_values("date_iso", ascending=False).head(25), width='stretch', hide_index=True)
 
+# ---------- Weekly entry (unos) ----------
 def weeks_forward_until_year_end(ref:date)->int:
     year_end=date(ref.year,12,31)
     start_monday=monday_of_week(ref); end_monday=monday_of_week(year_end)
@@ -477,7 +473,8 @@ week_start, week_end = week_bounds(week_monday); week_num=iso_week(week_monday)
 week_year = pd.Timestamp(week_monday).isocalendar().year
 st.subheader(f"Tjedan {week_num} ({week_year}) ({week_start.strftime('%d.%m.%Y.')} — {week_end.strftime('%d.%m.%Y.')})")
 
-df_init, _, _, _ = load_tracker_and_meta()
+# Prefill iz Trackera
+df_init, _, _, _ = load_tracker_and_meta()  # refresh
 tracker_all = df_init
 prefill={}
 if not tracker_all.empty:
@@ -495,51 +492,6 @@ if reset_week: prefill={}
 admin_override = st.session_state.get('admin_ok', False)
 locked = (week_end < today) and (not admin_override)
 if locked: st.info("Ovaj tjedan je zaključan za izmjene (admin može override).")
-
-
-# ---- Location catalog for this session ----
-LOC_NORM = load_locations_norm(LOC_NORM_FILE)
-def build_location_catalog_session():
-    if LOC_NORM is None or LOC_NORM.empty:
-        return [], {}, {}, {}
-    names = []
-    alias_map = {}
-    type_map = {}
-    id_map   = {}
-    for _, r in LOC_NORM.iterrows():
-        canon = str(r.get("name",""))..strip()
-        if not canon: continue
-        typ = str(r.get("type","")).strip().upper()
-        lid = str(r.get("location_id",""))..strip()
-        if canon not in names: names.append(canon)
-        type_map[_norm_key(canon)] = typ
-        id_map[_norm_key(canon)]   = lid
-        alias_map[_norm_key(canon)] = canon
-        ali = str(r.get("aliases",""))..strip()
-        if ali:
-            for a in ali.split("|"):
-                a = a.strip()
-                if a: alias_map[_norm_key(a)] = canon
-    names = sorted(list(dict.fromkeys(names)))
-    return names, alias_map, type_map, id_map
-
-LOC_OPTIONS, LOC_ALIAS_MAP, LOC_TYPE_MAP, LOC_ID_MAP = build_location_catalog_session()
-
-def map_to_canonical(user_value: str) -> str:
-    if not user_value: return ""
-    s = str(user_value).strip()
-    if re.search(r"(?i)^neradni\s*dan$", s):
-        return "__BLOCKED__"
-    key = _norm_key(s)
-    return LOC_ALIAS_MAP.get(key, s)
-
-def is_remote_by_catalog(loc_value: str) -> bool:
-    if not loc_value: return False
-    canon = map_to_canonical(loc_value)
-    if canon == "__BLOCKED__": return False
-    typ = LOC_TYPE_MAP.get(_norm_key(canon), "")
-    if typ in {"REMOTE"}: return True
-    return is_remote_value(str(canon))
 
 with st.form("unos_tjedan"):
     st.write("**Datum, Dan, Lokacija** — Neradni dani su automatski označeni i nisu promjenjivi.")
@@ -587,6 +539,7 @@ with st.form("unos_tjedan"):
             "Week":pd.Timestamp(d).isocalendar().week,"Month":d.month,"Year":d.year
         })
 
+    # Debug: prikaži payload prije spremanja
     debug_preview = st.checkbox("🔎 Debug: prikaži payload prije slanja", value=False)
     if debug_preview:
         df_preview = pd.DataFrame([r for r in week_rows if r["Lokacija"]])
@@ -594,9 +547,9 @@ with st.form("unos_tjedan"):
             can_preview = canonicalize_rows(df_preview)
             can_preview = apply_canonical_fields(can_preview, source="preview")
             st.dataframe(can_preview, width='stretch', hide_index=True)
-            st.caption("Ovo je sadržaj koji će biti spojen u Tracker.csv (prije last-wins + globalnog DESC sortiranja)." )
+            st.caption("Ovo je sadržaj koji će biti spojen u Tracker.csv (prije last-wins + globalnog DESC sortiranja).")
         else:
-            st.info("Nema unosa za prikaz." )
+            st.info("Nema unosa za prikaz.")
 
     st.markdown("##### Tjedni sažetak")
     st.dataframe(pd.DataFrame(week_rows)[["Datum","Dan","Lokacija"]], width='stretch', hide_index=True)
@@ -607,22 +560,21 @@ with st.form("unos_tjedan"):
     if submit:
         if locked: st.error("Tjedan je zaključan; izmjena nije dopuštena."); st.stop()
         if any_empty: st.error("Molimo unesite lokaciju za svaki radni dan ili ostavite sva polja prazna."); st.stop()
+
         to_save=[r for r in week_rows if r["Lokacija"]]
         if not to_save: st.info("Nema unosa za spremanje.")
         else:
             df_save=pd.DataFrame(to_save)
+            # spremi u session za debug panel
             st.session_state['debug_to_save'] = canonicalize_rows(df_save).pipe(lambda d: apply_canonical_fields(d, source="preview"))
+            # stvarno spremanje
             save_tracker_rows(df_save)
 
+# ---------- Personal analytics (THIS YEAR, UP TO LAST COMPLETED WEEK) ----------
 st.markdown("---"); st.subheader("Udio lokacija u tekućoj godini (do zadnjeg završenog tjedna)")
-def last_completed_week_end(today: date) -> date:
-    start_this = (pd.Timestamp(today)-pd.Timedelta(days=today.weekday())).date()
-    end_prev   = (pd.Timestamp(start_this) - pd.Timedelta(days=1)).date()
-    return end_prev
-def iso_week(dt:date)->int: return pd.Timestamp(dt).isocalendar().week
-
 cutoff = last_completed_week_end(date.today())
-st.caption(f"Analitika uključuje zapise **do zaključno s tjednom {iso_week(cutoff)}** (do {cutoff.strftime('%d.%m.%Y.')}), ne uključuje tekući tjedan {iso_week(date.today())}." )
+st.caption(f"Analitika uključuje zapise **do zaključno s tjednom {iso_week(cutoff)}** "
+           f"(do {cutoff.strftime('%d.%m.%Y.')}), ne uključuje tekući tjedan {iso_week(date.today())}.")
 
 with st.spinner("Računam osobnu analitiku …"):
     tracker_df, _, _, _ = load_tracker_and_meta()
@@ -641,16 +593,17 @@ with st.spinner("Računam osobnu analitiku …"):
         else: st.info("Nema spremljenih unosa za tekuću godinu u dovršenim tjednima.")
     else: st.info("Još nema podataka u Tracker.csv.")
 
+# ---------- Past records ----------
 st.markdown("---"); st.subheader("📜 Vaši prijašnji zapisi")
 with st.spinner("Učitavam prijašnje zapise …"):
     tracker_all, _, _, _ = load_tracker_and_meta()
     if not tracker_all.empty:
         mine=tracker_all[tracker_all["Ime i prezime"]==full_name].copy()
-        try: mine["_d"]=pd.to_datetime(mine.get("date_iso", mine["Datum"]), dayfirst=True, errors="coerce"); mine=mine.sort_values("_d", ascending=False).drop(columns="_d")
+        try: mine["_d"]=pd.to_datetime(mine.get("date_iso", mine["Datum"]), errors="coerce"); mine=mine.sort_values("_d", ascending=False).drop(columns="_d")
         except Exception: pass
         show=[c for c in ["Datum","Ime i prezime","Odjel","Lokacija","Week","Month","Year","location_id","location_name"] if c in mine.columns]
         if show: st.dataframe(mine[show], width='stretch', hide_index=True)
         else: st.info("Nema podataka za prikaz.")
     else: st.info("Tracker.csv je prazan ili nedostupan.")
 
-st.caption(f"Verzija: {BUILD_VERSION} · Build: {BUILD_TIMESTAMP} · Centralni dnevnik: data/Tracker.csv (DESC + last-wins, canonical, + location_id/name)." )
+st.caption(f"Verzija: {BUILD_VERSION} · Build: {BUILD_TIMESTAMP} · Centralni dnevnik: data/Tracker.csv (DESC + last-wins, canonical, + location_id/name).")
