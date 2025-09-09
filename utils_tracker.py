@@ -95,10 +95,12 @@ def dedupe_last_then_sort_desc(df: pd.DataFrame) -> pd.DataFrame:
     t = with_parsed_date(df).copy()
     if "updated_at" not in t.columns:
         t["updated_at"] = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    # primary: date desc, then updated desc
     t = t.sort_values(["date_iso","updated_at"], ascending=[False, False], kind="mergesort")
+    # last-wins per person+date
     if "Ime i prezime" in t.columns and "date_iso" in t.columns:
         t = t.drop_duplicates(subset=["Ime i prezime","date_iso"], keep="first")
-    # final presentation: global DESC by date
+    # final presentation: global date desc (stable)
     t = t.sort_values(["date_iso","Ime i prezime"], ascending=[False, True], kind="mergesort")
     return t
 

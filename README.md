@@ -1,21 +1,12 @@
+# Location Tracking HR Sales (v12.2)
 
-# Location Tracking HR (v10.3)
+- `app.py`: Streamlit aplikacija (Debug panel uključen)
+- `utils_tracker.py`: pomoćne funkcije (normalizacija, last-wins, DESC sortiranje, heuristike)
+- `data/`: CSV datoteke (Tracker, Popis djelatnika, Locations_normalized, CroatianHolidays)
+- `.streamlit/secrets.example.toml`: primjer konfiguracije (kopiraj u `secrets.toml` na Streamlit Cloudu i popuni)
+- `.github/workflows/tests.yml`: CI smoke test
 
-- UX/UI: Kopiraj prošli tjedan, Reset, Undo, zaključavanje prošlih tjedana.
-- Data model: canonical polja u Tracker.csv (`date_iso`, `record_id`, `created_at`, `updated_at`, `source`, `version`), last-wins strože.
-- Locations_normalized.csv za tipizaciju lokacija.
-- Perf: CI gradi Parquet; app preferira Parquet za admin analitiku.
-- CI: lint, type-check, tests s coverage, schema check, nightly.
-- Healthcheck u adminu (rate limit, scope, GET/PUT).
-- Telemetry (Sentry) opcionalno + **Sentry test gumbi**.
-
-## Pokretanje
-```
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-## Novosti v10.3
-- Dodan **Sentry test** (poruka + simulirana greška) u Admin portalu.
-- Dodan **About** (ℹ️) popover s verzijom, SHA i build timestampom.
-- Deprecated pozivi očišćeni (`experimental_rerun` -> `st.rerun`), prazni labele uklonjene.
+## Napomene
+- Spremanje tjednih unosa upisuje **svih 5 dana** (ako su zadani) i radi canonical mapiranje (`location_id`/`location_name`).
+- Uvijek se primjenjuje **last-wins** po `(Ime i prezime, date_iso)` i zapis je **globalno DESC** po datumu.
+- Admin **Debug panel** omogućuje pregled payload-a prije snimanja, testni merge bez snimanja i status zadnjih GitHub poziva.

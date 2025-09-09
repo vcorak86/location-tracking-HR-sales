@@ -1,11 +1,6 @@
-
-streamlit
-pandas
-matplotlib
-requests
-openpyxl
-pytest
+streamlit>=1.37.0
+pandas>=2.0.0
+matplotlib>=3.7
+requests>=2.31
 charset-normalizer>=3.3
-pyarrow
-reportlab
-sentry-sdk
+pyarrow>=15.0
