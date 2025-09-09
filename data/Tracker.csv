@@ -17,7 +17,7 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 16.09.2025.;Utorak;Vedran Čorak;Project management;Vukovina;38.0;9;2025;2025-09-16;d4522745-202a-54b2-9e56-031543a88c3a;L2;Vukovina;2025-09-09T09:21:03Z;2025-09-09T09:21:03Z;;;
 16.09.2025.;Utorak;Vuzem Nataša;Marketing;Vukovina;38.0;9;2025;2025-09-16;b785a935-aafb-5b6a-a1c8-24816d11a57f;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-16
 15.09.2025.;Ponedjeljak;Boc Marko;Project management;Špansko;38.0;9;2025;2025-09-15;14ae2c20-a2b8-5385-8e18-44a4b46d9ff1;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-15
-15.09.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;GO;38.0;9;2025;2025-09-15;999d146c-f7b5-584c-a524-ac79b2c11145;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-15
+15.09.2025.;Ponedjeljak;Pintarić Ivan;Call Centar;Godišnji omor;38.0;9;2025;2025-09-15;999d146c-f7b5-584c-a524-ac79b2c11145;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-15
 15.09.2025.;Ponedjeljak;Vedran Čorak;Project management;Vukovina;38.0;9;2025;2025-09-15;dcb44cb0-ba51-581e-b86b-2c670a754c34;L2;Vukovina;2025-09-09T09:21:03Z;2025-09-09T09:21:03Z;;;
 15.09.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Vukovina;38.0;9;2025;2025-09-15;b95ca12f-c556-58a8-8696-8220413f475b;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-15
 12.09.2025.;Petak;Boc Marko;Project management;Godišnji odmor;37.0;9;2025;2025-09-12;c66c0ad4-4491-596c-9c8e-1e561d1d94ae;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-09-12
@@ -319,7 +319,7 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 25.08.2025.;Ponedjeljak;Ramić Bernard;QS;Poslovni put;35.0;8;2025;2025-08-25;7ca589b4-47c9-578b-bc40-b4497df6ef40;L4;Poslovni put;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-25
 25.08.2025.;Ponedjeljak;Ros Antonio;Marketing;Vukovina;35.0;8;2025;2025-08-25;96365d77-e2f6-5f17-b747-8768a7ecb2d6;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-25
 25.08.2025.;Ponedjeljak;Roso Marko;Call Centar;Špansko;35.0;8;2025;2025-08-25;0bdc018a-bac9-593a-a9b5-48a390e63ebf;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-25
-25.08.2025.;Ponedjeljak;Vedran Čorak;Project management;GO;35.0;8;2025;2025-08-25;296fae27-2d0a-5df0-bb0e-7a74bd58f5d6;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-25
+25.08.2025.;Ponedjeljak;Vedran Čorak;Project management;Godišnji odmor;35.0;8;2025;2025-08-25;296fae27-2d0a-5df0-bb0e-7a74bd58f5d6;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-25
 25.08.2025.;Ponedjeljak;Vuzem Nataša;Marketing;Rad od kuće;35.0;8;2025;2025-08-25;a7d89562-2a0d-551d-857b-ebe1c493139b;L7;Rad od kuće;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-25
 25.08.2025.;Ponedjeljak;Zidar Ivan;RVP;Poslovnica;35.0;8;2025;2025-08-25;ec7bd92b-3129-5c4c-950c-b76ca1e65ff4;L3;Poslovnica;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-25
 25.08.2025.;Ponedjeljak;Zoroje Branislav;Call Centar;Špansko;35.0;8;2025;2025-08-25;236ae15a-ca24-5b58-b6c6-6c32c3e2c213;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-25
@@ -336,12 +336,12 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 22.08.2025.;Petak;Leskovar Jelena;Call Centar;Špansko;34.0;8;2025;2025-08-22;5a86bef9-ff79-56e2-8ae9-7de0c0ab19ba;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;Marin Pustak;Tehnički centar;Vukovina;34.0;8;2025;2025-08-22;a9cd4310-5feb-50b3-8b4e-71a50c484857;L2;Vukovina;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;MiRad od kućelić Galic Matija;Project management;Godišnji odmor;34.0;8;2025;2025-08-22;90dfdc1f-c57f-59ec-b6ac-19874b257bae;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
-22.08.2025.;Petak;Miholić Galic Matija;Project management;GO;34.0;8;2025;2025-08-22;009182de-3212-511c-a001-0242dabf5fd5;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
+22.08.2025.;Petak;Miholić Galic Matija;Project management;Godišnji odmor;34.0;8;2025;2025-08-22;009182de-3212-511c-a001-0242dabf5fd5;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;Pintarić Ivan;Call Centar;Špansko;34.0;8;2025;2025-08-22;fae7c24e-176e-5f71-8c50-3f8827aa8110;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;Ramić Bernard;QS;;34.0;8;2025;2025-08-22;c79e52b7-465e-5933-aafc-c620bac16949;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;Ros Antonio;Marketing;;34.0;8;2025;2025-08-22;fc0e24be-c9a7-51b9-90a9-12cf60ba8daf;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;Roso Marko;Call Centar;;34.0;8;2025;2025-08-22;57519174-2b39-5e43-b847-398db7123e54;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
-22.08.2025.;Petak;Vedran Čorak;Project management;;34.0;8;2025;2025-08-22;9bf85ece-4465-51ca-af15-c71390bb15ee;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
+22.08.2025.;Petak;Vedran Čorak;Project management;Rad od kuće;34.0;8;2025;2025-08-22;9bf85ece-4465-51ca-af15-c71390bb15ee;L7;Rad od kuće;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;Vuzem Nataša;Marketing;GO;34.0;8;2025;2025-08-22;cb471bdf-db44-56ad-8b42-e005f5d44ca9;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;Zoroje Branislav;Call Centar;Špansko;34.0;8;2025;2025-08-22;9484bbbf-d07c-5e33-acaa-f1d05b448738;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
 22.08.2025.;Petak;Zubić Petra;Marketing;;34.0;8;2025;2025-08-22;e51dca3f-1e04-5898-9bc6-d20ce0c8a23a;;;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-22
@@ -470,7 +470,7 @@ Datum;Dan;Ime i prezime;Odjel;Lokacija;Week;Month;Year;date_iso;record_id;locati
 13.08.2025.;Srijeda;Pintarić Ivan;Call Centar;GO;33.0;8;2025;2025-08-13;0ec9ba7c-ad6a-5339-8f0d-0e7eb30a1f18;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-13
 13.08.2025.;Srijeda;Ramić Bernard;QS;GO;33.0;8;2025;2025-08-13;a3385125-4711-56aa-aae1-e7ae02b22aea;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-13
 13.08.2025.;Srijeda;Ros Antonio;Marketing;Špansko;33.0;8;2025;2025-08-13;76dcffb5-37f2-500c-8643-242994ae00ac;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-13
-13.08.2025.;Srijeda;Vedran Čorak;Project management;GO;33.0;8;2025;2025-08-13;cbb55e0e-5cea-517e-8d94-7af852330b7b;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-13
+13.08.2025.;Srijeda;Vedran Čorak;Project management;Godišnji odmor;33.0;8;2025;2025-08-13;cbb55e0e-5cea-517e-8d94-7af852330b7b;L5;Godišnji odmor;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-13
 13.08.2025.;Srijeda;Vuzem Nataša;Marketing;GO;33.0;8;2025;2025-08-13;81f7358e-4a11-54c0-9a3e-23530553f492;;GO;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-13
 13.08.2025.;Srijeda;Zoroje Branislav;Call Centar;Špansko;33.0;8;2025;2025-08-13;e3c0bf1d-965f-55ab-81ea-fe1801782303;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-13
 13.08.2025.;Srijeda;Zubić Petra;Marketing;Špansko;33.0;8;2025;2025-08-13;5b0924d1-8d44-5cf5-be3c-b0bc2fcf6d19;L1;Špansko;2025-09-09T09:19:40Z;2025-09-09T09:19:40Z;gh;1.0;2025-08-13
